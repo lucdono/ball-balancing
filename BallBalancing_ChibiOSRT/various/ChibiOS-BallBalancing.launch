@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.cdt.debug.gdbjtag.launchConfigurationType">
+<intAttribute key="org.eclipse.cdt.debug.gdbjtag.core.delay" value="3"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.doHalt" value="true"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.doReset" value="true"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value=""/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageOffset" value=""/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.initCommands" value=""/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.ipAddress" value="localhost"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.jtagDevice" value="Generic TCP/IP"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.loadImage" value="true"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.loadSymbols" value="true"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.pcRegister" value=""/>
+<intAttribute key="org.eclipse.cdt.debug.gdbjtag.core.portNumber" value="61234"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.runCommands" value="jump ResetHandler"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setPcRegister" value="false"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setResume" value="false"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setStopAt" value="true"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.stopAt" value="main"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsFileName" value=""/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsOffset" value=""/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useFileForImage" value="false"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useFileForSymbols" value="false"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useProjBinaryForImage" value="true"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useProjBinaryForSymbols" value="true"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useRemoteTarget" value="true"/>
+<stringAttribute key="org.eclipse.cdt.debug.mi.core.DEBUG_NAME" value="arm-none-eabi-gdb"/>
+<stringAttribute key="org.eclipse.cdt.debug.mi.core.commandFactory" value="Standard (Windows)"/>
+<stringAttribute key="org.eclipse.cdt.debug.mi.core.protocol" value="mi"/>
+<booleanAttribute key="org.eclipse.cdt.debug.mi.core.verboseMode" value="false"/>
+<stringAttribute key="org.eclipse.cdt.dsf.gdb.DEBUG_NAME" value="arm-none-eabi-gdb"/>
+<booleanAttribute key="org.eclipse.cdt.dsf.gdb.UPDATE_THREADLIST_ON_SUSPEND" value="false"/>
+<intAttribute key="org.eclipse.cdt.launch.ATTR_BUILD_BEFORE_LAUNCH_ATTR" value="2"/>
+<stringAttribute key="org.eclipse.cdt.launch.COREFILE_PATH" value=""/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_REGISTER_GROUPS" value=""/>
+<stringAttribute key="org.eclipse.cdt.launch.FORMAT" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&lt;contentList&gt;&lt;content id=&quot;a0-CtrlThread-(format)&quot; val=&quot;1&quot;/&gt;&lt;content id=&quot;leds-fill_frame-(format)&quot; val=&quot;2&quot;/&gt;&lt;content id=&quot;high-select_led-(format)&quot; val=&quot;2&quot;/&gt;&lt;content id=&quot;layer-frame-fill_buffer-(format)&quot; val=&quot;2&quot;/&gt;&lt;content id=&quot;buffer[16]-buffer--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;buffer[6]-buffer--(format)&quot; val=&quot;1&quot;/&gt;&lt;content id=&quot;buffer[7]-buffer--(format)&quot; val=&quot;1&quot;/&gt;&lt;content id=&quot;crc-readReceiver-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;perc-setThrottle-(format)&quot; val=&quot;1&quot;/&gt;&lt;content id=&quot;b-readReceiver-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;layer-frame-get_pattern-(format)&quot; val=&quot;2&quot;/&gt;&lt;content id=&quot;layer-frame-fill_frame-(format)&quot; val=&quot;2&quot;/&gt;&lt;content id=&quot;pattern-fill_frame-(format)&quot; val=&quot;2&quot;/&gt;&lt;content id=&quot;frames-current_anim-AnimationThread-(format)&quot; val=&quot;1&quot;/&gt;&lt;content id=&quot;angle-commandServo-(format)&quot; val=&quot;1&quot;/&gt;&lt;content id=&quot;val-DisplayThread-(format)&quot; val=&quot;2&quot;/&gt;&lt;/contentList&gt;"/>
+<stringAttribute key="org.eclipse.cdt.launch.GLOBAL_VARIABLES" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;globalVariableList/&gt;&#13;&#10;"/>
+<stringAttribute key="org.eclipse.cdt.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;memoryBlockExpressionList&gt;&#13;&#10;&lt;memoryBlockExpressionItem&gt;&#13;&#10;&lt;expression text=&quot;0x20000db6&quot;/&gt;&#13;&#10;&lt;/memoryBlockExpressionItem&gt;&#13;&#10;&lt;/memoryBlockExpressionList&gt;&#13;&#10;"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value=".\build\ball_balancing.elf"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="BallBalancing_ChibiOSRT"/>
+<booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="true"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="0.1240177842"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/BallBalancing_ChibiOSRT"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+<listEntry value="org.eclipse.debug.ui.launchGroup.debug"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.dsf.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;memoryBlockExpressionList context=&quot;reserved-for-future-use&quot;&gt;&#13;&#10;&lt;gdbmemoryBlockExpression address=&quot;536872872&quot; label=&quot;&amp;amp;(*(pBuffer))&quot;/&gt;&#13;&#10;&lt;gdbmemoryBlockExpression address=&quot;536872943&quot; label=&quot;arg&quot;/&gt;&#13;&#10;&lt;gdbmemoryBlockExpression address=&quot;536872942&quot; label=&quot;&amp;amp;(*(type))&quot;/&gt;&#13;&#10;&lt;gdbmemoryBlockExpression address=&quot;536872942&quot; label=&quot;type&quot;/&gt;&#13;&#10;&lt;gdbmemoryBlockExpression address=&quot;536872942&quot; label=&quot;arg&quot;/&gt;&#13;&#10;&lt;gdbmemoryBlockExpression address=&quot;536872942&quot; label=&quot;type&quot;/&gt;&#13;&#10;&lt;gdbmemoryBlockExpression address=&quot;536872942&quot; label=&quot;arg&quot;/&gt;&#13;&#10;&lt;gdbmemoryBlockExpression address=&quot;536872942&quot; label=&quot;arg&quot;/&gt;&#13;&#10;&lt;gdbmemoryBlockExpression address=&quot;536876784&quot; label=&quot;buffer&quot;/&gt;&#13;&#10;&lt;gdbmemoryBlockExpression address=&quot;536872832&quot; label=&quot;dest&quot;/&gt;&#13;&#10;&lt;gdbmemoryBlockExpression address=&quot;536872848&quot; label=&quot;dest&quot;/&gt;&#13;&#10;&lt;gdbmemoryBlockExpression address=&quot;536872848&quot; label=&quot;dest&quot;/&gt;&#13;&#10;&lt;gdbmemoryBlockExpression address=&quot;536872848&quot; label=&quot;dest&quot;/&gt;&#13;&#10;&lt;gdbmemoryBlockExpression address=&quot;536872848&quot; label=&quot;resp&quot;/&gt;&#13;&#10;&lt;gdbmemoryBlockExpression address=&quot;536872848&quot; label=&quot;resp&quot;/&gt;&#13;&#10;&lt;gdbmemoryBlockExpression address=&quot;536872744&quot; label=&quot;resp&quot;/&gt;&#13;&#10;&lt;/memoryBlockExpressionList&gt;&#13;&#10;"/>
+<stringAttribute key="process_factory_id" value="org.eclipse.cdt.dsf.gdb.GdbProcessFactory"/>
+</launchConfiguration>
