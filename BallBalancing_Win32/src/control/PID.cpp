@@ -1,36 +1,50 @@
 /*
- XBlade-Copter - Copyright (C) 2012 Luca D'Onofrio.
-
- This file is part of XBlade-Copter Project
-
- XBlade-Copter is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 3 of the License, or
- (at your option) any later version.
-
- XBlade-Copter is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
-
- You should have received a copy of the GNU General Public License
- along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * BallBalancing - Copyright (C) 2013 Luca D'Onofrio.
+ *
+ * This file is part of BallBalancing Project
+ *
+ * BallBalancing is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * BallBalancing is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * This firmware is based on OpenCV 2.4.5, see <http://www.opencv.org>.
  */
 
 /**
- * @file    PID.c
+ * @file    PID.cpp
  * @brief   PID Controller update function code.
  *
- * @addtogroup Utils
+ * @addtogroup Control
  * @{
  */
 
 /*===========================================================================*/
 /* Include files.                                                            */
 /*===========================================================================*/
+
 #include <math.h>
 #include "PID.hpp"
 
+/*===========================================================================*/
+/* External declarations.                                                    */
+/*===========================================================================*/
+
+/**
+ * @brief		The constructor.
+ *
+ * @param[in]	P	Proportional gain.
+ * @param[in]	I	Integral gain.
+ * @param[in]	D	Derivative gain.
+ */
 PID::PID(float P, float I, float D) {
 	this->firstPass = TRUE;
 	this->I = I;
@@ -42,25 +56,23 @@ PID::PID(float P, float I, float D) {
 	this->integratedError = 0;
 }
 
+/**
+ * @brief 		The destructor.
+ */
 PID::~PID(void) {
 
 }
 
-/*===========================================================================*/
-/* External declarations.                                                    */
-/*===========================================================================*/
 /**
- * @brief         PID controller update function.
- * @details       Compute the PID output according to the current reference
- *                signal value and the desired target reference value.
+ * @brief         	PID controller update function.
+ * @details       	Compute the PID output according to the current reference
+ *                	signal value and the desired target reference value.
  *
- * @param[in] targetPosition   the target reference value.
- * @param[in] currentPosition  current signal value.
- * @param[in] PIDparamenters   the PID controller parameters.
+ * @param[in] 		targetPosition   the target reference value.
+ * @param[in] 		currentPosition  current signal value.
  *
- * @return    the actuator input signal needed to reach the target reference
- *            value.
- *
+ * @return    		the actuator input signal needed to reach the target
+ * 					reference value.
  */
 float PID::updatePID(float targetPosition, float currentPosition) {
 	float error;
