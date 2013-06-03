@@ -1,4 +1,4 @@
- /*
+/*
  * BallBalancing - Copyright (C) 2013 Luca D'Onofrio.
  *
  * This file is part of BallBalancing Project
@@ -42,21 +42,16 @@
  * @param[in]	height	Camera frame height.
  */
 Compute::Compute(int width, int height) {
-	/*
-	 * FIXME remove warning
-	 */
 	this->serial = new Serial("\\\\.\\COM19");
 
-	/*
-	 * FIXME move to slider in a window
-	 * FIXME add graph in the window in order to show system response
-	 */
-	this->pidX = new PID(0.1f, 0.1f, -0.05f);
-	this->pidY = new PID(0.05f, 0.1f, -0.02f);
-	this->kalmanX = new Kalman(0.02f, 0.015f);
-	this->kalmanY = new Kalman(0.02f, 0.015f);
+	this->pidX = new PID(0.08f, 0.0f, -0.03f);
+	this->pidY = new PID(0.06f, 0.0f, -0.05f);
+	this->kalmanX = new Kalman(0.012f, 0.215f);
+	this->kalmanY = new Kalman(0.012f, 0.215f);
 	this->width = width;
 	this->height = height;
+	this->setPoint_x = 0;
+	this->setPoint_y = 0;
 }
 
 /**
@@ -64,6 +59,41 @@ Compute::Compute(int width, int height) {
  */
 Compute::~Compute() {
 
+}
+
+/**
+ * @brief		Return PID x axis.
+ * @return		The PID instance.
+ */
+PID *Compute::getPIDX(void) {
+	return this->pidX;
+}
+
+/**
+ * @brief		Return PID y axis.
+ * @return		The PID instance.
+ */
+PID *Compute::getPIDY(void) {
+	return this->pidY;
+}
+
+/**
+ * @brief		Update the x,y coordinates of the set point.
+ *
+ * @param[in]	x	x axis coordinate of the set point.
+ * @param[in]	y	y axis coordinate of the set point.
+ */
+void Compute::setPoint(int x, int y) {
+	this->setPoint_x = x;
+	this->setPoint_y = y;
+}
+
+/**
+ * @brief 		Reset the set point to the center.
+ */
+void Compute::center() {
+	this->setPoint_x = this->width / 2;
+	this->setPoint_y = this->height / 2;
 }
 
 /**
@@ -86,12 +116,6 @@ bool Compute::IsConnected() {
  */
 void Compute::Update(int x, int y) {
 	char data[2];
-	/*
-	 * TODO set the ball at the center of the plate.
-	 * We will provide a path-following algorihm next.
-	 */
-	int setpoint_x = this->width / 2;
-	int setpoint_y = this->height / 2;
 
 	if (serial->IsConnected()) {
 		/*
@@ -103,8 +127,8 @@ void Compute::Update(int x, int y) {
 		/*
 		 * Update PIDs
 		 */
-		float ctrl_x = this->pidX->updatePID(setpoint_x, x_est);
-		float ctrl_y = this->pidY->updatePID(setpoint_y, y_est);
+		float ctrl_x = this->pidX->updatePID(this->setPoint_x, x_est);
+		float ctrl_y = this->pidY->updatePID(this->setPoint_y, y_est);
 
 		/*
 		 * Scale PIDs output to motor angles
@@ -112,7 +136,7 @@ void Compute::Update(int x, int y) {
 		data[0] =
 				map(ctrl_x,MAX_ANGLE,-MAX_ANGLE,-(float)(this->width / 2),(float)(this->width / 2));
 		data[1] =
-				map(ctrl_y,MAX_ANGLE,-MAX_ANGLE,-(float)(this->width / 2),(float)(this->width / 2));
+				map(ctrl_y,MAX_ANGLE,-MAX_ANGLE,-(float)(this->height / 2),(float)(this->height / 2));
 
 		/*
 		 * Send data over serial port

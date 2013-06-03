@@ -96,6 +96,10 @@ private:
 public:
 	PID(float P, float I, float D);
 	~PID();
+
+	void setP(float val);
+	void setI(float val);
+	void setD(float val);
 	float updatePID(float targetPosition, float currentPosition);
 
 };

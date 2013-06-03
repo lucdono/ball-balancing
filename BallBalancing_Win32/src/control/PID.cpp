@@ -64,6 +64,33 @@ PID::~PID(void) {
 }
 
 /**
+ * @brief		Set P value.
+ *
+ * @param[in]	val	the value to set.
+ */
+void PID::setP(float val){
+	this->P = val;
+}
+
+/**
+ * @brief		Set D value.
+ *
+ * @param[in]	val	the value to set.
+ */
+void PID::setD(float val){
+	this->D = val;
+}
+
+/**
+ * @brief		Set I value.
+ *
+ * @param[in]	val	the value to set.
+ */
+void PID::setI(float val){
+	this->I = val;
+}
+
+/**
  * @brief         	PID controller update function.
  * @details       	Compute the PID output according to the current reference
  *                	signal value and the desired target reference value.

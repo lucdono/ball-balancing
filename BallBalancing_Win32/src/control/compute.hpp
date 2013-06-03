@@ -64,10 +64,17 @@ private:
 
 	int width;				//!< Camera frame width
 	int height;				//!< Camera frame height
+	int setPoint_x;			//!< X coordinate of the set point
+	int setPoint_y;			//!< Y coordinate of the set point
 
 public:
 	Compute(int width, int height);
 	~Compute();
+
+	PID *getPIDX();
+	PID *getPIDY();
+	void setPoint(int x, int y);
+	void center();
 
 	bool IsConnected();
 	void Update(int x, int y);
