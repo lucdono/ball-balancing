@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group___ball_balancing" kind="group">
+    <compoundname>BallBalancing</compoundname>
+    <title>BallBalancing</title>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___ball_balancing_1ga902ad52cd507aae1615bd2858a47020d" prot="public" static="yes" mutable="no">
+        <type>PWMConfig</type>
+        <definition>PWMConfig pwmcfg</definition>
+        <argsstring></argsstring>
+        <name>pwmcfg</name>
+        <initializer> {
+		1000000, 
+		20000, 
+		NULL,
+		{
+			{ PWM_OUTPUT_ACTIVE_LOW, NULL },
+			{ PWM_OUTPUT_ACTIVE_LOW, NULL },
+			{ PWM_OUTPUT_ACTIVE_HIGH, NULL },
+			{ PWM_OUTPUT_ACTIVE_HIGH, NULL }
+		},
+		
+		0,
+
+
+
+}</initializer>
+        <briefdescription>
+<para>PWM configuration structure. </para>        </briefdescription>
+        <detaileddescription>
+<para>Channels 3 and 4 enabled without callbacks, the active state is logic high. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" line="62" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" bodystart="47" bodyend="-1"/>
+        <referencedby refid="group___ball_balancing_1ga840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8c" startline="158" endline="219">main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void commandServo</definition>
+        <argsstring>(uint8_t servo, int8_t angle)</argsstring>
+        <name>commandServo</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>servo</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Rotate a servo with the given angle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">servo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the servo to command (0 or 1). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the rotation angle in the range [-MAX_ANGLE,MAX_ANGLE].</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>the servo id will be mapped to the associated PWM channel. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" line="112" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" bodystart="112" bodyend="116"/>
+        <references refid="group___ball_balancing_1gaf3c82099d63a2d91d68bd62d954059c7" compoundref="main_8c" startline="81">MAX_ANGLE</references>
+        <references refid="group___ball_balancing_1ga5de5e8e3ab304842347b047eb9a7a468" compoundref="main_8c" startline="94">map</references>
+        <references refid="group___ball_balancing_1ga104df749bd51b5924bbfcd67313773c3" compoundref="main_8c" startline="71">MIN_SERVO</references>
+        <references refid="group___ball_balancing_1ga6225ed2d3ed40a4841073e5b6b0b4166" compoundref="main_8c" startline="76">MAX_SERVO</references>
+        <referencedby refid="group___ball_balancing_1ga66c2c15e726cd90ad73f1497f6f9859c" compoundref="main_8c" startline="130" endline="149">CtrlThread</referencedby>
+        <referencedby refid="group___ball_balancing_1ga840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8c" startline="158" endline="219">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___ball_balancing_1gaf2c4109d8f7d0188c8bd1792b02368cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>static</type>
+        <definition>static WORKING_AREA</definition>
+        <argsstring>(ctrlThreadWA, 128)</argsstring>
+        <name>WORKING_AREA</name>
+        <param>
+          <type>ctrlThreadWA</type>
+        </param>
+        <param>
+          <type>128</type>
+        </param>
+        <briefdescription>
+<para>The servo control thread. </para>        </briefdescription>
+        <detaileddescription>
+<para>It reads the angle used to control the servos from serial driver, then it commands the servo. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the thread argument.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the thread exit status.</para></simplesect>
+<simplesect kind="note"><para>serial 1° byte --&gt; servo 0 angle, serial 2° byte --&gt; servo 1 angle. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" line="129"/>
+      </memberdef>
+      <memberdef kind="function" id="group___ball_balancing_1ga66c2c15e726cd90ad73f1497f6f9859c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_t</type>
+        <definition>static msg_t CtrlThread</definition>
+        <argsstring>(void *arg)</argsstring>
+        <name>CtrlThread</name>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" line="130" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" bodystart="130" bodyend="149"/>
+        <references refid="group___ball_balancing_1gaf3c82099d63a2d91d68bd62d954059c7" compoundref="main_8c" startline="81">MAX_ANGLE</references>
+        <references refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" compoundref="main_8c" startline="112" endline="116">commandServo</references>
+        <referencedby refid="group___ball_balancing_1ga840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8c" startline="158" endline="219">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___ball_balancing_1ga840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(void)</argsstring>
+        <name>main</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Application entry point. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" line="158" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" bodystart="158" bodyend="219"/>
+        <references refid="group___ball_balancing_1ga902ad52cd507aae1615bd2858a47020d" compoundref="main_8c" startline="47">pwmcfg</references>
+        <references refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" compoundref="main_8c" startline="112" endline="116">commandServo</references>
+        <references refid="group___ball_balancing_1ga66c2c15e726cd90ad73f1497f6f9859c" compoundref="main_8c" startline="130" endline="149">CtrlThread</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___ball_balancing_1ga104df749bd51b5924bbfcd67313773c3" prot="public" static="no">
+        <name>MIN_SERVO</name>
+        <initializer>700</initializer>
+        <briefdescription>
+<para>HS325HB servo min pulse. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" line="71" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" bodystart="71" bodyend="-1"/>
+        <referencedby refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" compoundref="main_8c" startline="112" endline="116">commandServo</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___ball_balancing_1ga6225ed2d3ed40a4841073e5b6b0b4166" prot="public" static="no">
+        <name>MAX_SERVO</name>
+        <initializer>2400</initializer>
+        <briefdescription>
+<para>HS325HB servo max pulse. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" line="76" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" bodystart="76" bodyend="-1"/>
+        <referencedby refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" compoundref="main_8c" startline="112" endline="116">commandServo</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___ball_balancing_1gaf3c82099d63a2d91d68bd62d954059c7" prot="public" static="no">
+        <name>MAX_ANGLE</name>
+        <initializer>90</initializer>
+        <briefdescription>
+<para>HS325HB servo max absolute angle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" line="81" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" bodystart="81" bodyend="-1"/>
+        <referencedby refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" compoundref="main_8c" startline="112" endline="116">commandServo</referencedby>
+        <referencedby refid="group___ball_balancing_1ga66c2c15e726cd90ad73f1497f6f9859c" compoundref="main_8c" startline="130" endline="149">CtrlThread</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___ball_balancing_1ga5de5e8e3ab304842347b047eb9a7a468" prot="public" static="no">
+        <name>map</name>
+        <param><defname>in</defname></param>
+        <param><defname>inMin</defname></param>
+        <param><defname>inMax</defname></param>
+        <param><defname>outMin</defname></param>
+        <param><defname>outMax</defname></param>
+        <initializer>(((float)in - (float)inMin) / \
+	((float)inMax - (float)inMin) * \
+	((float)outMax - (float)outMin) + (float)outMin)</initializer>
+        <briefdescription>
+<para>Scale an input value within a given range. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to scale. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">inMin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the lower bound of input value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">inMax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the upper bound of input value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">outMin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the lower bound of output value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">outMax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the upper bound of utput value.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the scaled value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" line="97" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" bodystart="94" bodyend="-1"/>
+        <referencedby refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" compoundref="main_8c" startline="112" endline="116">commandServo</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

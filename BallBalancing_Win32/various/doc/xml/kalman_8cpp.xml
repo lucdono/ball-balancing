@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="kalman_8cpp" kind="file">
+    <compoundname>kalman.cpp</compoundname>
+    <includes refid="kalman_8hpp" local="yes">kalman.hpp</includes>
+    <incdepgraph>
+      <node id="124">
+        <label>C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.cpp</label>
+        <link refid="kalman.cpp"/>
+        <childnode refid="125" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>kalman.hpp</label>
+        <link refid="kalman_8hpp"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>Simple <ref refid="class_kalman" kindref="compound">Kalman</ref> filter code. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>BallBalancing<sp/>-<sp/>Copyright<sp/>(C)<sp/>2013<sp/>Luca<sp/>D&apos;Onofrio.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>BallBalancing<sp/>Project</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>BallBalancing<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>BallBalancing<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>This<sp/>firmware<sp/>is<sp/>based<sp/>on<sp/>OpenCV<sp/>2.4.5,<sp/>see<sp/>&lt;http://www.opencv.org&gt;.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Include<sp/>files.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="kalman_8hpp" kindref="compound" tooltip="Simple Kalman filter.">kalman.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>External<sp/>functions.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="group___control_1gafced0e28f571d98e8a3c7057e87cd100" refkind="member"><highlight class="normal"><ref refid="group___control_1gafced0e28f571d98e8a3c7057e87cd100" kindref="member" tooltip="The constructor.">Kalman::Kalman</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Q,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>R)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;Q<sp/>=<sp/><ref refid="class_kalman_1afe10e874165b1bfb94ced158ff993fc8" kindref="member" tooltip="Noise covariance.">Q</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;R<sp/>=<sp/><ref refid="class_kalman_1a451aa7b1366890a5963a81be7b6f015c" kindref="member" tooltip="Noise covariance.">R</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_kalman_1a9855d82e7d26f8990198899b438ca431" kindref="member" tooltip="Last output estimation.">x_est_last</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_kalman_1a69c419c798d6c1498d74a8e506833458" kindref="member" tooltip="Last prediction.">P_last</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_kalman_1a7817ee61561f40ff8568252a5fcd828e" kindref="member" tooltip="Kalman gain.">K</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_kalman_1abb285b89fef7785b774455164c08120b" kindref="member" tooltip="Prediction.">P</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_kalman_1a21c6e83c549940968c25c8d2545e30f7" kindref="member" tooltip="System inner state temp value.">P_temp</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_kalman_1aeb4230bb855eb133aa1e4dfe16dfa576" kindref="member" tooltip="Output estimation temp value.">x_temp_est</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_kalman_1a59a6a51c69cef6a20d4ac9837804c8fa" kindref="member" tooltip="Output estimation.">x_est</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="group___control_1ga4e54bc3ac77da48219de5b6297d90386" refkind="member"><highlight class="normal"><ref refid="group___control_1ga4e54bc3ac77da48219de5b6297d90386" kindref="member" tooltip="The destructor.">Kalman::~Kalman</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="group___control_1gaa5abc03d34d704f352f145904ddbc3b4" refkind="member"><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="group___control_1gaa5abc03d34d704f352f145904ddbc3b4" kindref="member" tooltip="Update estimated value.">Kalman::update</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>measure)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//do<sp/>a<sp/>prediction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_kalman_1aeb4230bb855eb133aa1e4dfe16dfa576" kindref="member" tooltip="Output estimation temp value.">x_temp_est</ref><sp/>=<sp/>this-&gt;<ref refid="class_kalman_1a9855d82e7d26f8990198899b438ca431" kindref="member" tooltip="Last output estimation.">x_est_last</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_kalman_1a21c6e83c549940968c25c8d2545e30f7" kindref="member" tooltip="System inner state temp value.">P_temp</ref><sp/>=<sp/>this-&gt;<ref refid="class_kalman_1a69c419c798d6c1498d74a8e506833458" kindref="member" tooltip="Last prediction.">P_last</ref><sp/>+<sp/>this-&gt;<ref refid="class_kalman_1afe10e874165b1bfb94ced158ff993fc8" kindref="member" tooltip="Noise covariance.">Q</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//calculate<sp/>the<sp/>Kalman<sp/>gain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_kalman_1a7817ee61561f40ff8568252a5fcd828e" kindref="member" tooltip="Kalman gain.">K</ref><sp/>=<sp/>this-&gt;<ref refid="class_kalman_1a21c6e83c549940968c25c8d2545e30f7" kindref="member" tooltip="System inner state temp value.">P_temp</ref><sp/>*<sp/>(1.0<sp/>/<sp/>(this-&gt;<ref refid="class_kalman_1a21c6e83c549940968c25c8d2545e30f7" kindref="member" tooltip="System inner state temp value.">P_temp</ref><sp/>+<sp/>this-&gt;<ref refid="class_kalman_1a451aa7b1366890a5963a81be7b6f015c" kindref="member" tooltip="Noise covariance.">R</ref>));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//correct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_kalman_1a59a6a51c69cef6a20d4ac9837804c8fa" kindref="member" tooltip="Output estimation.">x_est</ref><sp/>=<sp/>this-&gt;<ref refid="class_kalman_1aeb4230bb855eb133aa1e4dfe16dfa576" kindref="member" tooltip="Output estimation temp value.">x_temp_est</ref><sp/>+<sp/>this-&gt;<ref refid="class_kalman_1a7817ee61561f40ff8568252a5fcd828e" kindref="member" tooltip="Kalman gain.">K</ref><sp/>*<sp/>(measure<sp/>-<sp/>this-&gt;<ref refid="class_kalman_1aeb4230bb855eb133aa1e4dfe16dfa576" kindref="member" tooltip="Output estimation temp value.">x_temp_est</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//we<sp/>have<sp/>our<sp/>new<sp/>system</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_kalman_1abb285b89fef7785b774455164c08120b" kindref="member" tooltip="Prediction.">P</ref><sp/>=<sp/>(1<sp/>-<sp/>this-&gt;<ref refid="class_kalman_1a7817ee61561f40ff8568252a5fcd828e" kindref="member" tooltip="Kalman gain.">K</ref>)<sp/>*<sp/>this-&gt;<ref refid="class_kalman_1a21c6e83c549940968c25c8d2545e30f7" kindref="member" tooltip="System inner state temp value.">P_temp</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//update<sp/>our<sp/>last&apos;s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_kalman_1a69c419c798d6c1498d74a8e506833458" kindref="member" tooltip="Last prediction.">P_last</ref><sp/>=<sp/>this-&gt;<ref refid="class_kalman_1abb285b89fef7785b774455164c08120b" kindref="member" tooltip="Prediction.">P</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_kalman_1a9855d82e7d26f8990198899b438ca431" kindref="member" tooltip="Last output estimation.">x_est_last</ref><sp/>=<sp/>this-&gt;<ref refid="class_kalman_1a59a6a51c69cef6a20d4ac9837804c8fa" kindref="member" tooltip="Output estimation.">x_est</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(this-&gt;<ref refid="class_kalman_1a59a6a51c69cef6a20d4ac9837804c8fa" kindref="member" tooltip="Output estimation.">x_est</ref>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.cpp"/>
+  </compounddef>
+</doxygen>

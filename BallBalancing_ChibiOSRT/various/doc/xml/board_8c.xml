@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="board_8c" kind="file">
+    <compoundname>board.c</compoundname>
+    <includes local="yes">ch.h</includes>
+    <includes local="yes">hal.h</includes>
+    <incdepgraph>
+      <node id="248">
+        <label>ch.h</label>
+      </node>
+      <node id="247">
+        <label>C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/board.c</label>
+        <link refid="board.c"/>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+      </node>
+      <node id="249">
+        <label>hal.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="board_8c_1a32c73ccd62cbae6568272cc6949531f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __early_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>__early_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Early initialization code. </para>        </briefdescription>
+        <detaileddescription>
+<para>This initialization must be performed just after stack setup and before any other initialization. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/board.c" line="50" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/board.c" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="board_8c_1a48edc646a1de1ba488bbe7d786df9bae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void boardInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>boardInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Board-specific initialization code. </para>        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="todo_1_todo000001"><xreftitle>Todo</xreftitle><xrefdescription><para>Add your board-specific code, if any. </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/board.c" line="81" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/board.c" bodystart="81" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>ChibiOS/RT<sp/>-<sp/>Copyright<sp/>(C)<sp/>2006,2007,2008,2009,2010,</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2011,2012<sp/>Giovanni<sp/>Di<sp/>Sirio.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>ChibiOS/RT.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>ChibiOS/RT<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>ChibiOS/RT<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ch.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>HAL_USE_PAL<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="30"><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PALConfig<sp/>pal_default_config<sp/>=</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>{<ref refid="board_8h_1ad16dfcfb4a90d9b761e03c3ac6aadd2e" kindref="member">VAL_GPIOA_MODER</ref>,<sp/><ref refid="board_8h_1a7e762012e6bb42ab282f57b3d0b1f101" kindref="member">VAL_GPIOA_OTYPER</ref>,<sp/><ref refid="board_8h_1abf9ac480a76c990769dbe5d0bb15f56d" kindref="member">VAL_GPIOA_OSPEEDR</ref>,<sp/><ref refid="board_8h_1a6aa1810521655aff39e0c7874721d99a" kindref="member">VAL_GPIOA_PUPDR</ref>,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><ref refid="board_8h_1a8cde079f33594b124a570f0fe78d5cd5" kindref="member">VAL_GPIOA_ODR</ref>,<sp/><sp/><sp/><ref refid="board_8h_1a8b4e7aaf8051d3e479a6f3569a49e0a9" kindref="member">VAL_GPIOA_AFRL</ref>,<sp/><sp/><sp/><ref refid="board_8h_1a250f4c63cbd770a83e2186d130b5f41b" kindref="member">VAL_GPIOA_AFRH</ref>},</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>{<ref refid="board_8h_1a39f5bc8c5a9ae9112cb64d4075b8be5a" kindref="member">VAL_GPIOB_MODER</ref>,<sp/><ref refid="board_8h_1a84f32a5321a9bc68e7f87ac44886cba9" kindref="member">VAL_GPIOB_OTYPER</ref>,<sp/><ref refid="board_8h_1a39192c18809ac7cd77522b0e193fabb0" kindref="member">VAL_GPIOB_OSPEEDR</ref>,<sp/><ref refid="board_8h_1a6d6a3a7d45de1e999e501ff106bcec3d" kindref="member">VAL_GPIOB_PUPDR</ref>,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><ref refid="board_8h_1afbbc9829d1d73c13adbf94452a010edd" kindref="member">VAL_GPIOB_ODR</ref>,<sp/><sp/><sp/><ref refid="board_8h_1a5772a31590fe61e808106e64711d8713" kindref="member">VAL_GPIOB_AFRL</ref>,<sp/><sp/><sp/><ref refid="board_8h_1adbfad33fc072d86908d2fe56b90b4af7" kindref="member">VAL_GPIOB_AFRH</ref>},</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>{<ref refid="board_8h_1a54fc240187d9ad4ab5f7e900c049fdf7" kindref="member">VAL_GPIOC_MODER</ref>,<sp/><ref refid="board_8h_1a7543f04fa6799015c04039794a777f34" kindref="member">VAL_GPIOC_OTYPER</ref>,<sp/><ref refid="board_8h_1a5e7885959c3b8293e0f1bb34872a6fe6" kindref="member">VAL_GPIOC_OSPEEDR</ref>,<sp/><ref refid="board_8h_1a6b854c2f1520264d0572b6980bea6a2c" kindref="member">VAL_GPIOC_PUPDR</ref>,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><ref refid="board_8h_1a4e07d89596c7b20d5b7c2327cbc9223a" kindref="member">VAL_GPIOC_ODR</ref>,<sp/><sp/><sp/><ref refid="board_8h_1af405d486ccb51c99a1252dfa4495363b" kindref="member">VAL_GPIOC_AFRL</ref>,<sp/><sp/><sp/><ref refid="board_8h_1a66a89dd26c96c9808c4610caa08ba2e4" kindref="member">VAL_GPIOC_AFRH</ref>},</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>{<ref refid="board_8h_1a42f2ef726fc7a48b6038eee382c93c63" kindref="member">VAL_GPIOD_MODER</ref>,<sp/><ref refid="board_8h_1a2e620d487db2d7240e759f66c3a68efa" kindref="member">VAL_GPIOD_OTYPER</ref>,<sp/><ref refid="board_8h_1a6a6cd142a0c0cde9125352343a8e6005" kindref="member">VAL_GPIOD_OSPEEDR</ref>,<sp/><ref refid="board_8h_1aba79b3f3e2bd1622ae7db217c596f7ed" kindref="member">VAL_GPIOD_PUPDR</ref>,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><ref refid="board_8h_1a67eac2b1434cea46ec00fdaad117cd6d" kindref="member">VAL_GPIOD_ODR</ref>,<sp/><sp/><sp/><ref refid="board_8h_1a54d1a960b26a142dba05d5cd54902c4f" kindref="member">VAL_GPIOD_AFRL</ref>,<sp/><sp/><sp/><ref refid="board_8h_1afc3c4656818e047de4de36afc54d6e15" kindref="member">VAL_GPIOD_AFRH</ref>},</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>{<ref refid="board_8h_1a2781f04e2f6682d822e9fca6a8aa4ed3" kindref="member">VAL_GPIOF_MODER</ref>,<sp/><ref refid="board_8h_1a32770ebb67e9c7ff6ce165259765d471" kindref="member">VAL_GPIOF_OTYPER</ref>,<sp/><ref refid="board_8h_1aa019726230902e124ce65fc02b81e29d" kindref="member">VAL_GPIOF_OSPEEDR</ref>,<sp/><ref refid="board_8h_1a27509d84ec428c3ec26142905c3f011f" kindref="member">VAL_GPIOF_PUPDR</ref>,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><ref refid="board_8h_1ab335eb9d43d391cc2c891587da70d3bd" kindref="member">VAL_GPIOF_ODR</ref>,<sp/><sp/><sp/><ref refid="board_8h_1ab33db8a93f5e34f7c9db84ebc69450a5" kindref="member">VAL_GPIOF_AFRL</ref>,<sp/><sp/><sp/><ref refid="board_8h_1a47952951048cb682536ff38cb754cf74" kindref="member">VAL_GPIOF_AFRH</ref>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="50" refid="board_8c_1a32c73ccd62cbae6568272cc6949531f2" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="board_8c_1a32c73ccd62cbae6568272cc6949531f2" kindref="member" tooltip="Early initialization code.">__early_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>stm32_clock_init();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>HAL_USE_MMC_SPI<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">bool_t<sp/>mmc_lld_is_card_inserted(MMCDriver<sp/>*mmcp)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>(void)mmcp;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>TODO:<sp/>Fill<sp/>the<sp/>implementation.*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TRUE;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">bool_t<sp/>mmc_lld_is_write_protected(MMCDriver<sp/>*mmcp)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>(void)mmcp;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>TODO:<sp/>Fill<sp/>the<sp/>implementation.*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="81" refid="board_8h_1a48edc646a1de1ba488bbe7d786df9bae" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="board_8c_1a48edc646a1de1ba488bbe7d786df9bae" kindref="member" tooltip="Board-specific initialization code.">boardInit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/board.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,619 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="halconf_8h" kind="file">
+    <compoundname>halconf.h</compoundname>
+    <includes refid="mcuconf_8h" local="yes">mcuconf.h</includes>
+    <incdepgraph>
+      <node id="255">
+        <label>C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h</label>
+        <link refid="halconf.h"/>
+        <childnode refid="256" relation="include">
+        </childnode>
+      </node>
+      <node id="256">
+        <label>mcuconf.h</label>
+        <link refid="mcuconf_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga989811956a40f9270a092212a8570632" prot="public" static="no">
+        <name>HAL_USE_TM</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Enables the TM subsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="41" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga2311bcc7b41bfba183c9ec1a64a11e93" prot="public" static="no">
+        <name>HAL_USE_PAL</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Enables the PAL subsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="48" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga413a1b6c0ca2c9e524df50ceac1275fd" prot="public" static="no">
+        <name>HAL_USE_ADC</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Enables the ADC subsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="55" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga2e351185eace5acfd90b65c9fe796355" prot="public" static="no">
+        <name>HAL_USE_CAN</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Enables the CAN subsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="62" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga2dd40c0fdd833b861f9241f6d282fe34" prot="public" static="no">
+        <name>HAL_USE_EXT</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Enables the EXT subsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="69" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1gab4702b9e1b6fa2869e26c274fccd53f0" prot="public" static="no">
+        <name>HAL_USE_GPT</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Enables the GPT subsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="76" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1gae5eb94efa72e401dc17a356b27f4e7e5" prot="public" static="no">
+        <name>HAL_USE_I2C</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Enables the I2C subsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="83" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1gac58fde738d018b1233a5441ae4c6245b" prot="public" static="no">
+        <name>HAL_USE_ICU</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Enables the ICU subsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="90" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga0da24d012c72a79db22e5621b391d3da" prot="public" static="no">
+        <name>HAL_USE_MAC</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Enables the MAC subsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="97" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1gafc4461ac2cc33590839ed91f2e940079" prot="public" static="no">
+        <name>HAL_USE_MMC_SPI</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Enables the MMC_SPI subsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="104" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1gafb7a560610f96b2858d51c36d65f8c2f" prot="public" static="no">
+        <name>HAL_USE_PWM</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Enables the PWM subsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="111" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga17d20632810c9bb1601a19973977f55c" prot="public" static="no">
+        <name>HAL_USE_RTC</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Enables the RTC subsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="118" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga06f315a18b911f426da736c42ab20325" prot="public" static="no">
+        <name>HAL_USE_SDC</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Enables the SDC subsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="125" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga720d92b9c3a00d952f6f0c8665b54ebb" prot="public" static="no">
+        <name>HAL_USE_SERIAL</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Enables the SERIAL subsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="132" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga79c970fb20565143ad8b65720c0b2d0e" prot="public" static="no">
+        <name>HAL_USE_SERIAL_USB</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Enables the SERIAL over USB subsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="139" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga33a3c5bee9ed1f665aace8b88fed9b2b" prot="public" static="no">
+        <name>HAL_USE_SPI</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Enables the SPI subsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="146" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga73220cad2edf2aee77b7ce1b53cacff0" prot="public" static="no">
+        <name>HAL_USE_UART</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Enables the UART subsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="153" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1gafc8f8fc6010f46f5baae4a369e14974e" prot="public" static="no">
+        <name>HAL_USE_USB</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Enables the USB subsystem. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="160" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga39e892a4090185fbdda9bb105bc03b4f" prot="public" static="no">
+        <name>ADC_USE_WAIT</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Enables synchronous APIs. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Disabling this option saves both code and data space. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="172" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1gac0893cb47e338c2dabad34b974a0a88d" prot="public" static="no">
+        <name>ADC_USE_MUTUAL_EXCLUSION</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Enables the <computeroutput>adcAcquireBus()</computeroutput> and <computeroutput>adcReleaseBus()</computeroutput> APIs. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Disabling this option saves both code and data space. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="180" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga5294d9d12e4186c781df3b2f1d8bd80b" prot="public" static="no">
+        <name>CAN_USE_SLEEP_MODE</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Sleep mode related APIs inclusion switch. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="191" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga7125642404a6fd3d4985d1cb6e1b7b0a" prot="public" static="no">
+        <name>I2C_USE_MUTUAL_EXCLUSION</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Enables the mutual exclusion APIs on the I2C bus. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="202" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga887da1c1383a9e7b45c4464877a7e05e" prot="public" static="no">
+        <name>MAC_USE_EVENTS</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Enables an event sources for incoming packets. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="213" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga502a0143be4c303f3006c0888e1cec82" prot="public" static="no">
+        <name>MMC_SECTOR_SIZE</name>
+        <initializer>512</initializer>
+        <briefdescription>
+<para>Block size for MMC transfers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="224" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga3087dfffa81dd8a0a80ee92746e65fe2" prot="public" static="no">
+        <name>MMC_NICE_WAITING</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Delays insertions. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled this options inserts delays into the MMC waiting routines releasing some extra CPU time for the threads with lower priority, this may slow down the driver a bit however. This option is recommended also if the SPI driver does not use a DMA channel and heavily loads the CPU. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="236" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1gac57e95210b57d6699c23bfb648e0904d" prot="public" static="no">
+        <name>MMC_POLLING_INTERVAL</name>
+        <initializer>10</initializer>
+        <briefdescription>
+<para>Number of positive insertion queries before generating the insertion event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="244" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga6d164ed93ae233b2dc0c35bd19f75224" prot="public" static="no">
+        <name>MMC_POLLING_DELAY</name>
+        <initializer>10</initializer>
+        <briefdescription>
+<para>Interval, in milliseconds, between insertion queries. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="251" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga463aaf38dda5f44ab579ddab0a1cf104" prot="public" static="no">
+        <name>MMC_USE_SPI_POLLING</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Uses the SPI polled API for small data transfers. </para>        </briefdescription>
+        <detaileddescription>
+<para>Polled transfers usually improve performance because it saves two context switches and interrupt servicing. Note that this option has no effect on large transfers which are always performed using DMAs/IRQs. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="262" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga8d39f0c9799062f0698d97c26e6fa42d" prot="public" static="no">
+        <name>SDC_INIT_RETRY</name>
+        <initializer>100</initializer>
+        <briefdescription>
+<para>Number of initialization attempts before rejecting the card. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Attempts are performed at 10mS intervals. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="274" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga4f938eff7370feb8de8411e255d21b01" prot="public" static="no">
+        <name>SDC_MMC_SUPPORT</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Include support for MMC cards. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>MMC support is not yet implemented so this option must be kept at <computeroutput>FALSE</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="283" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga3391c832c171a8606b0fc864766f08ba" prot="public" static="no">
+        <name>SDC_NICE_WAITING</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Delays insertions. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled this options inserts delays into the MMC waiting routines releasing some extra CPU time for the threads with lower priority, this may slow down the driver a bit however. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="293" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1gacb4c08ac23f83ac9d58c50ff840de516" prot="public" static="no">
+        <name>SERIAL_DEFAULT_BITRATE</name>
+        <initializer>115200</initializer>
+        <briefdescription>
+<para>Default bit rate. </para>        </briefdescription>
+        <detaileddescription>
+<para>Configuration parameter, this is the baud rate selected for the default configuration. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="306" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga81a9fb00c7a1ce0fe70f263d8fd820e8" prot="public" static="no">
+        <name>SERIAL_BUFFERS_SIZE</name>
+        <initializer>128</initializer>
+        <briefdescription>
+<para>Serial buffers size. </para>        </briefdescription>
+        <detaileddescription>
+<para>Configuration parameter, you can change the depth of the queue buffers depending on the requirements of your application. <simplesect kind="note"><para>The default is 64 bytes for both the transmission and receive buffers. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="317" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga0c9ab1488423fa10a22f506c6e74b563" prot="public" static="no">
+        <name>SPI_USE_WAIT</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Enables synchronous APIs. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Disabling this option saves both code and data space. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="329" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___h_a_l___c_o_n_f_1ga36d1818f9631f955f7cc94629b1d5498" prot="public" static="no">
+        <name>SPI_USE_MUTUAL_EXCLUSION</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Enables the <computeroutput>spiAcquireBus()</computeroutput> and <computeroutput>spiReleaseBus()</computeroutput> APIs. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Disabling this option saves both code and data space. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" line="337" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>ChibiOS/RT<sp/>-<sp/>Copyright<sp/>(C)<sp/>2006,2007,2008,2009,2010,</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2011,2012<sp/>Giovanni<sp/>Di<sp/>Sirio.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>ChibiOS/RT.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>ChibiOS/RT<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>ChibiOS/RT<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#ifndef<sp/>_HALCONF_H_</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_HALCONF_H_</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mcuconf_8h" kindref="compound">mcuconf.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor">#if<sp/>!defined(HAL_USE_TM)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="41" refid="group___h_a_l___c_o_n_f_1ga989811956a40f9270a092212a8570632" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAL_USE_TM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor">#if<sp/>!defined(HAL_USE_PAL)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="48" refid="group___h_a_l___c_o_n_f_1ga2311bcc7b41bfba183c9ec1a64a11e93" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAL_USE_PAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor">#if<sp/>!defined(HAL_USE_ADC)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="55" refid="group___h_a_l___c_o_n_f_1ga413a1b6c0ca2c9e524df50ceac1275fd" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAL_USE_ADC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor">#if<sp/>!defined(HAL_USE_CAN)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="62" refid="group___h_a_l___c_o_n_f_1ga2e351185eace5acfd90b65c9fe796355" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAL_USE_CAN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor">#if<sp/>!defined(HAL_USE_EXT)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="69" refid="group___h_a_l___c_o_n_f_1ga2dd40c0fdd833b861f9241f6d282fe34" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAL_USE_EXT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor">#if<sp/>!defined(HAL_USE_GPT)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="76" refid="group___h_a_l___c_o_n_f_1gab4702b9e1b6fa2869e26c274fccd53f0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAL_USE_GPT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor">#if<sp/>!defined(HAL_USE_I2C)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="83" refid="group___h_a_l___c_o_n_f_1gae5eb94efa72e401dc17a356b27f4e7e5" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAL_USE_I2C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor">#if<sp/>!defined(HAL_USE_ICU)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="90" refid="group___h_a_l___c_o_n_f_1gac58fde738d018b1233a5441ae4c6245b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAL_USE_ICU<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor">#if<sp/>!defined(HAL_USE_MAC)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="97" refid="group___h_a_l___c_o_n_f_1ga0da24d012c72a79db22e5621b391d3da" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAL_USE_MAC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor">#if<sp/>!defined(HAL_USE_MMC_SPI)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="104" refid="group___h_a_l___c_o_n_f_1gafc4461ac2cc33590839ed91f2e940079" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAL_USE_MMC_SPI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor">#if<sp/>!defined(HAL_USE_PWM)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="111" refid="group___h_a_l___c_o_n_f_1gafb7a560610f96b2858d51c36d65f8c2f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAL_USE_PWM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor">#if<sp/>!defined(HAL_USE_RTC)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="118" refid="group___h_a_l___c_o_n_f_1ga17d20632810c9bb1601a19973977f55c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAL_USE_RTC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor">#if<sp/>!defined(HAL_USE_SDC)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="125" refid="group___h_a_l___c_o_n_f_1ga06f315a18b911f426da736c42ab20325" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAL_USE_SDC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="126"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="127"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor">#if<sp/>!defined(HAL_USE_SERIAL)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="132" refid="group___h_a_l___c_o_n_f_1ga720d92b9c3a00d952f6f0c8665b54ebb" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAL_USE_SERIAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor">#if<sp/>!defined(HAL_USE_SERIAL_USB)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="139" refid="group___h_a_l___c_o_n_f_1ga79c970fb20565143ad8b65720c0b2d0e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAL_USE_SERIAL_USB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor">#if<sp/>!defined(HAL_USE_SPI)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="146" refid="group___h_a_l___c_o_n_f_1ga33a3c5bee9ed1f665aace8b88fed9b2b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAL_USE_SPI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="148"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor">#if<sp/>!defined(HAL_USE_UART)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="153" refid="group___h_a_l___c_o_n_f_1ga73220cad2edf2aee77b7ce1b53cacff0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAL_USE_UART<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="155"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="159"><highlight class="preprocessor">#if<sp/>!defined(HAL_USE_USB)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="160" refid="group___h_a_l___c_o_n_f_1gafc8f8fc6010f46f5baae4a369e14974e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAL_USE_USB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="161"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>ADC<sp/>driver<sp/>related<sp/>settings.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="preprocessor">#if<sp/>!defined(ADC_USE_WAIT)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="172" refid="group___h_a_l___c_o_n_f_1ga39e892a4090185fbdda9bb105bc03b4f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_USE_WAIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="174"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="179"><highlight class="preprocessor">#if<sp/>!defined(ADC_USE_MUTUAL_EXCLUSION)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="180" refid="group___h_a_l___c_o_n_f_1gac0893cb47e338c2dabad34b974a0a88d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_USE_MUTUAL_EXCLUSION<sp/><sp/><sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="181"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="182"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>CAN<sp/>driver<sp/>related<sp/>settings.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="preprocessor">#if<sp/>!defined(CAN_USE_SLEEP_MODE)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="191" refid="group___h_a_l___c_o_n_f_1ga5294d9d12e4186c781df3b2f1d8bd80b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAN_USE_SLEEP_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="192"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="193"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>I2C<sp/>driver<sp/>related<sp/>settings.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="preprocessor">#if<sp/>!defined(I2C_USE_MUTUAL_EXCLUSION)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="202" refid="group___h_a_l___c_o_n_f_1ga7125642404a6fd3d4985d1cb6e1b7b0a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_USE_MUTUAL_EXCLUSION<sp/><sp/><sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="203"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="204"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>MAC<sp/>driver<sp/>related<sp/>settings.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="preprocessor">#if<sp/>!defined(MAC_USE_EVENTS)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="213" refid="group___h_a_l___c_o_n_f_1ga887da1c1383a9e7b45c4464877a7e05e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MAC_USE_EVENTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="214"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="215"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>MMC_SPI<sp/>driver<sp/>related<sp/>settings.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="preprocessor">#if<sp/>!defined(MMC_SECTOR_SIZE)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="224" refid="group___h_a_l___c_o_n_f_1ga502a0143be4c303f3006c0888e1cec82" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MMC_SECTOR_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>512</highlight></codeline>
+<codeline lineno="225"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="226"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="235"><highlight class="preprocessor">#if<sp/>!defined(MMC_NICE_WAITING)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="236" refid="group___h_a_l___c_o_n_f_1ga3087dfffa81dd8a0a80ee92746e65fe2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MMC_NICE_WAITING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="237"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="238"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="243"><highlight class="preprocessor">#if<sp/>!defined(MMC_POLLING_INTERVAL)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="244" refid="group___h_a_l___c_o_n_f_1gac57e95210b57d6699c23bfb648e0904d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MMC_POLLING_INTERVAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight></codeline>
+<codeline lineno="245"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="246"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="250"><highlight class="preprocessor">#if<sp/>!defined(MMC_POLLING_DELAY)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="251" refid="group___h_a_l___c_o_n_f_1ga6d164ed93ae233b2dc0c35bd19f75224" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MMC_POLLING_DELAY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight></codeline>
+<codeline lineno="252"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="253"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="261"><highlight class="preprocessor">#if<sp/>!defined(MMC_USE_SPI_POLLING)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="262" refid="group___h_a_l___c_o_n_f_1ga463aaf38dda5f44ab579ddab0a1cf104" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MMC_USE_SPI_POLLING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="263"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="264"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SDC<sp/>driver<sp/>related<sp/>settings.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="preprocessor">#if<sp/>!defined(SDC_INIT_RETRY)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="274" refid="group___h_a_l___c_o_n_f_1ga8d39f0c9799062f0698d97c26e6fa42d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SDC_INIT_RETRY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>100</highlight></codeline>
+<codeline lineno="275"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="276"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="282"><highlight class="preprocessor">#if<sp/>!defined(SDC_MMC_SUPPORT)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="283" refid="group___h_a_l___c_o_n_f_1ga4f938eff7370feb8de8411e255d21b01" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SDC_MMC_SUPPORT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="284"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="285"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="292"><highlight class="preprocessor">#if<sp/>!defined(SDC_NICE_WAITING)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="293" refid="group___h_a_l___c_o_n_f_1ga3391c832c171a8606b0fc864766f08ba" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SDC_NICE_WAITING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="294"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="295"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SERIAL<sp/>driver<sp/>related<sp/>settings.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="preprocessor">#if<sp/>!defined(SERIAL_DEFAULT_BITRATE)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="306" refid="group___h_a_l___c_o_n_f_1gacb4c08ac23f83ac9d58c50ff840de516" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SERIAL_DEFAULT_BITRATE<sp/><sp/><sp/><sp/><sp/><sp/>115200</highlight></codeline>
+<codeline lineno="307"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="308"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="316"><highlight class="preprocessor">#if<sp/>!defined(SERIAL_BUFFERS_SIZE)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="317" refid="group___h_a_l___c_o_n_f_1ga81a9fb00c7a1ce0fe70f263d8fd820e8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SERIAL_BUFFERS_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>128</highlight></codeline>
+<codeline lineno="318"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="319"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SPI<sp/>driver<sp/>related<sp/>settings.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="preprocessor">#if<sp/>!defined(SPI_USE_WAIT)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="329" refid="group___h_a_l___c_o_n_f_1ga0c9ab1488423fa10a22f506c6e74b563" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SPI_USE_WAIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="330"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="331"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="336"><highlight class="preprocessor">#if<sp/>!defined(SPI_USE_MUTUAL_EXCLUSION)<sp/>||<sp/>defined(__DOXYGEN__)</highlight></codeline>
+<codeline lineno="337" refid="group___h_a_l___c_o_n_f_1ga36d1818f9631f955f7cc94629b1d5498" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SPI_USE_MUTUAL_EXCLUSION<sp/><sp/><sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="338"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="339"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_HALCONF_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,987 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="mcuconf_8h" kind="file">
+    <compoundname>mcuconf.h</compoundname>
+    <includedby refid="halconf_8h" local="yes">C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h</includedby>
+    <invincdepgraph>
+      <node id="260">
+        <label>C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/halconf.h</label>
+        <link refid="halconf_8h"/>
+      </node>
+      <node id="259">
+        <label>C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h</label>
+        <link refid="mcuconf.h"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="mcuconf_8h_1aa49c010da5948c237ea0ca9eb1e7ac30" prot="public" static="no">
+        <name>STM32F0xx_MCUCONF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="35" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1affb519ca907542b6bff9104700c0009d" prot="public" static="no">
+        <name>STM32_NO_INIT</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="40" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1ab70d9b5c3764aac6282d594d8f6a88ec" prot="public" static="no">
+        <name>STM32_PVD_ENABLE</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="41" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a6f4f9c19c6b1a1c3694278a542e3c60d" prot="public" static="no">
+        <name>STM32_PLS</name>
+        <initializer>STM32_PLS_LEV0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="42" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a2044f0288f2c20b27d6eee1e1a1e6256" prot="public" static="no">
+        <name>STM32_HSI_ENABLED</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="43" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1aa649dc58606c255da49875759cb541ef" prot="public" static="no">
+        <name>STM32_HSI14_ENABLED</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="44" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a02b4e3e6222baab7ee448cbbb2273370" prot="public" static="no">
+        <name>STM32_LSI_ENABLED</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="45" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1ad94c4a0da6c8c7a3d0b800fdc0dbebfa" prot="public" static="no">
+        <name>STM32_HSE_ENABLED</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="46" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a05b49e91f478558d33b2b862718758fa" prot="public" static="no">
+        <name>STM32_LSE_ENABLED</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="47" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a29204b81c265dd6e124fbcf12a2c8d6f" prot="public" static="no">
+        <name>STM32_SW</name>
+        <initializer>STM32_SW_PLL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="48" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a811cfbd049f0ab00976def9593849d32" prot="public" static="no">
+        <name>STM32_PLLSRC</name>
+        <initializer>STM32_PLLSRC_HSI</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="49" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1ad7443fb89c1569f264a218209fbe8ddd" prot="public" static="no">
+        <name>STM32_PLLXTPRE</name>
+        <initializer>STM32_PLLXTPRE_DIV1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="50" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a0015fc8f73017358a7025ba57a265a11" prot="public" static="no">
+        <name>STM32_PLLMUL_VALUE</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="51" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a035ea0d8259c0f89306c6a7d344705f2" prot="public" static="no">
+        <name>STM32_HPRE</name>
+        <initializer>STM32_HPRE_DIV1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="52" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1afd546c796f9904072b0ce9104306f401" prot="public" static="no">
+        <name>STM32_PPRE</name>
+        <initializer>STM32_PPRE_DIV1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="53" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a3e71ebfcb3a072cbc0751581f3f4ee84" prot="public" static="no">
+        <name>STM32_ADCSW</name>
+        <initializer>STM32_ADCSW_HSI14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="54" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a671b452f988ee9b64e128fad72f656e6" prot="public" static="no">
+        <name>STM32_ADCPRE</name>
+        <initializer>STM32_ADCPRE_DIV4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="55" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1ab395c2abfb2e6fd501ce4529bf09a05f" prot="public" static="no">
+        <name>STM32_MCOSEL</name>
+        <initializer>STM32_MCOSEL_NOCLOCK</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="56" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a671b452f988ee9b64e128fad72f656e6" prot="public" static="no">
+        <name>STM32_ADCPRE</name>
+        <initializer>STM32_ADCPRE_DIV4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="57" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a3e71ebfcb3a072cbc0751581f3f4ee84" prot="public" static="no">
+        <name>STM32_ADCSW</name>
+        <initializer>STM32_ADCSW_HSI14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="58" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a25a50837427f5a728de543d8463b6623" prot="public" static="no">
+        <name>STM32_CECSW</name>
+        <initializer>STM32_CECSW_HSI</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="59" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a5f73f584e60bf235f5440ce5cee2ca20" prot="public" static="no">
+        <name>STM32_I2C1SW</name>
+        <initializer>STM32_I2C1SW_HSI</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="60" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1ade0c8b4992afc59bd1256c66c794bdeb" prot="public" static="no">
+        <name>STM32_USART1SW</name>
+        <initializer>STM32_USART1SW_PCLK</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="61" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a945eb1f70822303bd0191ef633e5eaca" prot="public" static="no">
+        <name>STM32_RTCSEL</name>
+        <initializer>STM32_RTCSEL_LSI</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="62" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a7256aa7c13b88f877cfb8d4913dcec0a" prot="public" static="no">
+        <name>STM32_ADC_USE_ADC1</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="67" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1ad19de93466026d8b03a895cae792bce9" prot="public" static="no">
+        <name>STM32_ADC_ADC1_DMA_PRIORITY</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="68" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a58e21948e78c6cf50c04e64363637dd4" prot="public" static="no">
+        <name>STM32_ADC_IRQ_PRIORITY</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="69" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a19080c8c395ae24df995fa57a2291465" prot="public" static="no">
+        <name>STM32_ADC_ADC1_DMA_IRQ_PRIORITY</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="70" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a804943425d4ff111eca58d30ada743f3" prot="public" static="no">
+        <name>STM32_EXT_EXTI0_1_IRQ_PRIORITY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="75" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1ae9bc072daafcb71c1c1a476fc3d25509" prot="public" static="no">
+        <name>STM32_EXT_EXTI2_3_IRQ_PRIORITY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="76" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1ae240cda1552b6fd87ccfbbfd7c46819e" prot="public" static="no">
+        <name>STM32_EXT_EXTI4_15_IRQ_PRIORITY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="77" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1abd53222576d825b8a23d1d9fd6d78a6a" prot="public" static="no">
+        <name>STM32_EXT_EXTI16_IRQ_PRIORITY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="78" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1aff4ce61159313e9c4b43dd1c0f61fd47" prot="public" static="no">
+        <name>STM32_EXT_EXTI17_IRQ_PRIORITY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="79" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a44c0e5a4a20e05dbb598a408cf1ebee7" prot="public" static="no">
+        <name>STM32_GPT_USE_TIM1</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="84" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a87dac50603730367a564c5ba63c6e9a1" prot="public" static="no">
+        <name>STM32_GPT_USE_TIM2</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="85" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a13e83c85f2c204e9302199f07dfc982e" prot="public" static="no">
+        <name>STM32_GPT_USE_TIM3</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="86" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a1e249eb52e9aafc7325e6cfde76db4cf" prot="public" static="no">
+        <name>STM32_GPT_TIM1_IRQ_PRIORITY</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="87" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a314cec15b23670096752964ec5caf3ce" prot="public" static="no">
+        <name>STM32_GPT_TIM2_IRQ_PRIORITY</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="88" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1aa0e96044581d47cc827e2cbeb0227a8e" prot="public" static="no">
+        <name>STM32_GPT_TIM3_IRQ_PRIORITY</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="89" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a5f5e9b802c24ad1637cd2aaee14606ed" prot="public" static="no">
+        <name>STM32_ICU_USE_TIM1</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="94" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a9d125141e8f301e2b6d590067fd7890e" prot="public" static="no">
+        <name>STM32_ICU_USE_TIM2</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="95" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a877fa83cee0173d5f451b77e59180725" prot="public" static="no">
+        <name>STM32_ICU_USE_TIM3</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="96" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a51083eefd4e7d0303f11081df496d2ed" prot="public" static="no">
+        <name>STM32_ICU_TIM1_IRQ_PRIORITY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="97" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a639272943cb5b9bdcbd78e5ced2b52a0" prot="public" static="no">
+        <name>STM32_ICU_TIM2_IRQ_PRIORITY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="98" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a5a90d9b62fd7b1a0180c2aec7d00089d" prot="public" static="no">
+        <name>STM32_ICU_TIM3_IRQ_PRIORITY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="99" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a554728f749ad9aca0102d189cc6bb9e7" prot="public" static="no">
+        <name>STM32_PWM_USE_ADVANCED</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="104" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a6f066eafb341c481f419dc609e1cd147" prot="public" static="no">
+        <name>STM32_PWM_USE_TIM1</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="105" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a061e9a31faab6d787c73d7f21893e483" prot="public" static="no">
+        <name>STM32_PWM_USE_TIM2</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="106" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a3f108deab28dba83858c5a6d5089a322" prot="public" static="no">
+        <name>STM32_PWM_USE_TIM3</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="107" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1ae631e1c4b6541c9d67de9d009196b770" prot="public" static="no">
+        <name>STM32_PWM_TIM1_IRQ_PRIORITY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="108" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a01b2a27910cfaed8a40043c8efe1e9a4" prot="public" static="no">
+        <name>STM32_PWM_TIM2_IRQ_PRIORITY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="109" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a8b4f8d9d4308f0503738704437284592" prot="public" static="no">
+        <name>STM32_PWM_TIM3_IRQ_PRIORITY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="110" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a7f657adda8b7f6aa955f0806a29b0b9d" prot="public" static="no">
+        <name>STM32_SERIAL_USE_USART1</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="115" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1acf6b4949732fac0a1ded862174aabba7" prot="public" static="no">
+        <name>STM32_SERIAL_USE_USART2</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="116" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a7509c7a01a83276aa7768474357ec61d" prot="public" static="no">
+        <name>STM32_SERIAL_USART1_PRIORITY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="117" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a562945e4ccd2bca4a4277eaa05ae70a0" prot="public" static="no">
+        <name>STM32_SERIAL_USART2_PRIORITY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="118" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1af105fbdfb7b9076472b373ed0c7b3fef" prot="public" static="no">
+        <name>STM32_SPI_USE_SPI1</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="123" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a626416dc22cf5f3deff2a8c7d8efa5b2" prot="public" static="no">
+        <name>STM32_SPI_USE_SPI2</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="124" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a22d3ce19419dc8bbc47f94c065f3271c" prot="public" static="no">
+        <name>STM32_SPI_SPI1_DMA_PRIORITY</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="125" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a90bd623120d1e54038094fba54ba05c0" prot="public" static="no">
+        <name>STM32_SPI_SPI2_DMA_PRIORITY</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="126" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a0b3f4734d9855324ef89b57cb9858e49" prot="public" static="no">
+        <name>STM32_SPI_SPI1_IRQ_PRIORITY</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="127" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a47d90eaca23f3eea99d74d1bb3539541" prot="public" static="no">
+        <name>STM32_SPI_SPI2_IRQ_PRIORITY</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="128" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1afda450bd11b4c1408739367b23c9f852" prot="public" static="no">
+        <name>STM32_SPI_DMA_ERROR_HOOK</name>
+        <param><defname>spip</defname></param>
+        <initializer>chSysHalt()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="129" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a7b366b1eb660467c7ef9667705ad8308" prot="public" static="no">
+        <name>STM32_UART_USE_USART1</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="134" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1ad9f8b9dcf8dd01e163b8d47c56cee1aa" prot="public" static="no">
+        <name>STM32_UART_USE_USART2</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="135" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a050fc59913309402f34dd2ea6ab3cdf8" prot="public" static="no">
+        <name>STM32_UART_USART1_IRQ_PRIORITY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="136" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1ad1d292d78abf8f0b5a9e210d217a1cfe" prot="public" static="no">
+        <name>STM32_UART_USART2_IRQ_PRIORITY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="137" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a8307c6c43bf456405efe19e5908d5a25" prot="public" static="no">
+        <name>STM32_UART_USART1_DMA_PRIORITY</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="138" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a02ab064f32c429288dce0b15b2e443a1" prot="public" static="no">
+        <name>STM32_UART_USART2_DMA_PRIORITY</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="139" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a969b79cb637b8b69cec9257705d74484" prot="public" static="no">
+        <name>STM32_UART_USART1_RX_DMA_STREAM</name>
+        <initializer>STM32_DMA_STREAM_ID(1, 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="140" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a02c568ae2c758034cdf478f81b447af3" prot="public" static="no">
+        <name>STM32_UART_USART1_TX_DMA_STREAM</name>
+        <initializer>STM32_DMA_STREAM_ID(1, 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="141" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1af80e6c340ebc738f24275329c32db853" prot="public" static="no">
+        <name>STM32_UART_USART2_RX_DMA_STREAM</name>
+        <initializer>STM32_DMA_STREAM_ID(1, 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="142" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1aacb71b8fee4d07ab0317ac8cc6ee9856" prot="public" static="no">
+        <name>STM32_UART_USART2_TX_DMA_STREAM</name>
+        <initializer>STM32_DMA_STREAM_ID(1, 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="143" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mcuconf_8h_1a9a4cb321d74c57b544a1628faaae1569" prot="public" static="no">
+        <name>STM32_UART_DMA_ERROR_HOOK</name>
+        <param><defname>uartp</defname></param>
+        <initializer>chSysHalt()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" line="144" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>ChibiOS/RT<sp/>-<sp/>Copyright<sp/>(C)<sp/>2006,2007,2008,2009,2010,</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2011,2012<sp/>Giovanni<sp/>Di<sp/>Sirio.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>ChibiOS/RT.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>ChibiOS/RT<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>ChibiOS/RT<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>STM32F0xx<sp/>drivers<sp/>configuration.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>The<sp/>following<sp/>settings<sp/>override<sp/>the<sp/>default<sp/>settings<sp/>present<sp/>in</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>the<sp/>various<sp/>device<sp/>driver<sp/>implementation<sp/>headers.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>Note<sp/>that<sp/>the<sp/>settings<sp/>for<sp/>each<sp/>driver<sp/>only<sp/>have<sp/>effect<sp/>if<sp/>the<sp/>whole</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>driver<sp/>is<sp/>enabled<sp/>in<sp/>halconf.h.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>IRQ<sp/>priorities:</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>3...0<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Lowest...Highest.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>DMA<sp/>priorities:</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/>0...3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Lowest...Highest.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="mcuconf_8h_1aa49c010da5948c237ea0ca9eb1e7ac30" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32F0xx_MCUCONF</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/>HAL<sp/>driver<sp/>system<sp/>settings.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="mcuconf_8h_1affb519ca907542b6bff9104700c0009d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32_NO_INIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="41" refid="mcuconf_8h_1ab70d9b5c3764aac6282d594d8f6a88ec" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_PVD_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="42" refid="mcuconf_8h_1a6f4f9c19c6b1a1c3694278a542e3c60d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_PLS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_PLS_LEV0</highlight></codeline>
+<codeline lineno="43" refid="mcuconf_8h_1a2044f0288f2c20b27d6eee1e1a1e6256" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_HSI_ENABLED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="44" refid="mcuconf_8h_1aa649dc58606c255da49875759cb541ef" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_HSI14_ENABLED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="45" refid="mcuconf_8h_1a02b4e3e6222baab7ee448cbbb2273370" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_LSI_ENABLED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="46" refid="mcuconf_8h_1ad94c4a0da6c8c7a3d0b800fdc0dbebfa" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_HSE_ENABLED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="47" refid="mcuconf_8h_1a05b49e91f478558d33b2b862718758fa" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_LSE_ENABLED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="48" refid="mcuconf_8h_1a29204b81c265dd6e124fbcf12a2c8d6f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_SW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_SW_PLL</highlight></codeline>
+<codeline lineno="49" refid="mcuconf_8h_1a811cfbd049f0ab00976def9593849d32" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_PLLSRC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_PLLSRC_HSI</highlight></codeline>
+<codeline lineno="50" refid="mcuconf_8h_1ad7443fb89c1569f264a218209fbe8ddd" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_PLLXTPRE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_PLLXTPRE_DIV1</highlight></codeline>
+<codeline lineno="51" refid="mcuconf_8h_1a0015fc8f73017358a7025ba57a265a11" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_PLLMUL_VALUE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight></codeline>
+<codeline lineno="52" refid="mcuconf_8h_1a035ea0d8259c0f89306c6a7d344705f2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_HPRE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_HPRE_DIV1</highlight></codeline>
+<codeline lineno="53" refid="mcuconf_8h_1afd546c796f9904072b0ce9104306f401" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_PPRE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_PPRE_DIV1</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_ADCSW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_ADCSW_HSI14</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_ADCPRE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_ADCPRE_DIV4</highlight></codeline>
+<codeline lineno="56" refid="mcuconf_8h_1ab395c2abfb2e6fd501ce4529bf09a05f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_MCOSEL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_MCOSEL_NOCLOCK</highlight></codeline>
+<codeline lineno="57" refid="mcuconf_8h_1a671b452f988ee9b64e128fad72f656e6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_ADCPRE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_ADCPRE_DIV4</highlight></codeline>
+<codeline lineno="58" refid="mcuconf_8h_1a3e71ebfcb3a072cbc0751581f3f4ee84" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_ADCSW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_ADCSW_HSI14</highlight></codeline>
+<codeline lineno="59" refid="mcuconf_8h_1a25a50837427f5a728de543d8463b6623" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_CECSW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_CECSW_HSI</highlight></codeline>
+<codeline lineno="60" refid="mcuconf_8h_1a5f73f584e60bf235f5440ce5cee2ca20" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_I2C1SW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_I2C1SW_HSI</highlight></codeline>
+<codeline lineno="61" refid="mcuconf_8h_1ade0c8b4992afc59bd1256c66c794bdeb" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_USART1SW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_USART1SW_PCLK</highlight></codeline>
+<codeline lineno="62" refid="mcuconf_8h_1a945eb1f70822303bd0191ef633e5eaca" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_RTCSEL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_RTCSEL_LSI</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*<sp/>ADC<sp/>driver<sp/>system<sp/>settings.</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="mcuconf_8h_1a7256aa7c13b88f877cfb8d4913dcec0a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32_ADC_USE_ADC1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="68" refid="mcuconf_8h_1ad19de93466026d8b03a895cae792bce9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_ADC_ADC1_DMA_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="69" refid="mcuconf_8h_1a58e21948e78c6cf50c04e64363637dd4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_ADC_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="70" refid="mcuconf_8h_1a19080c8c395ae24df995fa57a2291465" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_ADC_ADC1_DMA_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/>EXT<sp/>driver<sp/>system<sp/>settings.</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="mcuconf_8h_1a804943425d4ff111eca58d30ada743f3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32_EXT_EXTI0_1_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="76" refid="mcuconf_8h_1ae9bc072daafcb71c1c1a476fc3d25509" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_EXT_EXTI2_3_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="77" refid="mcuconf_8h_1ae240cda1552b6fd87ccfbbfd7c46819e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_EXT_EXTI4_15_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="78" refid="mcuconf_8h_1abd53222576d825b8a23d1d9fd6d78a6a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_EXT_EXTI16_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="79" refid="mcuconf_8h_1aff4ce61159313e9c4b43dd1c0f61fd47" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_EXT_EXTI17_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*<sp/>GPT<sp/>driver<sp/>system<sp/>settings.</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="mcuconf_8h_1a44c0e5a4a20e05dbb598a408cf1ebee7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32_GPT_USE_TIM1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="85" refid="mcuconf_8h_1a87dac50603730367a564c5ba63c6e9a1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_GPT_USE_TIM2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="86" refid="mcuconf_8h_1a13e83c85f2c204e9302199f07dfc982e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_GPT_USE_TIM3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="87" refid="mcuconf_8h_1a1e249eb52e9aafc7325e6cfde76db4cf" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_GPT_TIM1_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="88" refid="mcuconf_8h_1a314cec15b23670096752964ec5caf3ce" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_GPT_TIM2_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="89" refid="mcuconf_8h_1aa0e96044581d47cc827e2cbeb0227a8e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_GPT_TIM3_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/>*<sp/>ICU<sp/>driver<sp/>system<sp/>settings.</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="mcuconf_8h_1a5f5e9b802c24ad1637cd2aaee14606ed" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32_ICU_USE_TIM1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="95" refid="mcuconf_8h_1a9d125141e8f301e2b6d590067fd7890e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_ICU_USE_TIM2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="96" refid="mcuconf_8h_1a877fa83cee0173d5f451b77e59180725" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_ICU_USE_TIM3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="97" refid="mcuconf_8h_1a51083eefd4e7d0303f11081df496d2ed" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_ICU_TIM1_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="98" refid="mcuconf_8h_1a639272943cb5b9bdcbd78e5ced2b52a0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_ICU_TIM2_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="99" refid="mcuconf_8h_1a5a90d9b62fd7b1a0180c2aec7d00089d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_ICU_TIM3_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*<sp/>PWM<sp/>driver<sp/>system<sp/>settings.</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="mcuconf_8h_1a554728f749ad9aca0102d189cc6bb9e7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32_PWM_USE_ADVANCED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="105" refid="mcuconf_8h_1a6f066eafb341c481f419dc609e1cd147" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_PWM_USE_TIM1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="106" refid="mcuconf_8h_1a061e9a31faab6d787c73d7f21893e483" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_PWM_USE_TIM2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="107" refid="mcuconf_8h_1a3f108deab28dba83858c5a6d5089a322" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_PWM_USE_TIM3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="108" refid="mcuconf_8h_1ae631e1c4b6541c9d67de9d009196b770" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_PWM_TIM1_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="109" refid="mcuconf_8h_1a01b2a27910cfaed8a40043c8efe1e9a4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_PWM_TIM2_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="110" refid="mcuconf_8h_1a8b4f8d9d4308f0503738704437284592" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_PWM_TIM3_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/>*<sp/>SERIAL<sp/>driver<sp/>system<sp/>settings.</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="mcuconf_8h_1a7f657adda8b7f6aa955f0806a29b0b9d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32_SERIAL_USE_USART1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TRUE</highlight></codeline>
+<codeline lineno="116" refid="mcuconf_8h_1acf6b4949732fac0a1ded862174aabba7" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_SERIAL_USE_USART2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="117" refid="mcuconf_8h_1a7509c7a01a83276aa7768474357ec61d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_SERIAL_USART1_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="118" refid="mcuconf_8h_1a562945e4ccd2bca4a4277eaa05ae70a0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_SERIAL_USART2_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/>*<sp/>SPI<sp/>driver<sp/>system<sp/>settings.</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="mcuconf_8h_1af105fbdfb7b9076472b373ed0c7b3fef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32_SPI_USE_SPI1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="124" refid="mcuconf_8h_1a626416dc22cf5f3deff2a8c7d8efa5b2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_SPI_USE_SPI2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="125" refid="mcuconf_8h_1a22d3ce19419dc8bbc47f94c065f3271c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_SPI_SPI1_DMA_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="126" refid="mcuconf_8h_1a90bd623120d1e54038094fba54ba05c0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_SPI_SPI2_DMA_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="127" refid="mcuconf_8h_1a0b3f4734d9855324ef89b57cb9858e49" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_SPI_SPI1_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="128" refid="mcuconf_8h_1a47d90eaca23f3eea99d74d1bb3539541" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_SPI_SPI2_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="129" refid="mcuconf_8h_1afda450bd11b4c1408739367b23c9f852" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_SPI_DMA_ERROR_HOOK(spip)<sp/><sp/><sp/><sp/><sp/><sp/>chSysHalt()</highlight></codeline>
+<codeline lineno="130"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/>*<sp/>UART<sp/>driver<sp/>system<sp/>settings.</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="mcuconf_8h_1a7b366b1eb660467c7ef9667705ad8308" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32_UART_USE_USART1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="135" refid="mcuconf_8h_1ad9f8b9dcf8dd01e163b8d47c56cee1aa" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_UART_USE_USART2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="136" refid="mcuconf_8h_1a050fc59913309402f34dd2ea6ab3cdf8" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_UART_USART1_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="137" refid="mcuconf_8h_1ad1d292d78abf8f0b5a9e210d217a1cfe" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_UART_USART2_IRQ_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="138" refid="mcuconf_8h_1a8307c6c43bf456405efe19e5908d5a25" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_UART_USART1_DMA_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="139" refid="mcuconf_8h_1a02ab064f32c429288dce0b15b2e443a1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_UART_USART2_DMA_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="140" refid="mcuconf_8h_1a969b79cb637b8b69cec9257705d74484" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_UART_USART1_RX_DMA_STREAM<sp/><sp/><sp/><sp/><sp/>STM32_DMA_STREAM_ID(1,<sp/>3)</highlight></codeline>
+<codeline lineno="141" refid="mcuconf_8h_1a02c568ae2c758034cdf478f81b447af3" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_UART_USART1_TX_DMA_STREAM<sp/><sp/><sp/><sp/><sp/>STM32_DMA_STREAM_ID(1,<sp/>2)</highlight></codeline>
+<codeline lineno="142" refid="mcuconf_8h_1af80e6c340ebc738f24275329c32db853" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_UART_USART2_RX_DMA_STREAM<sp/><sp/><sp/><sp/><sp/>STM32_DMA_STREAM_ID(1,<sp/>5)</highlight></codeline>
+<codeline lineno="143" refid="mcuconf_8h_1aacb71b8fee4d07ab0317ac8cc6ee9856" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_UART_USART2_TX_DMA_STREAM<sp/><sp/><sp/><sp/><sp/>STM32_DMA_STREAM_ID(1,<sp/>4)</highlight></codeline>
+<codeline lineno="144" refid="mcuconf_8h_1a9a4cb321d74c57b544a1628faaae1569" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_UART_DMA_ERROR_HOOK(uartp)<sp/><sp/><sp/><sp/>chSysHalt()</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/mcuconf.h"/>
+  </compounddef>
+</doxygen>

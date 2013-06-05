@@ -1,0 +1,497 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__config" kind="group">
+    <compoundname>config</compoundname>
+    <title>Config</title>
+      <sectiondef kind="user-defined">
+      <header>Kernel parameters and options</header>
+      <memberdef kind="define" id="group__config_1ga195ab8ff3340a18d4513cbaf915078f2" prot="public" static="no">
+        <name>CH_FREQUENCY</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+<para>System tick frequency. </para>        </briefdescription>
+        <detaileddescription>
+<para>Frequency of the system timer that drives the system ticks. This setting also defines the system tick time unit. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="48" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1ga3c6800242611cf244a38c4a870e8515a" prot="public" static="no">
+        <name>CH_TIME_QUANTUM</name>
+        <initializer>20</initializer>
+        <briefdescription>
+<para>Round robin interval. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constant is the number of system ticks allowed for the threads before preemption occurs. Setting this value to zero disables the preemption for threads with equal priority and the round robin becomes cooperative. Note that higher priority threads can still preempt, the kernel is always preemptive.</para><para><simplesect kind="note"><para>Disabling the round robin preemption makes the kernel more compact and generally faster. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="63" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gac73902e3c40b375483f9dde71e83253d" prot="public" static="no">
+        <name>CH_MEMCORE_SIZE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Managed RAM size. </para>        </briefdescription>
+        <detaileddescription>
+<para>Size of the RAM area to be managed by the OS. If set to zero then the whole available RAM is used. The core memory is made available to the heap allocator and/or can be used directly through the simplified core memory allocator.</para><para><simplesect kind="note"><para>In order to let the OS manage the whole RAM the linker script must provide the <computeroutput>__heap_base__</computeroutput> and <computeroutput>__heap_end__</computeroutput> symbols. </para><simplesectsep/><para>Requires <computeroutput>CH_USE_MEMCORE</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="78" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gac7ceed3b75958cb6f7a977aab5ee249f" prot="public" static="no">
+        <name>CH_NO_IDLE_THREAD</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Idle thread automatic spawn suppression. </para>        </briefdescription>
+        <detaileddescription>
+<para>When this option is activated the function <computeroutput>chSysInit()</computeroutput> does not spawn the idle thread automatically. The application has then the responsibility to do one of the following:<itemizedlist>
+<listitem><para>Spawn a custom idle thread at priority <computeroutput>IDLEPRIO</computeroutput>.</para></listitem><listitem><para>Change the <ref refid="group___ball_balancing_1ga840291bc02cba5474a4cb46a9b9566fe" kindref="member">main()</ref> thread priority to <computeroutput>IDLEPRIO</computeroutput> then enter an endless loop. In this scenario the <computeroutput><ref refid="group___ball_balancing_1ga840291bc02cba5474a4cb46a9b9566fe" kindref="member">main()</ref></computeroutput> thread acts as the idle thread.</para></listitem></itemizedlist>
+<simplesect kind="note"><para>Unless an idle thread is spawned the <computeroutput><ref refid="group___ball_balancing_1ga840291bc02cba5474a4cb46a9b9566fe" kindref="member">main()</ref></computeroutput> thread must not enter a sleep state. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="95" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Performance options</header>
+      <memberdef kind="define" id="group__config_1gaa5a3d403206b04dfa43ee769e8a220c6" prot="public" static="no">
+        <name>CH_OPTIMIZE_SPEED</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>OS optimization. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then time efficient rather than space efficient code is used when two possible implementations exist.</para><para><simplesect kind="note"><para>This is not related to the compiler optimization options. </para><simplesectsep/><para>The default is <computeroutput>TRUE</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="116" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Subsystem options</header>
+      <memberdef kind="define" id="group__config_1ga881045654c5c0b04081bf89da3fe4534" prot="public" static="no">
+        <name>CH_USE_REGISTRY</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Threads registry APIs. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the registry APIs are included in the kernel.</para><para><simplesect kind="note"><para>The default is <computeroutput>TRUE</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="135" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gac5e6308f66b8fdb57f0c849ed22b3d95" prot="public" static="no">
+        <name>CH_USE_WAITEXIT</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Threads synchronization APIs. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the <computeroutput>chThdWait()</computeroutput> function is included in the kernel.</para><para><simplesect kind="note"><para>The default is <computeroutput>TRUE</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="146" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gab88f410fdc6a67192194a8431d991b27" prot="public" static="no">
+        <name>CH_USE_SEMAPHORES</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Semaphores APIs. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the Semaphores APIs are included in the kernel.</para><para><simplesect kind="note"><para>The default is <computeroutput>TRUE</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="156" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1ga866568c0387963f11c078a8d939c2284" prot="public" static="no">
+        <name>CH_USE_SEMAPHORES_PRIORITY</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Semaphores queuing mode. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the threads are enqueued on semaphores by priority rather than in FIFO order.</para><para><simplesect kind="note"><para>The default is <computeroutput>FALSE</computeroutput>. Enable this if you have special requirements. </para><simplesectsep/><para>Requires <computeroutput>CH_USE_SEMAPHORES</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="168" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gae9e6ff0fe1964761ea6e1bce51d8ee59" prot="public" static="no">
+        <name>CH_USE_SEMSW</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Atomic semaphore API. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the semaphores the <computeroutput>chSemSignalWait()</computeroutput> API is included in the kernel.</para><para><simplesect kind="note"><para>The default is <computeroutput>TRUE</computeroutput>. </para><simplesectsep/><para>Requires <computeroutput>CH_USE_SEMAPHORES</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="180" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1ga4f461a7b5edbff2405b7b40d2bb238a6" prot="public" static="no">
+        <name>CH_USE_MUTEXES</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Mutexes APIs. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the mutexes APIs are included in the kernel.</para><para><simplesect kind="note"><para>The default is <computeroutput>TRUE</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="190" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1ga24fd7fe539fd6094b5db3215e1721c9c" prot="public" static="no">
+        <name>CH_USE_CONDVARS</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Conditional Variables APIs. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the conditional variables APIs are included in the kernel.</para><para><simplesect kind="note"><para>The default is <computeroutput>TRUE</computeroutput>. </para><simplesectsep/><para>Requires <computeroutput>CH_USE_MUTEXES</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="202" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gaccc2c032c409bced696f75877e270979" prot="public" static="no">
+        <name>CH_USE_CONDVARS_TIMEOUT</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Conditional Variables APIs with timeout. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the conditional variables APIs with timeout specification are included in the kernel.</para><para><simplesect kind="note"><para>The default is <computeroutput>TRUE</computeroutput>. </para><simplesectsep/><para>Requires <computeroutput>CH_USE_CONDVARS</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="214" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1ga5e3ac686cd33ad40a89aaaf97b3dc781" prot="public" static="no">
+        <name>CH_USE_EVENTS</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Events Flags APIs. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the event flags APIs are included in the kernel.</para><para><simplesect kind="note"><para>The default is <computeroutput>TRUE</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="224" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1ga64a6ad752750f42fe2474d3e7f191a71" prot="public" static="no">
+        <name>CH_USE_EVENTS_TIMEOUT</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Events Flags APIs with timeout. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the events APIs with timeout specification are included in the kernel.</para><para><simplesect kind="note"><para>The default is <computeroutput>TRUE</computeroutput>. </para><simplesectsep/><para>Requires <computeroutput>CH_USE_EVENTS</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="236" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1ga3823e336736d522bbfaf780c86746482" prot="public" static="no">
+        <name>CH_USE_MESSAGES</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Synchronous Messages APIs. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the synchronous messages APIs are included in the kernel.</para><para><simplesect kind="note"><para>The default is <computeroutput>TRUE</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="247" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gaf48947f33ed7a44a7701d84d83d94a1c" prot="public" static="no">
+        <name>CH_USE_MESSAGES_PRIORITY</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>Synchronous Messages queuing mode. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then messages are served by priority rather than in FIFO order.</para><para><simplesect kind="note"><para>The default is <computeroutput>FALSE</computeroutput>. Enable this if you have special requirements. </para><simplesectsep/><para>Requires <computeroutput>CH_USE_MESSAGES</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="259" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1ga6cf1736db681617019f96c4c209d2716" prot="public" static="no">
+        <name>CH_USE_MAILBOXES</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Mailboxes APIs. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the asynchronous messages (mailboxes) APIs are included in the kernel.</para><para><simplesect kind="note"><para>The default is <computeroutput>TRUE</computeroutput>. </para><simplesectsep/><para>Requires <computeroutput>CH_USE_SEMAPHORES</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="271" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gaabe4bd52d2fd1b180ebba1d1e8243051" prot="public" static="no">
+        <name>CH_USE_QUEUES</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>I/O Queues APIs. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the I/O queues APIs are included in the kernel.</para><para><simplesect kind="note"><para>The default is <computeroutput>TRUE</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="281" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gaff85f4d919dac30a337ce2f34e2fa1af" prot="public" static="no">
+        <name>CH_USE_MEMCORE</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Core Memory Manager APIs. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the core memory manager APIs are included in the kernel.</para><para><simplesect kind="note"><para>The default is <computeroutput>TRUE</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="292" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gaaeb266ab6131572f1d8f164bddf2da3f" prot="public" static="no">
+        <name>CH_USE_HEAP</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Heap Allocator APIs. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the memory heap allocator APIs are included in the kernel.</para><para><simplesect kind="note"><para>The default is <computeroutput>TRUE</computeroutput>. </para><simplesectsep/><para>Requires <computeroutput>CH_USE_MEMCORE</computeroutput> and either <computeroutput>CH_USE_MUTEXES</computeroutput> or <computeroutput>CH_USE_SEMAPHORES</computeroutput>. </para><simplesectsep/><para>Mutexes are recommended. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="306" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1ga4785d390f3a787916c5a5c41e953577d" prot="public" static="no">
+        <name>CH_USE_MALLOC_HEAP</name>
+        <initializer>FALSE</initializer>
+        <briefdescription>
+<para>C-runtime allocator. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled the the heap allocator APIs just wrap the C-runtime <computeroutput>malloc()</computeroutput> and <computeroutput>free()</computeroutput> functions.</para><para><simplesect kind="note"><para>The default is <computeroutput>FALSE</computeroutput>. </para><simplesectsep/><para>Requires <computeroutput>CH_USE_HEAP</computeroutput>. </para><simplesectsep/><para>The C-runtime may or may not require <computeroutput>CH_USE_MEMCORE</computeroutput>, see the appropriate documentation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="320" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gac456517b37f104d2226fef50310c79f8" prot="public" static="no">
+        <name>CH_USE_MEMPOOLS</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Memory Pools Allocator APIs. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the memory pools allocator APIs are included in the kernel.</para><para><simplesect kind="note"><para>The default is <computeroutput>TRUE</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="331" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gaae4996e24bbee7d66528671cec8b8749" prot="public" static="no">
+        <name>CH_USE_DYNAMIC</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Dynamic Threads APIs. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the dynamic threads creation APIs are included in the kernel.</para><para><simplesect kind="note"><para>The default is <computeroutput>TRUE</computeroutput>. </para><simplesectsep/><para>Requires <computeroutput>CH_USE_WAITEXIT</computeroutput>. </para><simplesectsep/><para>Requires <computeroutput>CH_USE_HEAP</computeroutput> and/or <computeroutput>CH_USE_MEMPOOLS</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="344" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Debug options</header>
+      <memberdef kind="define" id="group__config_1ga10db71bc25605169dddc82c1604b0a16" prot="public" static="no">
+        <name>CH_DBG_SYSTEM_STATE_CHECK</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Debug option, system state check. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled the correct call protocol for system APIs is checked at runtime.</para><para><simplesect kind="note"><para>The default is <computeroutput>FALSE</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="364" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gaef984ca3bfd8a71478ad55ce6e56a8bb" prot="public" static="no">
+        <name>CH_DBG_ENABLE_CHECKS</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Debug option, parameters checks. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the checks on the API functions input parameters are activated.</para><para><simplesect kind="note"><para>The default is <computeroutput>FALSE</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="375" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gad602fd2546073869a10859158d865b9b" prot="public" static="no">
+        <name>CH_DBG_ENABLE_ASSERTS</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Debug option, consistency checks. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then all the assertions in the kernel code are activated. This includes consistency checks inside the kernel, runtime anomalies and port-defined checks.</para><para><simplesect kind="note"><para>The default is <computeroutput>FALSE</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="387" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1ga8bc4cfd861131aeb3c880347d0068229" prot="public" static="no">
+        <name>CH_DBG_ENABLE_TRACE</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Debug option, trace buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the context switch circular trace buffer is activated.</para><para><simplesect kind="note"><para>The default is <computeroutput>FALSE</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="398" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gab93d9ee904f15d4f2c26ef2a1394a1d7" prot="public" static="no">
+        <name>CH_DBG_ENABLE_STACK_CHECK</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Debug option, stack checks. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then a runtime stack check is performed.</para><para><simplesect kind="note"><para>The default is <computeroutput>FALSE</computeroutput>. </para><simplesectsep/><para>The stack check is performed in a architecture/port dependent way. It may not be implemented or some ports. </para><simplesectsep/><para>The default failure mode is to halt the system with the global <computeroutput>panic_msg</computeroutput> variable set to <computeroutput>NULL</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="412" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1ga6a859dd249adfb66b9bbf809061ea06c" prot="public" static="no">
+        <name>CH_DBG_FILL_THREADS</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Debug option, stacks initialization. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then the threads working area is filled with a byte value when a thread is created. This can be useful for the runtime measurement of the used stack.</para><para><simplesect kind="note"><para>The default is <computeroutput>FALSE</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="424" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gadc9c00c2e5b6e766ded8dfa77c0c90c1" prot="public" static="no">
+        <name>CH_DBG_THREADS_PROFILING</name>
+        <initializer>TRUE</initializer>
+        <briefdescription>
+<para>Debug option, threads profiling. </para>        </briefdescription>
+        <detaileddescription>
+<para>If enabled then a field is added to the <computeroutput>Thread</computeroutput> structure that counts the system ticks occurred while executing the thread.</para><para><simplesect kind="note"><para>The default is <computeroutput>TRUE</computeroutput>. </para><simplesectsep/><para>This debug option is defaulted to TRUE because it is required by some test cases into the test suite. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="437" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Kernel hooks</header>
+      <memberdef kind="define" id="group__config_1gaba26fd717f33330fa56dcc7919a3f02f" prot="public" static="no">
+        <name>THREAD_EXT_FIELDS</name>
+        <initializer>/* Add threads custom fields here.*/</initializer>
+        <briefdescription>
+<para>Threads descriptor structure extension. </para>        </briefdescription>
+        <detaileddescription>
+<para>User fields added to the end of the <computeroutput>Thread</computeroutput> structure. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="455" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gaeb57466a9200b8c073ac96a3f1a9c34c" prot="public" static="no">
+        <name>THREAD_EXT_INIT_HOOK</name>
+        <param><defname>tp</defname></param>
+        <initializer>{                                          \
+  /* Add threads initialization code here.*/                                \
+}</initializer>
+        <briefdescription>
+<para>Threads initialization hook. </para>        </briefdescription>
+        <detaileddescription>
+<para>User initialization code added to the <computeroutput>chThdInit()</computeroutput> API.</para><para><simplesect kind="note"><para>It is invoked from within <computeroutput>chThdInit()</computeroutput> and implicitly from all the threads creation APIs. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="468" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gab8f241a87da52027625c9cc3d8403ebb" prot="public" static="no">
+        <name>THREAD_EXT_EXIT_HOOK</name>
+        <param><defname>tp</defname></param>
+        <initializer>{                                          \
+  /* Add threads finalization code here.*/                                  \
+}</initializer>
+        <briefdescription>
+<para>Threads finalization hook. </para>        </briefdescription>
+        <detaileddescription>
+<para>User finalization code added to the <computeroutput>chThdExit()</computeroutput> API.</para><para><simplesect kind="note"><para>It is inserted into lock zone. </para><simplesectsep/><para>It is also invoked when the threads simply return in order to terminate. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="482" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gac0317ee1a14709d39aef80ca8980a40a" prot="public" static="no">
+        <name>THREAD_CONTEXT_SWITCH_HOOK</name>
+        <param><defname>ntp</defname></param>
+        <param><defname>otp</defname></param>
+        <initializer>{                              \
+  /* System halt code here.*/                                               \
+}</initializer>
+        <briefdescription>
+<para>Context switch hook. </para>        </briefdescription>
+        <detaileddescription>
+<para>This hook is invoked just before switching between threads. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="492" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="490" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1gae52e2c3230a9e87d16befd547c2f92ef" prot="public" static="no">
+        <name>IDLE_LOOP_HOOK</name>
+        <param></param>
+        <initializer>{                                                  \
+  /* Idle loop code here.*/                                                 \
+}</initializer>
+        <briefdescription>
+<para>Idle Loop hook. </para>        </briefdescription>
+        <detaileddescription>
+<para>This hook is continuously invoked by the idle thread loop. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="502" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="500" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1ga132e1bd495c4f7c9b92d63b26705dfe1" prot="public" static="no">
+        <name>SYSTEM_TICK_EVENT_HOOK</name>
+        <param></param>
+        <initializer>{                                          \
+  /* System tick event code here.*/                                         \
+}</initializer>
+        <briefdescription>
+<para>System tick event hook. </para>        </briefdescription>
+        <detaileddescription>
+<para>This hook is invoked in the system tick handler immediately after processing the virtual timers queue. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="513" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="511" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__config_1ga71e0932757a8180816104fa313171c9a" prot="public" static="no">
+        <name>SYSTEM_HALT_HOOK</name>
+        <param></param>
+        <initializer>{                                                \
+  /* System halt code here.*/                                               \
+}</initializer>
+        <briefdescription>
+<para>System halt hook. </para>        </briefdescription>
+        <detaileddescription>
+<para>This hook is invoked in case to a system halting error before the system is halted. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" line="524" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/chconf.h" bodystart="522" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Kernel related settings and hooks. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

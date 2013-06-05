@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_kalman" kind="class" prot="public">
+    <compoundname>Kalman</compoundname>
+    <includes refid="kalman_8hpp" local="no">kalman.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_kalman_1a9855d82e7d26f8990198899b438ca431" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Kalman::x_est_last</definition>
+        <argsstring></argsstring>
+        <name>x_est_last</name>
+        <briefdescription>
+<para>Last output estimation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" line="42" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="group___control_1gafced0e28f571d98e8a3c7057e87cd100" compoundref="kalman_8cpp" startline="46" endline="57">Kalman</referencedby>
+        <referencedby refid="group___control_1gaa5abc03d34d704f352f145904ddbc3b4" compoundref="kalman_8cpp" startline="73" endline="92">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_kalman_1a69c419c798d6c1498d74a8e506833458" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Kalman::P_last</definition>
+        <argsstring></argsstring>
+        <name>P_last</name>
+        <briefdescription>
+<para>Last prediction. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" line="43" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" bodystart="43" bodyend="-1"/>
+        <referencedby refid="group___control_1gafced0e28f571d98e8a3c7057e87cd100" compoundref="kalman_8cpp" startline="46" endline="57">Kalman</referencedby>
+        <referencedby refid="group___control_1gaa5abc03d34d704f352f145904ddbc3b4" compoundref="kalman_8cpp" startline="73" endline="92">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_kalman_1afe10e874165b1bfb94ced158ff993fc8" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Kalman::Q</definition>
+        <argsstring></argsstring>
+        <name>Q</name>
+        <briefdescription>
+<para>Noise covariance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" line="44" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="group___control_1gafced0e28f571d98e8a3c7057e87cd100" compoundref="kalman_8cpp" startline="46" endline="57">Kalman</referencedby>
+        <referencedby refid="group___control_1gaa5abc03d34d704f352f145904ddbc3b4" compoundref="kalman_8cpp" startline="73" endline="92">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_kalman_1a451aa7b1366890a5963a81be7b6f015c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Kalman::R</definition>
+        <argsstring></argsstring>
+        <name>R</name>
+        <briefdescription>
+<para>Noise covariance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" line="45" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="group___control_1gafced0e28f571d98e8a3c7057e87cd100" compoundref="kalman_8cpp" startline="46" endline="57">Kalman</referencedby>
+        <referencedby refid="group___control_1gaa5abc03d34d704f352f145904ddbc3b4" compoundref="kalman_8cpp" startline="73" endline="92">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_kalman_1a7817ee61561f40ff8568252a5fcd828e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Kalman::K</definition>
+        <argsstring></argsstring>
+        <name>K</name>
+        <briefdescription>
+<para><ref refid="class_kalman" kindref="compound">Kalman</ref> gain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" line="46" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" bodystart="46" bodyend="-1"/>
+        <referencedby refid="group___control_1gafced0e28f571d98e8a3c7057e87cd100" compoundref="kalman_8cpp" startline="46" endline="57">Kalman</referencedby>
+        <referencedby refid="group___control_1gaa5abc03d34d704f352f145904ddbc3b4" compoundref="kalman_8cpp" startline="73" endline="92">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_kalman_1abb285b89fef7785b774455164c08120b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Kalman::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <briefdescription>
+<para>Prediction. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" line="47" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" bodystart="47" bodyend="-1"/>
+        <referencedby refid="group___control_1gafced0e28f571d98e8a3c7057e87cd100" compoundref="kalman_8cpp" startline="46" endline="57">Kalman</referencedby>
+        <referencedby refid="group___control_1gaa5abc03d34d704f352f145904ddbc3b4" compoundref="kalman_8cpp" startline="73" endline="92">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_kalman_1a21c6e83c549940968c25c8d2545e30f7" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Kalman::P_temp</definition>
+        <argsstring></argsstring>
+        <name>P_temp</name>
+        <briefdescription>
+<para>System inner state temp value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" line="48" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" bodystart="48" bodyend="-1"/>
+        <referencedby refid="group___control_1gafced0e28f571d98e8a3c7057e87cd100" compoundref="kalman_8cpp" startline="46" endline="57">Kalman</referencedby>
+        <referencedby refid="group___control_1gaa5abc03d34d704f352f145904ddbc3b4" compoundref="kalman_8cpp" startline="73" endline="92">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_kalman_1aeb4230bb855eb133aa1e4dfe16dfa576" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Kalman::x_temp_est</definition>
+        <argsstring></argsstring>
+        <name>x_temp_est</name>
+        <briefdescription>
+<para>Output estimation temp value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" line="49" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" bodystart="49" bodyend="-1"/>
+        <referencedby refid="group___control_1gafced0e28f571d98e8a3c7057e87cd100" compoundref="kalman_8cpp" startline="46" endline="57">Kalman</referencedby>
+        <referencedby refid="group___control_1gaa5abc03d34d704f352f145904ddbc3b4" compoundref="kalman_8cpp" startline="73" endline="92">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_kalman_1a59a6a51c69cef6a20d4ac9837804c8fa" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Kalman::x_est</definition>
+        <argsstring></argsstring>
+        <name>x_est</name>
+        <briefdescription>
+<para>Output estimation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" line="50" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" bodystart="50" bodyend="-1"/>
+        <referencedby refid="group___control_1gafced0e28f571d98e8a3c7057e87cd100" compoundref="kalman_8cpp" startline="46" endline="57">Kalman</referencedby>
+        <referencedby refid="group___control_1gaa5abc03d34d704f352f145904ddbc3b4" compoundref="kalman_8cpp" startline="73" endline="92">update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="group___control_1gafced0e28f571d98e8a3c7057e87cd100" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Kalman::Kalman</definition>
+        <argsstring>(float Q, float R)</argsstring>
+        <name>Kalman</name>
+        <param>
+          <type>float</type>
+          <declname>Q</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>R</declname>
+        </param>
+        <briefdescription>
+<para>The constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Estimation of the noise covariance. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">R</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Estimation of the noise covariance. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" line="53" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.cpp" bodystart="46" bodyend="57"/>
+        <references refid="class_kalman_1afe10e874165b1bfb94ced158ff993fc8" compoundref="kalman_8hpp" startline="44">Q</references>
+        <references refid="class_kalman_1a451aa7b1366890a5963a81be7b6f015c" compoundref="kalman_8hpp" startline="45">R</references>
+        <references refid="class_kalman_1a9855d82e7d26f8990198899b438ca431" compoundref="kalman_8hpp" startline="42">x_est_last</references>
+        <references refid="class_kalman_1a69c419c798d6c1498d74a8e506833458" compoundref="kalman_8hpp" startline="43">P_last</references>
+        <references refid="class_kalman_1a7817ee61561f40ff8568252a5fcd828e" compoundref="kalman_8hpp" startline="46">K</references>
+        <references refid="class_kalman_1abb285b89fef7785b774455164c08120b" compoundref="kalman_8hpp" startline="47">P</references>
+        <references refid="class_kalman_1a21c6e83c549940968c25c8d2545e30f7" compoundref="kalman_8hpp" startline="48">P_temp</references>
+        <references refid="class_kalman_1aeb4230bb855eb133aa1e4dfe16dfa576" compoundref="kalman_8hpp" startline="49">x_temp_est</references>
+        <references refid="class_kalman_1a59a6a51c69cef6a20d4ac9837804c8fa" compoundref="kalman_8hpp" startline="50">x_est</references>
+      </memberdef>
+      <memberdef kind="function" id="group___control_1ga4e54bc3ac77da48219de5b6297d90386" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Kalman::~Kalman</definition>
+        <argsstring>()</argsstring>
+        <name>~Kalman</name>
+        <briefdescription>
+<para>The destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" line="54" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.cpp" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="group___control_1gaa5abc03d34d704f352f145904ddbc3b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Kalman::update</definition>
+        <argsstring>(float measure)</argsstring>
+        <name>update</name>
+        <param>
+          <type>float</type>
+          <declname>measure</declname>
+        </param>
+        <briefdescription>
+<para>Update estimated value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">measure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The measured value</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The estimated value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" line="56" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.cpp" bodystart="73" bodyend="92"/>
+        <references refid="class_kalman_1aeb4230bb855eb133aa1e4dfe16dfa576" compoundref="kalman_8hpp" startline="49">x_temp_est</references>
+        <references refid="class_kalman_1a9855d82e7d26f8990198899b438ca431" compoundref="kalman_8hpp" startline="42">x_est_last</references>
+        <references refid="class_kalman_1a21c6e83c549940968c25c8d2545e30f7" compoundref="kalman_8hpp" startline="48">P_temp</references>
+        <references refid="class_kalman_1a69c419c798d6c1498d74a8e506833458" compoundref="kalman_8hpp" startline="43">P_last</references>
+        <references refid="class_kalman_1afe10e874165b1bfb94ced158ff993fc8" compoundref="kalman_8hpp" startline="44">Q</references>
+        <references refid="class_kalman_1a7817ee61561f40ff8568252a5fcd828e" compoundref="kalman_8hpp" startline="46">K</references>
+        <references refid="class_kalman_1a451aa7b1366890a5963a81be7b6f015c" compoundref="kalman_8hpp" startline="45">R</references>
+        <references refid="class_kalman_1a59a6a51c69cef6a20d4ac9837804c8fa" compoundref="kalman_8hpp" startline="50">x_est</references>
+        <references refid="class_kalman_1abb285b89fef7785b774455164c08120b" compoundref="kalman_8hpp" startline="47">P</references>
+        <referencedby refid="group___control_1ga654ce447d37ead187bf4294108f14dff" compoundref="compute_8cpp" startline="120" endline="151">Compute::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" line="40" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/kalman.hpp" bodystart="40" bodyend="57"/>
+    <listofallmembers>
+      <member refid="class_kalman_1a7817ee61561f40ff8568252a5fcd828e" prot="private" virt="non-virtual"><scope>Kalman</scope><name>K</name></member>
+      <member refid="group___control_1gafced0e28f571d98e8a3c7057e87cd100" prot="public" virt="non-virtual"><scope>Kalman</scope><name>Kalman</name></member>
+      <member refid="class_kalman_1abb285b89fef7785b774455164c08120b" prot="private" virt="non-virtual"><scope>Kalman</scope><name>P</name></member>
+      <member refid="class_kalman_1a69c419c798d6c1498d74a8e506833458" prot="private" virt="non-virtual"><scope>Kalman</scope><name>P_last</name></member>
+      <member refid="class_kalman_1a21c6e83c549940968c25c8d2545e30f7" prot="private" virt="non-virtual"><scope>Kalman</scope><name>P_temp</name></member>
+      <member refid="class_kalman_1afe10e874165b1bfb94ced158ff993fc8" prot="private" virt="non-virtual"><scope>Kalman</scope><name>Q</name></member>
+      <member refid="class_kalman_1a451aa7b1366890a5963a81be7b6f015c" prot="private" virt="non-virtual"><scope>Kalman</scope><name>R</name></member>
+      <member refid="group___control_1gaa5abc03d34d704f352f145904ddbc3b4" prot="public" virt="non-virtual"><scope>Kalman</scope><name>update</name></member>
+      <member refid="class_kalman_1a59a6a51c69cef6a20d4ac9837804c8fa" prot="private" virt="non-virtual"><scope>Kalman</scope><name>x_est</name></member>
+      <member refid="class_kalman_1a9855d82e7d26f8990198899b438ca431" prot="private" virt="non-virtual"><scope>Kalman</scope><name>x_est_last</name></member>
+      <member refid="class_kalman_1aeb4230bb855eb133aa1e4dfe16dfa576" prot="private" virt="non-virtual"><scope>Kalman</scope><name>x_temp_est</name></member>
+      <member refid="group___control_1ga4e54bc3ac77da48219de5b6297d90386" prot="public" virt="non-virtual"><scope>Kalman</scope><name>~Kalman</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

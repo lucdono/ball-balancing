@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_3a0b84d77d47386d9349ffb79c83085f" kind="dir">
+    <compoundname>C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/</compoundname>
+    <innerfile refid="serial_8cpp">serial.cpp</innerfile>
+    <innerfile refid="serial_8hpp">serial.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/"/>
+  </compounddef>
+</doxygen>

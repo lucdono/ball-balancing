@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_serial" kind="class" prot="public">
+    <compoundname>Serial</compoundname>
+    <includes refid="serial_8hpp" local="no">serial.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_serial_1ae4bd96b28d4eb348a1aca7ea456f82f5" prot="private" static="no" mutable="no">
+        <type>HANDLE</type>
+        <definition>HANDLE Serial::hSerial</definition>
+        <argsstring></argsstring>
+        <name>hSerial</name>
+        <briefdescription>
+<para><ref refid="class_serial" kindref="compound">Serial</ref> handler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.hpp" line="61" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.hpp" bodystart="61" bodyend="-1"/>
+        <referencedby refid="group___serial_1ga53e1e7d545e9ca3776224344ea4c3719" compoundref="serial_8cpp" startline="48" endline="107">Serial</referencedby>
+        <referencedby refid="group___serial_1ga5b32c394c0ff923a4ef1c13cfb20a6ba" compoundref="serial_8cpp" startline="113" endline="118">~Serial</referencedby>
+        <referencedby refid="group___serial_1ga3874e3c10b006dc37584d45a928ae9db" compoundref="serial_8cpp" startline="129" endline="158">ReadData</referencedby>
+        <referencedby refid="group___serial_1ga3cce4a34142e8e2adbda131d43103e01" compoundref="serial_8cpp" startline="168" endline="179">WriteData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_serial_1ad788fe882057ff8393e6a59767eb3aa7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Serial::connected</definition>
+        <argsstring></argsstring>
+        <name>connected</name>
+        <briefdescription>
+<para>Connection status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.hpp" line="62" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.hpp" bodystart="62" bodyend="-1"/>
+        <referencedby refid="group___serial_1ga53e1e7d545e9ca3776224344ea4c3719" compoundref="serial_8cpp" startline="48" endline="107">Serial</referencedby>
+        <referencedby refid="group___serial_1ga5b32c394c0ff923a4ef1c13cfb20a6ba" compoundref="serial_8cpp" startline="113" endline="118">~Serial</referencedby>
+        <referencedby refid="group___serial_1gaa53e46b5c8556152d5d3306fdab4117c" compoundref="serial_8cpp" startline="186" endline="188">IsConnected</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_serial_1a956a7895cca74bc01261857842581f06" prot="private" static="no" mutable="no">
+        <type>COMSTAT</type>
+        <definition>COMSTAT Serial::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+<para>Information about the connection. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.hpp" line="63" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.hpp" bodystart="63" bodyend="-1"/>
+        <referencedby refid="group___serial_1ga3874e3c10b006dc37584d45a928ae9db" compoundref="serial_8cpp" startline="129" endline="158">ReadData</referencedby>
+        <referencedby refid="group___serial_1ga3cce4a34142e8e2adbda131d43103e01" compoundref="serial_8cpp" startline="168" endline="179">WriteData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_serial_1a6762daaadf619992f60902783ae88727" prot="private" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD Serial::errors</definition>
+        <argsstring></argsstring>
+        <name>errors</name>
+        <briefdescription>
+<para>Last error. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.hpp" line="64" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.hpp" bodystart="64" bodyend="-1"/>
+        <referencedby refid="group___serial_1ga53e1e7d545e9ca3776224344ea4c3719" compoundref="serial_8cpp" startline="48" endline="107">Serial</referencedby>
+        <referencedby refid="group___serial_1ga3874e3c10b006dc37584d45a928ae9db" compoundref="serial_8cpp" startline="129" endline="158">ReadData</referencedby>
+        <referencedby refid="group___serial_1ga3cce4a34142e8e2adbda131d43103e01" compoundref="serial_8cpp" startline="168" endline="179">WriteData</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="group___serial_1ga53e1e7d545e9ca3776224344ea4c3719" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Serial::Serial</definition>
+        <argsstring>(char *portName)</argsstring>
+        <name>Serial</name>
+        <param>
+          <type>char *</type>
+          <declname>portName</declname>
+        </param>
+        <briefdescription>
+<para>The Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Initialize <ref refid="class_serial" kindref="compound">Serial</ref> communication with the given COM port.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">portName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The serial port to initializa. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.hpp" line="67" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.cpp" bodystart="48" bodyend="107"/>
+        <references refid="class_serial_1ad788fe882057ff8393e6a59767eb3aa7" compoundref="serial_8hpp" startline="62">connected</references>
+        <references refid="class_serial_1a6762daaadf619992f60902783ae88727" compoundref="serial_8hpp" startline="64">errors</references>
+        <references refid="class_serial_1ae4bd96b28d4eb348a1aca7ea456f82f5" compoundref="serial_8hpp" startline="61">hSerial</references>
+        <references refid="group___serial_1gae7676cdfa371dfdcf6fb0687737c29a6" compoundref="serial_8hpp" startline="50">WAIT_TIME</references>
+      </memberdef>
+      <memberdef kind="function" id="group___serial_1ga5b32c394c0ff923a4ef1c13cfb20a6ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Serial::~Serial</definition>
+        <argsstring>()</argsstring>
+        <name>~Serial</name>
+        <briefdescription>
+<para>The destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Close the serial connection. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.hpp" line="68" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.cpp" bodystart="113" bodyend="118"/>
+        <references refid="class_serial_1ad788fe882057ff8393e6a59767eb3aa7" compoundref="serial_8hpp" startline="62">connected</references>
+        <references refid="class_serial_1ae4bd96b28d4eb348a1aca7ea456f82f5" compoundref="serial_8hpp" startline="61">hSerial</references>
+      </memberdef>
+      <memberdef kind="function" id="group___serial_1ga3874e3c10b006dc37584d45a928ae9db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Serial::ReadData</definition>
+        <argsstring>(char *buffer, unsigned int nbChar)</argsstring>
+        <name>ReadData</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>nbChar</declname>
+        </param>
+        <briefdescription>
+<para>Read data from serial port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the destination buffer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nbChar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of bytes to read.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of bytes read. </para></simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if nothing to read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.hpp" line="70" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.cpp" bodystart="129" bodyend="158"/>
+        <references refid="class_serial_1ae4bd96b28d4eb348a1aca7ea456f82f5" compoundref="serial_8hpp" startline="61">hSerial</references>
+        <references refid="class_serial_1a6762daaadf619992f60902783ae88727" compoundref="serial_8hpp" startline="64">errors</references>
+        <references refid="class_serial_1a956a7895cca74bc01261857842581f06" compoundref="serial_8hpp" startline="63">status</references>
+      </memberdef>
+      <memberdef kind="function" id="group___serial_1ga3cce4a34142e8e2adbda131d43103e01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Serial::WriteData</definition>
+        <argsstring>(char *buffer, unsigned int nbChar)</argsstring>
+        <name>WriteData</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>nbChar</declname>
+        </param>
+        <briefdescription>
+<para>Write data to serial port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the source buffer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nbChar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of bytes to write.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if write operation succeeded, FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.hpp" line="71" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.cpp" bodystart="168" bodyend="179"/>
+        <references refid="class_serial_1ae4bd96b28d4eb348a1aca7ea456f82f5" compoundref="serial_8hpp" startline="61">hSerial</references>
+        <references refid="class_serial_1a6762daaadf619992f60902783ae88727" compoundref="serial_8hpp" startline="64">errors</references>
+        <references refid="class_serial_1a956a7895cca74bc01261857842581f06" compoundref="serial_8hpp" startline="63">status</references>
+        <referencedby refid="group___control_1ga654ce447d37ead187bf4294108f14dff" compoundref="compute_8cpp" startline="120" endline="151">Compute::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___serial_1gaa53e46b5c8556152d5d3306fdab4117c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Serial::IsConnected</definition>
+        <argsstring>()</argsstring>
+        <name>IsConnected</name>
+        <briefdescription>
+<para>Get the connection status. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>TRUE if serial port has been connected, FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.hpp" line="72" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.cpp" bodystart="186" bodyend="188"/>
+        <references refid="class_serial_1ad788fe882057ff8393e6a59767eb3aa7" compoundref="serial_8hpp" startline="62">connected</references>
+        <referencedby refid="group___control_1gae689eda9201b54d1ca06a04a693b0e73" compoundref="compute_8cpp" startline="106" endline="108">Compute::IsConnected</referencedby>
+        <referencedby refid="group___control_1ga654ce447d37ead187bf4294108f14dff" compoundref="compute_8cpp" startline="120" endline="151">Compute::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.hpp" line="59" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/serial.hpp" bodystart="59" bodyend="73"/>
+    <listofallmembers>
+      <member refid="class_serial_1ad788fe882057ff8393e6a59767eb3aa7" prot="private" virt="non-virtual"><scope>Serial</scope><name>connected</name></member>
+      <member refid="class_serial_1a6762daaadf619992f60902783ae88727" prot="private" virt="non-virtual"><scope>Serial</scope><name>errors</name></member>
+      <member refid="class_serial_1ae4bd96b28d4eb348a1aca7ea456f82f5" prot="private" virt="non-virtual"><scope>Serial</scope><name>hSerial</name></member>
+      <member refid="group___serial_1gaa53e46b5c8556152d5d3306fdab4117c" prot="public" virt="non-virtual"><scope>Serial</scope><name>IsConnected</name></member>
+      <member refid="group___serial_1ga3874e3c10b006dc37584d45a928ae9db" prot="public" virt="non-virtual"><scope>Serial</scope><name>ReadData</name></member>
+      <member refid="group___serial_1ga53e1e7d545e9ca3776224344ea4c3719" prot="public" virt="non-virtual"><scope>Serial</scope><name>Serial</name></member>
+      <member refid="class_serial_1a956a7895cca74bc01261857842581f06" prot="private" virt="non-virtual"><scope>Serial</scope><name>status</name></member>
+      <member refid="group___serial_1ga3cce4a34142e8e2adbda131d43103e01" prot="public" virt="non-virtual"><scope>Serial</scope><name>WriteData</name></member>
+      <member refid="group___serial_1ga5b32c394c0ff923a4ef1c13cfb20a6ba" prot="public" virt="non-virtual"><scope>Serial</scope><name>~Serial</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

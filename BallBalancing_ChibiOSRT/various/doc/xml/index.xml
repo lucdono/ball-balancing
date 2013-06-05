@@ -1,0 +1,518 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.7.6.1">
+  <compound refid="adc_8o_8d" kind="file"><name>adc.o.d</name>
+  </compound>
+  <compound refid="adc__lld_8o_8d" kind="file"><name>adc_lld.o.d</name>
+  </compound>
+  <compound refid="board_8o_8d" kind="file"><name>board.o.d</name>
+  </compound>
+  <compound refid="can_8o_8d" kind="file"><name>can.o.d</name>
+  </compound>
+  <compound refid="chcond_8o_8d" kind="file"><name>chcond.o.d</name>
+  </compound>
+  <compound refid="chcore_8o_8d" kind="file"><name>chcore.o.d</name>
+  </compound>
+  <compound refid="chcore__v6m_8o_8d" kind="file"><name>chcore_v6m.o.d</name>
+  </compound>
+  <compound refid="chdebug_8o_8d" kind="file"><name>chdebug.o.d</name>
+  </compound>
+  <compound refid="chdynamic_8o_8d" kind="file"><name>chdynamic.o.d</name>
+  </compound>
+  <compound refid="chevents_8o_8d" kind="file"><name>chevents.o.d</name>
+  </compound>
+  <compound refid="chheap_8o_8d" kind="file"><name>chheap.o.d</name>
+  </compound>
+  <compound refid="chlists_8o_8d" kind="file"><name>chlists.o.d</name>
+  </compound>
+  <compound refid="chmboxes_8o_8d" kind="file"><name>chmboxes.o.d</name>
+  </compound>
+  <compound refid="chmemcore_8o_8d" kind="file"><name>chmemcore.o.d</name>
+  </compound>
+  <compound refid="chmempools_8o_8d" kind="file"><name>chmempools.o.d</name>
+  </compound>
+  <compound refid="chmsg_8o_8d" kind="file"><name>chmsg.o.d</name>
+  </compound>
+  <compound refid="chmtx_8o_8d" kind="file"><name>chmtx.o.d</name>
+  </compound>
+  <compound refid="chqueues_8o_8d" kind="file"><name>chqueues.o.d</name>
+  </compound>
+  <compound refid="chregistry_8o_8d" kind="file"><name>chregistry.o.d</name>
+  </compound>
+  <compound refid="chschd_8o_8d" kind="file"><name>chschd.o.d</name>
+  </compound>
+  <compound refid="chsem_8o_8d" kind="file"><name>chsem.o.d</name>
+  </compound>
+  <compound refid="chsys_8o_8d" kind="file"><name>chsys.o.d</name>
+  </compound>
+  <compound refid="chthreads_8o_8d" kind="file"><name>chthreads.o.d</name>
+  </compound>
+  <compound refid="chvt_8o_8d" kind="file"><name>chvt.o.d</name>
+  </compound>
+  <compound refid="crt0_8o_8d" kind="file"><name>crt0.o.d</name>
+  </compound>
+  <compound refid="ext_8o_8d" kind="file"><name>ext.o.d</name>
+  </compound>
+  <compound refid="ext__lld_8o_8d" kind="file"><name>ext_lld.o.d</name>
+  </compound>
+  <compound refid="ext__lld__isr_8o_8d" kind="file"><name>ext_lld_isr.o.d</name>
+  </compound>
+  <compound refid="gpt_8o_8d" kind="file"><name>gpt.o.d</name>
+  </compound>
+  <compound refid="gpt__lld_8o_8d" kind="file"><name>gpt_lld.o.d</name>
+  </compound>
+  <compound refid="hal_8o_8d" kind="file"><name>hal.o.d</name>
+  </compound>
+  <compound refid="hal__lld_8o_8d" kind="file"><name>hal_lld.o.d</name>
+  </compound>
+  <compound refid="i2c_8o_8d" kind="file"><name>i2c.o.d</name>
+  </compound>
+  <compound refid="icu_8o_8d" kind="file"><name>icu.o.d</name>
+  </compound>
+  <compound refid="icu__lld_8o_8d" kind="file"><name>icu_lld.o.d</name>
+  </compound>
+  <compound refid="mac_8o_8d" kind="file"><name>mac.o.d</name>
+  </compound>
+  <compound refid="main_8o_8d" kind="file"><name>main.o.d</name>
+  </compound>
+  <compound refid="mmc__spi_8o_8d" kind="file"><name>mmc_spi.o.d</name>
+  </compound>
+  <compound refid="mmcsd_8o_8d" kind="file"><name>mmcsd.o.d</name>
+  </compound>
+  <compound refid="nvic_8o_8d" kind="file"><name>nvic.o.d</name>
+  </compound>
+  <compound refid="pal_8o_8d" kind="file"><name>pal.o.d</name>
+  </compound>
+  <compound refid="pal__lld_8o_8d" kind="file"><name>pal_lld.o.d</name>
+  </compound>
+  <compound refid="pwm_8o_8d" kind="file"><name>pwm.o.d</name>
+  </compound>
+  <compound refid="pwm__lld_8o_8d" kind="file"><name>pwm_lld.o.d</name>
+  </compound>
+  <compound refid="rtc_8o_8d" kind="file"><name>rtc.o.d</name>
+  </compound>
+  <compound refid="sdc_8o_8d" kind="file"><name>sdc.o.d</name>
+  </compound>
+  <compound refid="serial_8o_8d" kind="file"><name>serial.o.d</name>
+  </compound>
+  <compound refid="serial__lld_8o_8d" kind="file"><name>serial_lld.o.d</name>
+  </compound>
+  <compound refid="serial__usb_8o_8d" kind="file"><name>serial_usb.o.d</name>
+  </compound>
+  <compound refid="spi_8o_8d" kind="file"><name>spi.o.d</name>
+  </compound>
+  <compound refid="spi__lld_8o_8d" kind="file"><name>spi_lld.o.d</name>
+  </compound>
+  <compound refid="stm32__dma_8o_8d" kind="file"><name>stm32_dma.o.d</name>
+  </compound>
+  <compound refid="tm_8o_8d" kind="file"><name>tm.o.d</name>
+  </compound>
+  <compound refid="uart_8o_8d" kind="file"><name>uart.o.d</name>
+  </compound>
+  <compound refid="uart__lld_8o_8d" kind="file"><name>uart_lld.o.d</name>
+  </compound>
+  <compound refid="usb_8o_8d" kind="file"><name>usb.o.d</name>
+  </compound>
+  <compound refid="vectors_8o_8d" kind="file"><name>vectors.o.d</name>
+  </compound>
+  <compound refid="board_8c" kind="file"><name>board.c</name>
+    <member refid="board_8c_1a32c73ccd62cbae6568272cc6949531f2" kind="function"><name>__early_init</name></member>
+    <member refid="board_8c_1a48edc646a1de1ba488bbe7d786df9bae" kind="function"><name>boardInit</name></member>
+  </compound>
+  <compound refid="board_8h" kind="file"><name>board.h</name>
+    <member refid="board_8h_1a1020350a41472b2579a91b993c7c453f" kind="define"><name>BOARD_ST_STM32F0_DISCOVERY</name></member>
+    <member refid="board_8h_1a02581754b212d533d96cde56c8145c9b" kind="define"><name>BOARD_NAME</name></member>
+    <member refid="board_8h_1a9498f8f4ae2badbe39c078555ca9c793" kind="define"><name>STM32_LSECLK</name></member>
+    <member refid="board_8h_1aad7ccbfca9d4bd146d0d48ad6473912e" kind="define"><name>STM32_HSECLK</name></member>
+    <member refid="board_8h_1a1db400d06e42524f5e7f6da6888eb056" kind="define"><name>STM32_HSE_BYPASS</name></member>
+    <member refid="board_8h_1a6d26457e4296efa18c8dd7e272d3d0ad" kind="define"><name>STM32F0XX</name></member>
+    <member refid="board_8h_1a9d92bdb4790a24e31bd7412b0160daff" kind="define"><name>GPIOA_BUTTON</name></member>
+    <member refid="board_8h_1afb7901bdd81cbaf63a77adccc953bd24" kind="define"><name>GPIOA_PIN1</name></member>
+    <member refid="board_8h_1ae03444a6c3c41902b6a3d58721fa5448" kind="define"><name>GPIOA_PIN2</name></member>
+    <member refid="board_8h_1aa490e796204d6758822cd11ac39c854a" kind="define"><name>GPIOA_PIN3</name></member>
+    <member refid="board_8h_1a3828c7b468e32f2b175b13aa3f490baf" kind="define"><name>GPIOA_PIN4</name></member>
+    <member refid="board_8h_1a36375c382e976015e9b14a3dd51273e8" kind="define"><name>GPIOA_PIN5</name></member>
+    <member refid="board_8h_1a6b3a3de2f5811ee7ce8fac882addc381" kind="define"><name>GPIOA_PIN6</name></member>
+    <member refid="board_8h_1a4325a1ee7a8e8db35ea0d2f41659d56b" kind="define"><name>GPIOA_PIN7</name></member>
+    <member refid="board_8h_1a3525ad5aadd0473e6330234105bf2b65" kind="define"><name>GPIOA_PIN8</name></member>
+    <member refid="board_8h_1aa0f0a69047cd9277bb4dff4d834b7c2e" kind="define"><name>GPIOA_PIN9</name></member>
+    <member refid="board_8h_1aca3f2776220dbbb15e9e5924db3f3a16" kind="define"><name>GPIOA_PIN10</name></member>
+    <member refid="board_8h_1a9a9b88fcde1fa024e944424836005f15" kind="define"><name>GPIOA_PIN11</name></member>
+    <member refid="board_8h_1afa04dcef93c5983d3c5fc2a608598c37" kind="define"><name>GPIOA_PIN12</name></member>
+    <member refid="board_8h_1a7b9d2ea3e5488c32106e6bfb2e192c55" kind="define"><name>GPIOA_SWDAT</name></member>
+    <member refid="board_8h_1abe6c5d2162f9314024eed9ff196fb31c" kind="define"><name>GPIOA_SWCLK</name></member>
+    <member refid="board_8h_1a46acb855fad231790f79e54bc4d0af66" kind="define"><name>GPIOA_PIN15</name></member>
+    <member refid="board_8h_1aa2648d812dd7ac5db4a369d99cb39e15" kind="define"><name>GPIOB_PIN0</name></member>
+    <member refid="board_8h_1a79706be65d1a3914b4c074cc4935c2fa" kind="define"><name>GPIOB_PIN1</name></member>
+    <member refid="board_8h_1a90a35cfe7293f74466cf46350954ee29" kind="define"><name>GPIOB_PIN2</name></member>
+    <member refid="board_8h_1a0f04bb892c30f9de2bb954bb1b1ae3ad" kind="define"><name>GPIOB_PIN3</name></member>
+    <member refid="board_8h_1a3c06c0eacd36c5e8f9a0472270f3028f" kind="define"><name>GPIOB_PIN4</name></member>
+    <member refid="board_8h_1ab97b53c5beccd57c325d53b8a67babed" kind="define"><name>GPIOB_PIN5</name></member>
+    <member refid="board_8h_1afbdb30f231df0571934d93a052c08f0e" kind="define"><name>GPIOB_PIN6</name></member>
+    <member refid="board_8h_1aa6defd6b2924886d0e818ac192be03f7" kind="define"><name>GPIOB_PIN7</name></member>
+    <member refid="board_8h_1a56e8e833acac2dbe2d4638f176be6282" kind="define"><name>GPIOB_PIN8</name></member>
+    <member refid="board_8h_1a8175ccdd8ac896e4d38c570f7c72457e" kind="define"><name>GPIOB_PIN9</name></member>
+    <member refid="board_8h_1aafa39eeaae4d88d728d7799660b531ba" kind="define"><name>GPIOB_PIN10</name></member>
+    <member refid="board_8h_1afaa9f0a32c40d42f9038b2dd27cc6515" kind="define"><name>GPIOB_PIN11</name></member>
+    <member refid="board_8h_1ad917392d3554e6029bee8ee9caa87288" kind="define"><name>GPIOB_PIN12</name></member>
+    <member refid="board_8h_1aae560d0aa8ac8f4b5e173ea8c9ef2218" kind="define"><name>GPIOB_PIN13</name></member>
+    <member refid="board_8h_1ac6887c163fe7ed0e4b8e0039bf4def54" kind="define"><name>GPIOB_PIN14</name></member>
+    <member refid="board_8h_1a519934496e901bcefd1a410aee97296e" kind="define"><name>GPIOB_PIN15</name></member>
+    <member refid="board_8h_1a8b29a35d463fdeb98936223be420d2bf" kind="define"><name>GPIOC_PIN0</name></member>
+    <member refid="board_8h_1adc5846e2b81349872902580d656e31b8" kind="define"><name>GPIOC_PIN1</name></member>
+    <member refid="board_8h_1a39dbe2e967d2c39d9ca7a282b2f3941e" kind="define"><name>GPIOC_PIN2</name></member>
+    <member refid="board_8h_1aa2859ba835b7a77417bc9e068760972f" kind="define"><name>GPIOC_PIN3</name></member>
+    <member refid="board_8h_1a776541f2373108c806a0ce6f473a423f" kind="define"><name>GPIOC_PIN4</name></member>
+    <member refid="board_8h_1a3f83a6b3e683f60b62b44c132e400bb0" kind="define"><name>GPIOC_PIN5</name></member>
+    <member refid="board_8h_1ac80128596e60c1d26a710f5049b74cec" kind="define"><name>GPIOC_PIN6</name></member>
+    <member refid="board_8h_1a2c95e0b14a122f9f958ec02f33621f9c" kind="define"><name>GPIOC_PIN7</name></member>
+    <member refid="board_8h_1ad9fe774508289be007b794b1fb1b5ff8" kind="define"><name>GPIOC_LED4</name></member>
+    <member refid="board_8h_1a3166c438e70da9bed58c39f8a8115629" kind="define"><name>GPIOC_LED3</name></member>
+    <member refid="board_8h_1a5f503674d5ffd4d979b274f334c7b33c" kind="define"><name>GPIOC_PIN10</name></member>
+    <member refid="board_8h_1a7dbcb5cb4aeb0305b1fd76488ab19623" kind="define"><name>GPIOC_PIN11</name></member>
+    <member refid="board_8h_1a765dd7ddae838722db9e064c52f7de36" kind="define"><name>GPIOC_PIN12</name></member>
+    <member refid="board_8h_1abbcf570d3ec04d2ad8a100ecff190307" kind="define"><name>GPIOC_PIN13</name></member>
+    <member refid="board_8h_1accb1a04f064d9bca930eafbb2cf5d164" kind="define"><name>GPIOC_OSC32_IN</name></member>
+    <member refid="board_8h_1a5d89739c0a188c15b2b9223a967202cb" kind="define"><name>GPIOC_OSC32_OUT</name></member>
+    <member refid="board_8h_1ae1f88f2730f5b5b8ab4be7fd6314a8c5" kind="define"><name>GPIOD_PIN0</name></member>
+    <member refid="board_8h_1a7c54bd32ae300d1d46959ebdc46f34aa" kind="define"><name>GPIOD_PIN1</name></member>
+    <member refid="board_8h_1aa092f1c9dfa61758c392c9f189697758" kind="define"><name>GPIOD_PIN2</name></member>
+    <member refid="board_8h_1a51b2ae7279cfda50b2431ddd15c00725" kind="define"><name>GPIOD_PIN3</name></member>
+    <member refid="board_8h_1a96e14e372f407accefb5563d057efd56" kind="define"><name>GPIOD_PIN4</name></member>
+    <member refid="board_8h_1ac4ec3c0ea3218a417389b25a819e1e95" kind="define"><name>GPIOD_PIN5</name></member>
+    <member refid="board_8h_1a49c6597923441b5602345d7ef0a3d487" kind="define"><name>GPIOD_PIN6</name></member>
+    <member refid="board_8h_1a49a7ba6997764f87e1234e72483c1742" kind="define"><name>GPIOD_PIN7</name></member>
+    <member refid="board_8h_1a3dff47578248473ce282b44fc66da128" kind="define"><name>GPIOD_PIN8</name></member>
+    <member refid="board_8h_1a8a679b93e90892693e8d6c33d807ffe7" kind="define"><name>GPIOD_PIN9</name></member>
+    <member refid="board_8h_1a0b17e4d4764ddf7e6887f0fd7620963f" kind="define"><name>GPIOD_PIN10</name></member>
+    <member refid="board_8h_1ad58a63e083e9ec87180f80eeecf06d71" kind="define"><name>GPIOD_PIN11</name></member>
+    <member refid="board_8h_1af43c34a2ee6d9d7fea94ee467d81326a" kind="define"><name>GPIOD_PIN12</name></member>
+    <member refid="board_8h_1a72af035c720f005e7b2c0910d9999131" kind="define"><name>GPIOD_PIN13</name></member>
+    <member refid="board_8h_1afe33dc8ec33be45027b4b60dfde94937" kind="define"><name>GPIOD_PIN14</name></member>
+    <member refid="board_8h_1a4a9a03e830c7740cc37ca0399b428f7b" kind="define"><name>GPIOD_PIN15</name></member>
+    <member refid="board_8h_1a92b46be684a8a8d5c9df37bdacfbd3cd" kind="define"><name>GPIOF_OSC_IN</name></member>
+    <member refid="board_8h_1aec513bdecf3e822b2600bb57d558d626" kind="define"><name>GPIOF_OSC_OUT</name></member>
+    <member refid="board_8h_1a45842066fab4f6092931c9ee4f91beb5" kind="define"><name>GPIOF_PIN2</name></member>
+    <member refid="board_8h_1ab59221761c5c2c3cebc2c125913fc597" kind="define"><name>GPIOF_PIN3</name></member>
+    <member refid="board_8h_1a52e4eeac08327c1f4fdf205568232261" kind="define"><name>GPIOF_PIN4</name></member>
+    <member refid="board_8h_1a64e15aca55d67ef49db056db45aa0402" kind="define"><name>GPIOF_PIN5</name></member>
+    <member refid="board_8h_1a2ebc06cfd0a848322553162f73867e7b" kind="define"><name>GPIOF_PIN6</name></member>
+    <member refid="board_8h_1a13caa0719f4c1187dfc685f649d4d7d6" kind="define"><name>GPIOF_PIN7</name></member>
+    <member refid="board_8h_1a3ee59a45d7232b995b95173a7e7a56bd" kind="define"><name>GPIOF_PIN8</name></member>
+    <member refid="board_8h_1ac899e857b33dbcacca7d56b1f751ce28" kind="define"><name>GPIOF_PIN9</name></member>
+    <member refid="board_8h_1afba4cb2bb39470b14fe1728f2a346aa3" kind="define"><name>GPIOF_PIN10</name></member>
+    <member refid="board_8h_1a5d323ee66fff2a1afea9f737bde228fc" kind="define"><name>GPIOF_PIN11</name></member>
+    <member refid="board_8h_1aeb4ff76a72ed2f309fe97fd0cc3be7d1" kind="define"><name>GPIOF_PIN12</name></member>
+    <member refid="board_8h_1a07fa1211d10bce0ff89491bdcdade32a" kind="define"><name>GPIOF_PIN13</name></member>
+    <member refid="board_8h_1a94ff90d268a3db4eb6308a1d19a0d395" kind="define"><name>GPIOF_PIN14</name></member>
+    <member refid="board_8h_1a9900e46acf3f24185b1f7b6540c539d4" kind="define"><name>GPIOF_PIN15</name></member>
+    <member refid="board_8h_1a1304c508f7d7872fcb0f5d12fdd85868" kind="define"><name>PIN_MODE_INPUT</name></member>
+    <member refid="board_8h_1a17d26ffdf5e0e4c44f06dbb16c0363c3" kind="define"><name>PIN_MODE_OUTPUT</name></member>
+    <member refid="board_8h_1a356a8c63034c31d48ed836fd40089f9a" kind="define"><name>PIN_MODE_ALTERNATE</name></member>
+    <member refid="board_8h_1a91200c23541cf2829d91f9aeb9114f76" kind="define"><name>PIN_MODE_ANALOG</name></member>
+    <member refid="board_8h_1a9e7de50ad60645a96ed5081ee160e778" kind="define"><name>PIN_ODR_LOW</name></member>
+    <member refid="board_8h_1a35e934f564219e9c9ed577c023711e18" kind="define"><name>PIN_ODR_HIGH</name></member>
+    <member refid="board_8h_1a15972f7629e0dd4adb7a3b58f425580c" kind="define"><name>PIN_OTYPE_PUSHPULL</name></member>
+    <member refid="board_8h_1a4cdfe57c8db63d6e1c4f4cdd586b1bb7" kind="define"><name>PIN_OTYPE_OPENDRAIN</name></member>
+    <member refid="board_8h_1a5a33c4622ceb5344ab15f3bf9f985936" kind="define"><name>PIN_OSPEED_2M</name></member>
+    <member refid="board_8h_1a7fad3245e32aa82db69e12781ee7cb6b" kind="define"><name>PIN_OSPEED_10M</name></member>
+    <member refid="board_8h_1a99dc6c757d2b57ed81402bbf20cbea09" kind="define"><name>PIN_OSPEED_40M</name></member>
+    <member refid="board_8h_1a8ac977a5042e9153c2b148730fc201ae" kind="define"><name>PIN_PUPDR_FLOATING</name></member>
+    <member refid="board_8h_1aa0270bd5ac093358485e0c74004463a8" kind="define"><name>PIN_PUPDR_PULLUP</name></member>
+    <member refid="board_8h_1a6ca53a3c51d764a6b0e749d8d1b6bf24" kind="define"><name>PIN_PUPDR_PULLDOWN</name></member>
+    <member refid="board_8h_1a3ed50810d476eec14455af45039f78f6" kind="define"><name>PIN_AFIO_AF</name></member>
+    <member refid="board_8h_1ad16dfcfb4a90d9b761e03c3ac6aadd2e" kind="define"><name>VAL_GPIOA_MODER</name></member>
+    <member refid="board_8h_1a7e762012e6bb42ab282f57b3d0b1f101" kind="define"><name>VAL_GPIOA_OTYPER</name></member>
+    <member refid="board_8h_1abf9ac480a76c990769dbe5d0bb15f56d" kind="define"><name>VAL_GPIOA_OSPEEDR</name></member>
+    <member refid="board_8h_1a6aa1810521655aff39e0c7874721d99a" kind="define"><name>VAL_GPIOA_PUPDR</name></member>
+    <member refid="board_8h_1a8cde079f33594b124a570f0fe78d5cd5" kind="define"><name>VAL_GPIOA_ODR</name></member>
+    <member refid="board_8h_1a8b4e7aaf8051d3e479a6f3569a49e0a9" kind="define"><name>VAL_GPIOA_AFRL</name></member>
+    <member refid="board_8h_1a250f4c63cbd770a83e2186d130b5f41b" kind="define"><name>VAL_GPIOA_AFRH</name></member>
+    <member refid="board_8h_1a39f5bc8c5a9ae9112cb64d4075b8be5a" kind="define"><name>VAL_GPIOB_MODER</name></member>
+    <member refid="board_8h_1a84f32a5321a9bc68e7f87ac44886cba9" kind="define"><name>VAL_GPIOB_OTYPER</name></member>
+    <member refid="board_8h_1a39192c18809ac7cd77522b0e193fabb0" kind="define"><name>VAL_GPIOB_OSPEEDR</name></member>
+    <member refid="board_8h_1a6d6a3a7d45de1e999e501ff106bcec3d" kind="define"><name>VAL_GPIOB_PUPDR</name></member>
+    <member refid="board_8h_1afbbc9829d1d73c13adbf94452a010edd" kind="define"><name>VAL_GPIOB_ODR</name></member>
+    <member refid="board_8h_1a5772a31590fe61e808106e64711d8713" kind="define"><name>VAL_GPIOB_AFRL</name></member>
+    <member refid="board_8h_1adbfad33fc072d86908d2fe56b90b4af7" kind="define"><name>VAL_GPIOB_AFRH</name></member>
+    <member refid="board_8h_1a54fc240187d9ad4ab5f7e900c049fdf7" kind="define"><name>VAL_GPIOC_MODER</name></member>
+    <member refid="board_8h_1a7543f04fa6799015c04039794a777f34" kind="define"><name>VAL_GPIOC_OTYPER</name></member>
+    <member refid="board_8h_1a5e7885959c3b8293e0f1bb34872a6fe6" kind="define"><name>VAL_GPIOC_OSPEEDR</name></member>
+    <member refid="board_8h_1a6b854c2f1520264d0572b6980bea6a2c" kind="define"><name>VAL_GPIOC_PUPDR</name></member>
+    <member refid="board_8h_1a4e07d89596c7b20d5b7c2327cbc9223a" kind="define"><name>VAL_GPIOC_ODR</name></member>
+    <member refid="board_8h_1af405d486ccb51c99a1252dfa4495363b" kind="define"><name>VAL_GPIOC_AFRL</name></member>
+    <member refid="board_8h_1a66a89dd26c96c9808c4610caa08ba2e4" kind="define"><name>VAL_GPIOC_AFRH</name></member>
+    <member refid="board_8h_1a42f2ef726fc7a48b6038eee382c93c63" kind="define"><name>VAL_GPIOD_MODER</name></member>
+    <member refid="board_8h_1a2e620d487db2d7240e759f66c3a68efa" kind="define"><name>VAL_GPIOD_OTYPER</name></member>
+    <member refid="board_8h_1a6a6cd142a0c0cde9125352343a8e6005" kind="define"><name>VAL_GPIOD_OSPEEDR</name></member>
+    <member refid="board_8h_1aba79b3f3e2bd1622ae7db217c596f7ed" kind="define"><name>VAL_GPIOD_PUPDR</name></member>
+    <member refid="board_8h_1a67eac2b1434cea46ec00fdaad117cd6d" kind="define"><name>VAL_GPIOD_ODR</name></member>
+    <member refid="board_8h_1a54d1a960b26a142dba05d5cd54902c4f" kind="define"><name>VAL_GPIOD_AFRL</name></member>
+    <member refid="board_8h_1afc3c4656818e047de4de36afc54d6e15" kind="define"><name>VAL_GPIOD_AFRH</name></member>
+    <member refid="board_8h_1a2781f04e2f6682d822e9fca6a8aa4ed3" kind="define"><name>VAL_GPIOF_MODER</name></member>
+    <member refid="board_8h_1a32770ebb67e9c7ff6ce165259765d471" kind="define"><name>VAL_GPIOF_OTYPER</name></member>
+    <member refid="board_8h_1aa019726230902e124ce65fc02b81e29d" kind="define"><name>VAL_GPIOF_OSPEEDR</name></member>
+    <member refid="board_8h_1a27509d84ec428c3ec26142905c3f011f" kind="define"><name>VAL_GPIOF_PUPDR</name></member>
+    <member refid="board_8h_1ab335eb9d43d391cc2c891587da70d3bd" kind="define"><name>VAL_GPIOF_ODR</name></member>
+    <member refid="board_8h_1ab33db8a93f5e34f7c9db84ebc69450a5" kind="define"><name>VAL_GPIOF_AFRL</name></member>
+    <member refid="board_8h_1a47952951048cb682536ff38cb754cf74" kind="define"><name>VAL_GPIOF_AFRH</name></member>
+    <member refid="board_8h_1a48edc646a1de1ba488bbe7d786df9bae" kind="function"><name>boardInit</name></member>
+  </compound>
+  <compound refid="chconf_8h" kind="file"><name>chconf.h</name>
+    <member refid="group__config_1ga195ab8ff3340a18d4513cbaf915078f2" kind="define"><name>CH_FREQUENCY</name></member>
+    <member refid="group__config_1ga3c6800242611cf244a38c4a870e8515a" kind="define"><name>CH_TIME_QUANTUM</name></member>
+    <member refid="group__config_1gac73902e3c40b375483f9dde71e83253d" kind="define"><name>CH_MEMCORE_SIZE</name></member>
+    <member refid="group__config_1gac7ceed3b75958cb6f7a977aab5ee249f" kind="define"><name>CH_NO_IDLE_THREAD</name></member>
+    <member refid="group__config_1gaa5a3d403206b04dfa43ee769e8a220c6" kind="define"><name>CH_OPTIMIZE_SPEED</name></member>
+    <member refid="group__config_1ga881045654c5c0b04081bf89da3fe4534" kind="define"><name>CH_USE_REGISTRY</name></member>
+    <member refid="group__config_1gac5e6308f66b8fdb57f0c849ed22b3d95" kind="define"><name>CH_USE_WAITEXIT</name></member>
+    <member refid="group__config_1gab88f410fdc6a67192194a8431d991b27" kind="define"><name>CH_USE_SEMAPHORES</name></member>
+    <member refid="group__config_1ga866568c0387963f11c078a8d939c2284" kind="define"><name>CH_USE_SEMAPHORES_PRIORITY</name></member>
+    <member refid="group__config_1gae9e6ff0fe1964761ea6e1bce51d8ee59" kind="define"><name>CH_USE_SEMSW</name></member>
+    <member refid="group__config_1ga4f461a7b5edbff2405b7b40d2bb238a6" kind="define"><name>CH_USE_MUTEXES</name></member>
+    <member refid="group__config_1ga24fd7fe539fd6094b5db3215e1721c9c" kind="define"><name>CH_USE_CONDVARS</name></member>
+    <member refid="group__config_1gaccc2c032c409bced696f75877e270979" kind="define"><name>CH_USE_CONDVARS_TIMEOUT</name></member>
+    <member refid="group__config_1ga5e3ac686cd33ad40a89aaaf97b3dc781" kind="define"><name>CH_USE_EVENTS</name></member>
+    <member refid="group__config_1ga64a6ad752750f42fe2474d3e7f191a71" kind="define"><name>CH_USE_EVENTS_TIMEOUT</name></member>
+    <member refid="group__config_1ga3823e336736d522bbfaf780c86746482" kind="define"><name>CH_USE_MESSAGES</name></member>
+    <member refid="group__config_1gaf48947f33ed7a44a7701d84d83d94a1c" kind="define"><name>CH_USE_MESSAGES_PRIORITY</name></member>
+    <member refid="group__config_1ga6cf1736db681617019f96c4c209d2716" kind="define"><name>CH_USE_MAILBOXES</name></member>
+    <member refid="group__config_1gaabe4bd52d2fd1b180ebba1d1e8243051" kind="define"><name>CH_USE_QUEUES</name></member>
+    <member refid="group__config_1gaff85f4d919dac30a337ce2f34e2fa1af" kind="define"><name>CH_USE_MEMCORE</name></member>
+    <member refid="group__config_1gaaeb266ab6131572f1d8f164bddf2da3f" kind="define"><name>CH_USE_HEAP</name></member>
+    <member refid="group__config_1ga4785d390f3a787916c5a5c41e953577d" kind="define"><name>CH_USE_MALLOC_HEAP</name></member>
+    <member refid="group__config_1gac456517b37f104d2226fef50310c79f8" kind="define"><name>CH_USE_MEMPOOLS</name></member>
+    <member refid="group__config_1gaae4996e24bbee7d66528671cec8b8749" kind="define"><name>CH_USE_DYNAMIC</name></member>
+    <member refid="group__config_1ga10db71bc25605169dddc82c1604b0a16" kind="define"><name>CH_DBG_SYSTEM_STATE_CHECK</name></member>
+    <member refid="group__config_1gaef984ca3bfd8a71478ad55ce6e56a8bb" kind="define"><name>CH_DBG_ENABLE_CHECKS</name></member>
+    <member refid="group__config_1gad602fd2546073869a10859158d865b9b" kind="define"><name>CH_DBG_ENABLE_ASSERTS</name></member>
+    <member refid="group__config_1ga8bc4cfd861131aeb3c880347d0068229" kind="define"><name>CH_DBG_ENABLE_TRACE</name></member>
+    <member refid="group__config_1gab93d9ee904f15d4f2c26ef2a1394a1d7" kind="define"><name>CH_DBG_ENABLE_STACK_CHECK</name></member>
+    <member refid="group__config_1ga6a859dd249adfb66b9bbf809061ea06c" kind="define"><name>CH_DBG_FILL_THREADS</name></member>
+    <member refid="group__config_1gadc9c00c2e5b6e766ded8dfa77c0c90c1" kind="define"><name>CH_DBG_THREADS_PROFILING</name></member>
+    <member refid="group__config_1gaba26fd717f33330fa56dcc7919a3f02f" kind="define"><name>THREAD_EXT_FIELDS</name></member>
+    <member refid="group__config_1gaeb57466a9200b8c073ac96a3f1a9c34c" kind="define"><name>THREAD_EXT_INIT_HOOK</name></member>
+    <member refid="group__config_1gab8f241a87da52027625c9cc3d8403ebb" kind="define"><name>THREAD_EXT_EXIT_HOOK</name></member>
+    <member refid="group__config_1gac0317ee1a14709d39aef80ca8980a40a" kind="define"><name>THREAD_CONTEXT_SWITCH_HOOK</name></member>
+    <member refid="group__config_1gae52e2c3230a9e87d16befd547c2f92ef" kind="define"><name>IDLE_LOOP_HOOK</name></member>
+    <member refid="group__config_1ga132e1bd495c4f7c9b92d63b26705dfe1" kind="define"><name>SYSTEM_TICK_EVENT_HOOK</name></member>
+    <member refid="group__config_1ga71e0932757a8180816104fa313171c9a" kind="define"><name>SYSTEM_HALT_HOOK</name></member>
+  </compound>
+  <compound refid="halconf_8h" kind="file"><name>halconf.h</name>
+    <member refid="group___h_a_l___c_o_n_f_1ga989811956a40f9270a092212a8570632" kind="define"><name>HAL_USE_TM</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga2311bcc7b41bfba183c9ec1a64a11e93" kind="define"><name>HAL_USE_PAL</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga413a1b6c0ca2c9e524df50ceac1275fd" kind="define"><name>HAL_USE_ADC</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga2e351185eace5acfd90b65c9fe796355" kind="define"><name>HAL_USE_CAN</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga2dd40c0fdd833b861f9241f6d282fe34" kind="define"><name>HAL_USE_EXT</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1gab4702b9e1b6fa2869e26c274fccd53f0" kind="define"><name>HAL_USE_GPT</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1gae5eb94efa72e401dc17a356b27f4e7e5" kind="define"><name>HAL_USE_I2C</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1gac58fde738d018b1233a5441ae4c6245b" kind="define"><name>HAL_USE_ICU</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga0da24d012c72a79db22e5621b391d3da" kind="define"><name>HAL_USE_MAC</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1gafc4461ac2cc33590839ed91f2e940079" kind="define"><name>HAL_USE_MMC_SPI</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1gafb7a560610f96b2858d51c36d65f8c2f" kind="define"><name>HAL_USE_PWM</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga17d20632810c9bb1601a19973977f55c" kind="define"><name>HAL_USE_RTC</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga06f315a18b911f426da736c42ab20325" kind="define"><name>HAL_USE_SDC</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga720d92b9c3a00d952f6f0c8665b54ebb" kind="define"><name>HAL_USE_SERIAL</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga79c970fb20565143ad8b65720c0b2d0e" kind="define"><name>HAL_USE_SERIAL_USB</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga33a3c5bee9ed1f665aace8b88fed9b2b" kind="define"><name>HAL_USE_SPI</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga73220cad2edf2aee77b7ce1b53cacff0" kind="define"><name>HAL_USE_UART</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1gafc8f8fc6010f46f5baae4a369e14974e" kind="define"><name>HAL_USE_USB</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga39e892a4090185fbdda9bb105bc03b4f" kind="define"><name>ADC_USE_WAIT</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1gac0893cb47e338c2dabad34b974a0a88d" kind="define"><name>ADC_USE_MUTUAL_EXCLUSION</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga5294d9d12e4186c781df3b2f1d8bd80b" kind="define"><name>CAN_USE_SLEEP_MODE</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga7125642404a6fd3d4985d1cb6e1b7b0a" kind="define"><name>I2C_USE_MUTUAL_EXCLUSION</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga887da1c1383a9e7b45c4464877a7e05e" kind="define"><name>MAC_USE_EVENTS</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga502a0143be4c303f3006c0888e1cec82" kind="define"><name>MMC_SECTOR_SIZE</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga3087dfffa81dd8a0a80ee92746e65fe2" kind="define"><name>MMC_NICE_WAITING</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1gac57e95210b57d6699c23bfb648e0904d" kind="define"><name>MMC_POLLING_INTERVAL</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga6d164ed93ae233b2dc0c35bd19f75224" kind="define"><name>MMC_POLLING_DELAY</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga463aaf38dda5f44ab579ddab0a1cf104" kind="define"><name>MMC_USE_SPI_POLLING</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga8d39f0c9799062f0698d97c26e6fa42d" kind="define"><name>SDC_INIT_RETRY</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga4f938eff7370feb8de8411e255d21b01" kind="define"><name>SDC_MMC_SUPPORT</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga3391c832c171a8606b0fc864766f08ba" kind="define"><name>SDC_NICE_WAITING</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1gacb4c08ac23f83ac9d58c50ff840de516" kind="define"><name>SERIAL_DEFAULT_BITRATE</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga81a9fb00c7a1ce0fe70f263d8fd820e8" kind="define"><name>SERIAL_BUFFERS_SIZE</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga0c9ab1488423fa10a22f506c6e74b563" kind="define"><name>SPI_USE_WAIT</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga36d1818f9631f955f7cc94629b1d5498" kind="define"><name>SPI_USE_MUTUAL_EXCLUSION</name></member>
+  </compound>
+  <compound refid="mcuconf_8h" kind="file"><name>mcuconf.h</name>
+    <member refid="mcuconf_8h_1aa49c010da5948c237ea0ca9eb1e7ac30" kind="define"><name>STM32F0xx_MCUCONF</name></member>
+    <member refid="mcuconf_8h_1affb519ca907542b6bff9104700c0009d" kind="define"><name>STM32_NO_INIT</name></member>
+    <member refid="mcuconf_8h_1ab70d9b5c3764aac6282d594d8f6a88ec" kind="define"><name>STM32_PVD_ENABLE</name></member>
+    <member refid="mcuconf_8h_1a6f4f9c19c6b1a1c3694278a542e3c60d" kind="define"><name>STM32_PLS</name></member>
+    <member refid="mcuconf_8h_1a2044f0288f2c20b27d6eee1e1a1e6256" kind="define"><name>STM32_HSI_ENABLED</name></member>
+    <member refid="mcuconf_8h_1aa649dc58606c255da49875759cb541ef" kind="define"><name>STM32_HSI14_ENABLED</name></member>
+    <member refid="mcuconf_8h_1a02b4e3e6222baab7ee448cbbb2273370" kind="define"><name>STM32_LSI_ENABLED</name></member>
+    <member refid="mcuconf_8h_1ad94c4a0da6c8c7a3d0b800fdc0dbebfa" kind="define"><name>STM32_HSE_ENABLED</name></member>
+    <member refid="mcuconf_8h_1a05b49e91f478558d33b2b862718758fa" kind="define"><name>STM32_LSE_ENABLED</name></member>
+    <member refid="mcuconf_8h_1a29204b81c265dd6e124fbcf12a2c8d6f" kind="define"><name>STM32_SW</name></member>
+    <member refid="mcuconf_8h_1a811cfbd049f0ab00976def9593849d32" kind="define"><name>STM32_PLLSRC</name></member>
+    <member refid="mcuconf_8h_1ad7443fb89c1569f264a218209fbe8ddd" kind="define"><name>STM32_PLLXTPRE</name></member>
+    <member refid="mcuconf_8h_1a0015fc8f73017358a7025ba57a265a11" kind="define"><name>STM32_PLLMUL_VALUE</name></member>
+    <member refid="mcuconf_8h_1a035ea0d8259c0f89306c6a7d344705f2" kind="define"><name>STM32_HPRE</name></member>
+    <member refid="mcuconf_8h_1afd546c796f9904072b0ce9104306f401" kind="define"><name>STM32_PPRE</name></member>
+    <member refid="mcuconf_8h_1a3e71ebfcb3a072cbc0751581f3f4ee84" kind="define"><name>STM32_ADCSW</name></member>
+    <member refid="mcuconf_8h_1a671b452f988ee9b64e128fad72f656e6" kind="define"><name>STM32_ADCPRE</name></member>
+    <member refid="mcuconf_8h_1ab395c2abfb2e6fd501ce4529bf09a05f" kind="define"><name>STM32_MCOSEL</name></member>
+    <member refid="mcuconf_8h_1a671b452f988ee9b64e128fad72f656e6" kind="define"><name>STM32_ADCPRE</name></member>
+    <member refid="mcuconf_8h_1a3e71ebfcb3a072cbc0751581f3f4ee84" kind="define"><name>STM32_ADCSW</name></member>
+    <member refid="mcuconf_8h_1a25a50837427f5a728de543d8463b6623" kind="define"><name>STM32_CECSW</name></member>
+    <member refid="mcuconf_8h_1a5f73f584e60bf235f5440ce5cee2ca20" kind="define"><name>STM32_I2C1SW</name></member>
+    <member refid="mcuconf_8h_1ade0c8b4992afc59bd1256c66c794bdeb" kind="define"><name>STM32_USART1SW</name></member>
+    <member refid="mcuconf_8h_1a945eb1f70822303bd0191ef633e5eaca" kind="define"><name>STM32_RTCSEL</name></member>
+    <member refid="mcuconf_8h_1a7256aa7c13b88f877cfb8d4913dcec0a" kind="define"><name>STM32_ADC_USE_ADC1</name></member>
+    <member refid="mcuconf_8h_1ad19de93466026d8b03a895cae792bce9" kind="define"><name>STM32_ADC_ADC1_DMA_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a58e21948e78c6cf50c04e64363637dd4" kind="define"><name>STM32_ADC_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a19080c8c395ae24df995fa57a2291465" kind="define"><name>STM32_ADC_ADC1_DMA_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a804943425d4ff111eca58d30ada743f3" kind="define"><name>STM32_EXT_EXTI0_1_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1ae9bc072daafcb71c1c1a476fc3d25509" kind="define"><name>STM32_EXT_EXTI2_3_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1ae240cda1552b6fd87ccfbbfd7c46819e" kind="define"><name>STM32_EXT_EXTI4_15_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1abd53222576d825b8a23d1d9fd6d78a6a" kind="define"><name>STM32_EXT_EXTI16_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1aff4ce61159313e9c4b43dd1c0f61fd47" kind="define"><name>STM32_EXT_EXTI17_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a44c0e5a4a20e05dbb598a408cf1ebee7" kind="define"><name>STM32_GPT_USE_TIM1</name></member>
+    <member refid="mcuconf_8h_1a87dac50603730367a564c5ba63c6e9a1" kind="define"><name>STM32_GPT_USE_TIM2</name></member>
+    <member refid="mcuconf_8h_1a13e83c85f2c204e9302199f07dfc982e" kind="define"><name>STM32_GPT_USE_TIM3</name></member>
+    <member refid="mcuconf_8h_1a1e249eb52e9aafc7325e6cfde76db4cf" kind="define"><name>STM32_GPT_TIM1_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a314cec15b23670096752964ec5caf3ce" kind="define"><name>STM32_GPT_TIM2_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1aa0e96044581d47cc827e2cbeb0227a8e" kind="define"><name>STM32_GPT_TIM3_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a5f5e9b802c24ad1637cd2aaee14606ed" kind="define"><name>STM32_ICU_USE_TIM1</name></member>
+    <member refid="mcuconf_8h_1a9d125141e8f301e2b6d590067fd7890e" kind="define"><name>STM32_ICU_USE_TIM2</name></member>
+    <member refid="mcuconf_8h_1a877fa83cee0173d5f451b77e59180725" kind="define"><name>STM32_ICU_USE_TIM3</name></member>
+    <member refid="mcuconf_8h_1a51083eefd4e7d0303f11081df496d2ed" kind="define"><name>STM32_ICU_TIM1_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a639272943cb5b9bdcbd78e5ced2b52a0" kind="define"><name>STM32_ICU_TIM2_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a5a90d9b62fd7b1a0180c2aec7d00089d" kind="define"><name>STM32_ICU_TIM3_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a554728f749ad9aca0102d189cc6bb9e7" kind="define"><name>STM32_PWM_USE_ADVANCED</name></member>
+    <member refid="mcuconf_8h_1a6f066eafb341c481f419dc609e1cd147" kind="define"><name>STM32_PWM_USE_TIM1</name></member>
+    <member refid="mcuconf_8h_1a061e9a31faab6d787c73d7f21893e483" kind="define"><name>STM32_PWM_USE_TIM2</name></member>
+    <member refid="mcuconf_8h_1a3f108deab28dba83858c5a6d5089a322" kind="define"><name>STM32_PWM_USE_TIM3</name></member>
+    <member refid="mcuconf_8h_1ae631e1c4b6541c9d67de9d009196b770" kind="define"><name>STM32_PWM_TIM1_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a01b2a27910cfaed8a40043c8efe1e9a4" kind="define"><name>STM32_PWM_TIM2_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a8b4f8d9d4308f0503738704437284592" kind="define"><name>STM32_PWM_TIM3_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a7f657adda8b7f6aa955f0806a29b0b9d" kind="define"><name>STM32_SERIAL_USE_USART1</name></member>
+    <member refid="mcuconf_8h_1acf6b4949732fac0a1ded862174aabba7" kind="define"><name>STM32_SERIAL_USE_USART2</name></member>
+    <member refid="mcuconf_8h_1a7509c7a01a83276aa7768474357ec61d" kind="define"><name>STM32_SERIAL_USART1_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a562945e4ccd2bca4a4277eaa05ae70a0" kind="define"><name>STM32_SERIAL_USART2_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1af105fbdfb7b9076472b373ed0c7b3fef" kind="define"><name>STM32_SPI_USE_SPI1</name></member>
+    <member refid="mcuconf_8h_1a626416dc22cf5f3deff2a8c7d8efa5b2" kind="define"><name>STM32_SPI_USE_SPI2</name></member>
+    <member refid="mcuconf_8h_1a22d3ce19419dc8bbc47f94c065f3271c" kind="define"><name>STM32_SPI_SPI1_DMA_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a90bd623120d1e54038094fba54ba05c0" kind="define"><name>STM32_SPI_SPI2_DMA_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a0b3f4734d9855324ef89b57cb9858e49" kind="define"><name>STM32_SPI_SPI1_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a47d90eaca23f3eea99d74d1bb3539541" kind="define"><name>STM32_SPI_SPI2_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1afda450bd11b4c1408739367b23c9f852" kind="define"><name>STM32_SPI_DMA_ERROR_HOOK</name></member>
+    <member refid="mcuconf_8h_1a7b366b1eb660467c7ef9667705ad8308" kind="define"><name>STM32_UART_USE_USART1</name></member>
+    <member refid="mcuconf_8h_1ad9f8b9dcf8dd01e163b8d47c56cee1aa" kind="define"><name>STM32_UART_USE_USART2</name></member>
+    <member refid="mcuconf_8h_1a050fc59913309402f34dd2ea6ab3cdf8" kind="define"><name>STM32_UART_USART1_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1ad1d292d78abf8f0b5a9e210d217a1cfe" kind="define"><name>STM32_UART_USART2_IRQ_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a8307c6c43bf456405efe19e5908d5a25" kind="define"><name>STM32_UART_USART1_DMA_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a02ab064f32c429288dce0b15b2e443a1" kind="define"><name>STM32_UART_USART2_DMA_PRIORITY</name></member>
+    <member refid="mcuconf_8h_1a969b79cb637b8b69cec9257705d74484" kind="define"><name>STM32_UART_USART1_RX_DMA_STREAM</name></member>
+    <member refid="mcuconf_8h_1a02c568ae2c758034cdf478f81b447af3" kind="define"><name>STM32_UART_USART1_TX_DMA_STREAM</name></member>
+    <member refid="mcuconf_8h_1af80e6c340ebc738f24275329c32db853" kind="define"><name>STM32_UART_USART2_RX_DMA_STREAM</name></member>
+    <member refid="mcuconf_8h_1aacb71b8fee4d07ab0317ac8cc6ee9856" kind="define"><name>STM32_UART_USART2_TX_DMA_STREAM</name></member>
+    <member refid="mcuconf_8h_1a9a4cb321d74c57b544a1628faaae1569" kind="define"><name>STM32_UART_DMA_ERROR_HOOK</name></member>
+  </compound>
+  <compound refid="main_8c" kind="file"><name>main.c</name>
+    <member refid="group___ball_balancing_1ga104df749bd51b5924bbfcd67313773c3" kind="define"><name>MIN_SERVO</name></member>
+    <member refid="group___ball_balancing_1ga6225ed2d3ed40a4841073e5b6b0b4166" kind="define"><name>MAX_SERVO</name></member>
+    <member refid="group___ball_balancing_1gaf3c82099d63a2d91d68bd62d954059c7" kind="define"><name>MAX_ANGLE</name></member>
+    <member refid="group___ball_balancing_1ga5de5e8e3ab304842347b047eb9a7a468" kind="define"><name>map</name></member>
+    <member refid="group___ball_balancing_1ga902ad52cd507aae1615bd2858a47020d" kind="variable"><name>pwmcfg</name></member>
+    <member refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" kind="function"><name>commandServo</name></member>
+    <member refid="group___ball_balancing_1gaf2c4109d8f7d0188c8bd1792b02368cb" kind="function"><name>WORKING_AREA</name></member>
+    <member refid="group___ball_balancing_1ga66c2c15e726cd90ad73f1497f6f9859c" kind="function"><name>CtrlThread</name></member>
+    <member refid="group___ball_balancing_1ga840291bc02cba5474a4cb46a9b9566fe" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="group__config" kind="group"><name>config</name>
+    <member refid="group__config_1ga195ab8ff3340a18d4513cbaf915078f2" kind="define"><name>CH_FREQUENCY</name></member>
+    <member refid="group__config_1ga3c6800242611cf244a38c4a870e8515a" kind="define"><name>CH_TIME_QUANTUM</name></member>
+    <member refid="group__config_1gac73902e3c40b375483f9dde71e83253d" kind="define"><name>CH_MEMCORE_SIZE</name></member>
+    <member refid="group__config_1gac7ceed3b75958cb6f7a977aab5ee249f" kind="define"><name>CH_NO_IDLE_THREAD</name></member>
+    <member refid="group__config_1gaa5a3d403206b04dfa43ee769e8a220c6" kind="define"><name>CH_OPTIMIZE_SPEED</name></member>
+    <member refid="group__config_1ga881045654c5c0b04081bf89da3fe4534" kind="define"><name>CH_USE_REGISTRY</name></member>
+    <member refid="group__config_1gac5e6308f66b8fdb57f0c849ed22b3d95" kind="define"><name>CH_USE_WAITEXIT</name></member>
+    <member refid="group__config_1gab88f410fdc6a67192194a8431d991b27" kind="define"><name>CH_USE_SEMAPHORES</name></member>
+    <member refid="group__config_1ga866568c0387963f11c078a8d939c2284" kind="define"><name>CH_USE_SEMAPHORES_PRIORITY</name></member>
+    <member refid="group__config_1gae9e6ff0fe1964761ea6e1bce51d8ee59" kind="define"><name>CH_USE_SEMSW</name></member>
+    <member refid="group__config_1ga4f461a7b5edbff2405b7b40d2bb238a6" kind="define"><name>CH_USE_MUTEXES</name></member>
+    <member refid="group__config_1ga24fd7fe539fd6094b5db3215e1721c9c" kind="define"><name>CH_USE_CONDVARS</name></member>
+    <member refid="group__config_1gaccc2c032c409bced696f75877e270979" kind="define"><name>CH_USE_CONDVARS_TIMEOUT</name></member>
+    <member refid="group__config_1ga5e3ac686cd33ad40a89aaaf97b3dc781" kind="define"><name>CH_USE_EVENTS</name></member>
+    <member refid="group__config_1ga64a6ad752750f42fe2474d3e7f191a71" kind="define"><name>CH_USE_EVENTS_TIMEOUT</name></member>
+    <member refid="group__config_1ga3823e336736d522bbfaf780c86746482" kind="define"><name>CH_USE_MESSAGES</name></member>
+    <member refid="group__config_1gaf48947f33ed7a44a7701d84d83d94a1c" kind="define"><name>CH_USE_MESSAGES_PRIORITY</name></member>
+    <member refid="group__config_1ga6cf1736db681617019f96c4c209d2716" kind="define"><name>CH_USE_MAILBOXES</name></member>
+    <member refid="group__config_1gaabe4bd52d2fd1b180ebba1d1e8243051" kind="define"><name>CH_USE_QUEUES</name></member>
+    <member refid="group__config_1gaff85f4d919dac30a337ce2f34e2fa1af" kind="define"><name>CH_USE_MEMCORE</name></member>
+    <member refid="group__config_1gaaeb266ab6131572f1d8f164bddf2da3f" kind="define"><name>CH_USE_HEAP</name></member>
+    <member refid="group__config_1ga4785d390f3a787916c5a5c41e953577d" kind="define"><name>CH_USE_MALLOC_HEAP</name></member>
+    <member refid="group__config_1gac456517b37f104d2226fef50310c79f8" kind="define"><name>CH_USE_MEMPOOLS</name></member>
+    <member refid="group__config_1gaae4996e24bbee7d66528671cec8b8749" kind="define"><name>CH_USE_DYNAMIC</name></member>
+    <member refid="group__config_1ga10db71bc25605169dddc82c1604b0a16" kind="define"><name>CH_DBG_SYSTEM_STATE_CHECK</name></member>
+    <member refid="group__config_1gaef984ca3bfd8a71478ad55ce6e56a8bb" kind="define"><name>CH_DBG_ENABLE_CHECKS</name></member>
+    <member refid="group__config_1gad602fd2546073869a10859158d865b9b" kind="define"><name>CH_DBG_ENABLE_ASSERTS</name></member>
+    <member refid="group__config_1ga8bc4cfd861131aeb3c880347d0068229" kind="define"><name>CH_DBG_ENABLE_TRACE</name></member>
+    <member refid="group__config_1gab93d9ee904f15d4f2c26ef2a1394a1d7" kind="define"><name>CH_DBG_ENABLE_STACK_CHECK</name></member>
+    <member refid="group__config_1ga6a859dd249adfb66b9bbf809061ea06c" kind="define"><name>CH_DBG_FILL_THREADS</name></member>
+    <member refid="group__config_1gadc9c00c2e5b6e766ded8dfa77c0c90c1" kind="define"><name>CH_DBG_THREADS_PROFILING</name></member>
+    <member refid="group__config_1gaba26fd717f33330fa56dcc7919a3f02f" kind="define"><name>THREAD_EXT_FIELDS</name></member>
+    <member refid="group__config_1gaeb57466a9200b8c073ac96a3f1a9c34c" kind="define"><name>THREAD_EXT_INIT_HOOK</name></member>
+    <member refid="group__config_1gab8f241a87da52027625c9cc3d8403ebb" kind="define"><name>THREAD_EXT_EXIT_HOOK</name></member>
+    <member refid="group__config_1gac0317ee1a14709d39aef80ca8980a40a" kind="define"><name>THREAD_CONTEXT_SWITCH_HOOK</name></member>
+    <member refid="group__config_1gae52e2c3230a9e87d16befd547c2f92ef" kind="define"><name>IDLE_LOOP_HOOK</name></member>
+    <member refid="group__config_1ga132e1bd495c4f7c9b92d63b26705dfe1" kind="define"><name>SYSTEM_TICK_EVENT_HOOK</name></member>
+    <member refid="group__config_1ga71e0932757a8180816104fa313171c9a" kind="define"><name>SYSTEM_HALT_HOOK</name></member>
+  </compound>
+  <compound refid="group___h_a_l___c_o_n_f" kind="group"><name>HAL_CONF</name>
+    <member refid="group___h_a_l___c_o_n_f_1ga989811956a40f9270a092212a8570632" kind="define"><name>HAL_USE_TM</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga2311bcc7b41bfba183c9ec1a64a11e93" kind="define"><name>HAL_USE_PAL</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga413a1b6c0ca2c9e524df50ceac1275fd" kind="define"><name>HAL_USE_ADC</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga2e351185eace5acfd90b65c9fe796355" kind="define"><name>HAL_USE_CAN</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga2dd40c0fdd833b861f9241f6d282fe34" kind="define"><name>HAL_USE_EXT</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1gab4702b9e1b6fa2869e26c274fccd53f0" kind="define"><name>HAL_USE_GPT</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1gae5eb94efa72e401dc17a356b27f4e7e5" kind="define"><name>HAL_USE_I2C</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1gac58fde738d018b1233a5441ae4c6245b" kind="define"><name>HAL_USE_ICU</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga0da24d012c72a79db22e5621b391d3da" kind="define"><name>HAL_USE_MAC</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1gafc4461ac2cc33590839ed91f2e940079" kind="define"><name>HAL_USE_MMC_SPI</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1gafb7a560610f96b2858d51c36d65f8c2f" kind="define"><name>HAL_USE_PWM</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga17d20632810c9bb1601a19973977f55c" kind="define"><name>HAL_USE_RTC</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga06f315a18b911f426da736c42ab20325" kind="define"><name>HAL_USE_SDC</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga720d92b9c3a00d952f6f0c8665b54ebb" kind="define"><name>HAL_USE_SERIAL</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga79c970fb20565143ad8b65720c0b2d0e" kind="define"><name>HAL_USE_SERIAL_USB</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga33a3c5bee9ed1f665aace8b88fed9b2b" kind="define"><name>HAL_USE_SPI</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga73220cad2edf2aee77b7ce1b53cacff0" kind="define"><name>HAL_USE_UART</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1gafc8f8fc6010f46f5baae4a369e14974e" kind="define"><name>HAL_USE_USB</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga39e892a4090185fbdda9bb105bc03b4f" kind="define"><name>ADC_USE_WAIT</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1gac0893cb47e338c2dabad34b974a0a88d" kind="define"><name>ADC_USE_MUTUAL_EXCLUSION</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga5294d9d12e4186c781df3b2f1d8bd80b" kind="define"><name>CAN_USE_SLEEP_MODE</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga7125642404a6fd3d4985d1cb6e1b7b0a" kind="define"><name>I2C_USE_MUTUAL_EXCLUSION</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga887da1c1383a9e7b45c4464877a7e05e" kind="define"><name>MAC_USE_EVENTS</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga502a0143be4c303f3006c0888e1cec82" kind="define"><name>MMC_SECTOR_SIZE</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga3087dfffa81dd8a0a80ee92746e65fe2" kind="define"><name>MMC_NICE_WAITING</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1gac57e95210b57d6699c23bfb648e0904d" kind="define"><name>MMC_POLLING_INTERVAL</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga6d164ed93ae233b2dc0c35bd19f75224" kind="define"><name>MMC_POLLING_DELAY</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga463aaf38dda5f44ab579ddab0a1cf104" kind="define"><name>MMC_USE_SPI_POLLING</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga8d39f0c9799062f0698d97c26e6fa42d" kind="define"><name>SDC_INIT_RETRY</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga4f938eff7370feb8de8411e255d21b01" kind="define"><name>SDC_MMC_SUPPORT</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga3391c832c171a8606b0fc864766f08ba" kind="define"><name>SDC_NICE_WAITING</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1gacb4c08ac23f83ac9d58c50ff840de516" kind="define"><name>SERIAL_DEFAULT_BITRATE</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga81a9fb00c7a1ce0fe70f263d8fd820e8" kind="define"><name>SERIAL_BUFFERS_SIZE</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga0c9ab1488423fa10a22f506c6e74b563" kind="define"><name>SPI_USE_WAIT</name></member>
+    <member refid="group___h_a_l___c_o_n_f_1ga36d1818f9631f955f7cc94629b1d5498" kind="define"><name>SPI_USE_MUTUAL_EXCLUSION</name></member>
+  </compound>
+  <compound refid="group___ball_balancing" kind="group"><name>BallBalancing</name>
+    <member refid="group___ball_balancing_1ga902ad52cd507aae1615bd2858a47020d" kind="variable"><name>pwmcfg</name></member>
+    <member refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" kind="function"><name>commandServo</name></member>
+    <member refid="group___ball_balancing_1gaf2c4109d8f7d0188c8bd1792b02368cb" kind="function"><name>WORKING_AREA</name></member>
+    <member refid="group___ball_balancing_1ga66c2c15e726cd90ad73f1497f6f9859c" kind="function"><name>CtrlThread</name></member>
+    <member refid="group___ball_balancing_1ga840291bc02cba5474a4cb46a9b9566fe" kind="function"><name>main</name></member>
+    <member refid="group___ball_balancing_1ga104df749bd51b5924bbfcd67313773c3" kind="define"><name>MIN_SERVO</name></member>
+    <member refid="group___ball_balancing_1ga6225ed2d3ed40a4841073e5b6b0b4166" kind="define"><name>MAX_SERVO</name></member>
+    <member refid="group___ball_balancing_1gaf3c82099d63a2d91d68bd62d954059c7" kind="define"><name>MAX_ANGLE</name></member>
+    <member refid="group___ball_balancing_1ga5de5e8e3ab304842347b047eb9a7a468" kind="define"><name>map</name></member>
+  </compound>
+  <compound refid="todo" kind="page"><name>todo</name>
+  </compound>
+  <compound refid="dir_6e45fa0bd4374919c48b459ee5c9e1aa" kind="dir"><name>C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/.dep/</name>
+  </compound>
+  <compound refid="dir_af66b64a0ddb190138b52a0d54508de6" kind="dir"><name>C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/ch_settings/</name>
+  </compound>
+</doxygenindex>

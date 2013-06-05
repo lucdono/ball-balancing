@@ -1,0 +1,568 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_compute" kind="class" prot="public">
+    <compoundname>Compute</compoundname>
+    <includes refid="compute_8hpp" local="no">compute.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_compute_1a02745647b5601692ac3ec9bcf595637a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_serial" kindref="compound">Serial</ref> *</type>
+        <definition>Serial* Compute::serial</definition>
+        <argsstring></argsstring>
+        <name>serial</name>
+        <briefdescription>
+<para>The serial driver instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="61" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" bodystart="61" bodyend="-1"/>
+        <referencedby refid="group___control_1ga06063e8787ec8883de4ea5b5cc347b9b" compoundref="compute_8cpp" startline="44" endline="58">Compute</referencedby>
+        <referencedby refid="group___control_1gae689eda9201b54d1ca06a04a693b0e73" compoundref="compute_8cpp" startline="106" endline="108">IsConnected</referencedby>
+        <referencedby refid="group___control_1ga654ce447d37ead187bf4294108f14dff" compoundref="compute_8cpp" startline="120" endline="151">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_compute_1af65423b80c39fdf34188349218557de9" prot="private" static="no" mutable="no">
+        <type><ref refid="class_p_i_d" kindref="compound">PID</ref> *</type>
+        <definition>PID* Compute::pidX</definition>
+        <argsstring></argsstring>
+        <name>pidX</name>
+        <briefdescription>
+<para><ref refid="class_p_i_d" kindref="compound">PID</ref> for X coordinate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="62" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" bodystart="62" bodyend="-1"/>
+        <referencedby refid="group___control_1ga06063e8787ec8883de4ea5b5cc347b9b" compoundref="compute_8cpp" startline="44" endline="58">Compute</referencedby>
+        <referencedby refid="group___control_1gad916f913222c92830ecb4a192b67c6d4" compoundref="compute_8cpp" startline="71" endline="73">getPIDX</referencedby>
+        <referencedby refid="group___control_1ga654ce447d37ead187bf4294108f14dff" compoundref="compute_8cpp" startline="120" endline="151">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_compute_1a4b5b07c13ce32db61263e2f50b98fa26" prot="private" static="no" mutable="no">
+        <type><ref refid="class_p_i_d" kindref="compound">PID</ref> *</type>
+        <definition>PID* Compute::pidY</definition>
+        <argsstring></argsstring>
+        <name>pidY</name>
+        <briefdescription>
+<para><ref refid="class_p_i_d" kindref="compound">PID</ref> for Y coordinate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="63" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" bodystart="63" bodyend="-1"/>
+        <referencedby refid="group___control_1ga06063e8787ec8883de4ea5b5cc347b9b" compoundref="compute_8cpp" startline="44" endline="58">Compute</referencedby>
+        <referencedby refid="group___control_1ga23898dbfd5e46b3dbe38d245bd417b9d" compoundref="compute_8cpp" startline="79" endline="81">getPIDY</referencedby>
+        <referencedby refid="group___control_1ga654ce447d37ead187bf4294108f14dff" compoundref="compute_8cpp" startline="120" endline="151">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_compute_1a9d8e6f018efceb624332a8ed22b2d896" prot="private" static="no" mutable="no">
+        <type><ref refid="class_kalman" kindref="compound">Kalman</ref> *</type>
+        <definition>Kalman* Compute::kalmanX</definition>
+        <argsstring></argsstring>
+        <name>kalmanX</name>
+        <briefdescription>
+<para><ref refid="class_kalman" kindref="compound">Kalman</ref> filter for X coordinate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="64" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" bodystart="64" bodyend="-1"/>
+        <referencedby refid="group___control_1ga06063e8787ec8883de4ea5b5cc347b9b" compoundref="compute_8cpp" startline="44" endline="58">Compute</referencedby>
+        <referencedby refid="group___control_1ga654ce447d37ead187bf4294108f14dff" compoundref="compute_8cpp" startline="120" endline="151">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_compute_1aaf52b9db239d1a995d4c049ea33557f0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_kalman" kindref="compound">Kalman</ref> *</type>
+        <definition>Kalman* Compute::kalmanY</definition>
+        <argsstring></argsstring>
+        <name>kalmanY</name>
+        <briefdescription>
+<para><ref refid="class_kalman" kindref="compound">Kalman</ref> filter for X coordinate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="65" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" bodystart="65" bodyend="-1"/>
+        <referencedby refid="group___control_1ga06063e8787ec8883de4ea5b5cc347b9b" compoundref="compute_8cpp" startline="44" endline="58">Compute</referencedby>
+        <referencedby refid="group___control_1ga654ce447d37ead187bf4294108f14dff" compoundref="compute_8cpp" startline="120" endline="151">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_compute_1a77daaacdce6ae91ec1747a3ac7a89e39" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Compute::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+<para>Camera frame width. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="67" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" bodystart="67" bodyend="-1"/>
+        <referencedby refid="group___control_1ga06063e8787ec8883de4ea5b5cc347b9b" compoundref="compute_8cpp" startline="44" endline="58">Compute</referencedby>
+        <referencedby refid="group___control_1gaab1c21a03462410a52b24047c66961fe" compoundref="compute_8cpp" startline="97" endline="100">center</referencedby>
+        <referencedby refid="group___control_1ga654ce447d37ead187bf4294108f14dff" compoundref="compute_8cpp" startline="120" endline="151">Update</referencedby>
+        <referencedby refid="group___control_1gab35c5e0efd0fc15725300a44ec49ab3b" compoundref="compute_8cpp" startline="173" endline="218">Plot</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_compute_1a0495bed470f6c5730e8f50d5dc22272d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Compute::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+<para>Camera frame height. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="68" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" bodystart="68" bodyend="-1"/>
+        <referencedby refid="group___control_1ga06063e8787ec8883de4ea5b5cc347b9b" compoundref="compute_8cpp" startline="44" endline="58">Compute</referencedby>
+        <referencedby refid="group___control_1gaab1c21a03462410a52b24047c66961fe" compoundref="compute_8cpp" startline="97" endline="100">center</referencedby>
+        <referencedby refid="group___control_1ga654ce447d37ead187bf4294108f14dff" compoundref="compute_8cpp" startline="120" endline="151">Update</referencedby>
+        <referencedby refid="group___control_1gab35c5e0efd0fc15725300a44ec49ab3b" compoundref="compute_8cpp" startline="173" endline="218">Plot</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_compute_1a91eddcbc9fc44cccfef148a668e4da5a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Compute::setPoint_x</definition>
+        <argsstring></argsstring>
+        <name>setPoint_x</name>
+        <briefdescription>
+<para>X coordinate of the set point. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="69" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" bodystart="69" bodyend="-1"/>
+        <referencedby refid="group___control_1ga06063e8787ec8883de4ea5b5cc347b9b" compoundref="compute_8cpp" startline="44" endline="58">Compute</referencedby>
+        <referencedby refid="group___control_1ga426882753acbede055673691abe6b597" compoundref="compute_8cpp" startline="89" endline="92">setPoint</referencedby>
+        <referencedby refid="group___control_1gaab1c21a03462410a52b24047c66961fe" compoundref="compute_8cpp" startline="97" endline="100">center</referencedby>
+        <referencedby refid="group___control_1ga654ce447d37ead187bf4294108f14dff" compoundref="compute_8cpp" startline="120" endline="151">Update</referencedby>
+        <referencedby refid="group___control_1gab35c5e0efd0fc15725300a44ec49ab3b" compoundref="compute_8cpp" startline="173" endline="218">Plot</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_compute_1ab87fb2b6af3b765f819f85fcaa19da32" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Compute::setPoint_y</definition>
+        <argsstring></argsstring>
+        <name>setPoint_y</name>
+        <briefdescription>
+<para>Y coordinate of the set point. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="70" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" bodystart="70" bodyend="-1"/>
+        <referencedby refid="group___control_1ga06063e8787ec8883de4ea5b5cc347b9b" compoundref="compute_8cpp" startline="44" endline="58">Compute</referencedby>
+        <referencedby refid="group___control_1ga426882753acbede055673691abe6b597" compoundref="compute_8cpp" startline="89" endline="92">setPoint</referencedby>
+        <referencedby refid="group___control_1gaab1c21a03462410a52b24047c66961fe" compoundref="compute_8cpp" startline="97" endline="100">center</referencedby>
+        <referencedby refid="group___control_1ga654ce447d37ead187bf4294108f14dff" compoundref="compute_8cpp" startline="120" endline="151">Update</referencedby>
+        <referencedby refid="group___control_1gab35c5e0efd0fc15725300a44ec49ab3b" compoundref="compute_8cpp" startline="173" endline="218">Plot</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_compute_1a2542b78d6ec19f697e393f583443e924" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* Compute::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <briefdescription>
+<para>The window used to draw the graph. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="72" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" bodystart="72" bodyend="-1"/>
+        <referencedby refid="group___control_1ga06063e8787ec8883de4ea5b5cc347b9b" compoundref="compute_8cpp" startline="44" endline="58">Compute</referencedby>
+        <referencedby refid="group___control_1gadda796b81679fb1274b031977ed4aa85" compoundref="compute_8cpp" startline="160" endline="163">SetPlotter</referencedby>
+        <referencedby refid="group___control_1gab35c5e0efd0fc15725300a44ec49ab3b" compoundref="compute_8cpp" startline="173" endline="218">Plot</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" prot="private" static="no" mutable="no">
+        <type>IplImage *</type>
+        <definition>IplImage* Compute::image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <briefdescription>
+<para>The image used for plotting data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="73" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" bodystart="73" bodyend="-1"/>
+        <referencedby refid="group___control_1ga06063e8787ec8883de4ea5b5cc347b9b" compoundref="compute_8cpp" startline="44" endline="58">Compute</referencedby>
+        <referencedby refid="group___control_1gadda796b81679fb1274b031977ed4aa85" compoundref="compute_8cpp" startline="160" endline="163">SetPlotter</referencedby>
+        <referencedby refid="group___control_1gab35c5e0efd0fc15725300a44ec49ab3b" compoundref="compute_8cpp" startline="173" endline="218">Plot</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_compute_1a964c729355e2057c689c3f7dd2e73b43" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Compute::sample</definition>
+        <argsstring></argsstring>
+        <name>sample</name>
+        <briefdescription>
+<para>Plot x value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="74" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" bodystart="74" bodyend="-1"/>
+        <referencedby refid="group___control_1ga06063e8787ec8883de4ea5b5cc347b9b" compoundref="compute_8cpp" startline="44" endline="58">Compute</referencedby>
+        <referencedby refid="group___control_1gab35c5e0efd0fc15725300a44ec49ab3b" compoundref="compute_8cpp" startline="173" endline="218">Plot</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="group___control_1gab35c5e0efd0fc15725300a44ec49ab3b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Compute::Plot</definition>
+        <argsstring>(float x_est, float y_est)</argsstring>
+        <name>Plot</name>
+        <param>
+          <type>float</type>
+          <declname>x_est</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y_est</declname>
+        </param>
+        <briefdescription>
+<para>Draw a XY plot. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function draws a XY plot of <ref refid="class_kalman" kindref="compound">Kalman</ref> estimation comparing values with the given set point.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">x_est</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="class_kalman" kindref="compound">Kalman</ref> estimation of the x position. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">y_est</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="class_kalman" kindref="compound">Kalman</ref> estimation of the y position. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="76" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.cpp" bodystart="173" bodyend="218"/>
+        <references refid="group___control_1ga5de5e8e3ab304842347b047eb9a7a468" compoundref="_p_i_d_8hpp" startline="58">map</references>
+        <references refid="class_compute_1a77daaacdce6ae91ec1747a3ac7a89e39" compoundref="compute_8hpp" startline="67">width</references>
+        <references refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" compoundref="compute_8hpp" startline="73">image</references>
+        <references refid="class_compute_1a91eddcbc9fc44cccfef148a668e4da5a" compoundref="compute_8hpp" startline="69">setPoint_x</references>
+        <references refid="class_compute_1a0495bed470f6c5730e8f50d5dc22272d" compoundref="compute_8hpp" startline="68">height</references>
+        <references refid="class_compute_1ab87fb2b6af3b765f819f85fcaa19da32" compoundref="compute_8hpp" startline="70">setPoint_y</references>
+        <references refid="class_compute_1a964c729355e2057c689c3f7dd2e73b43" compoundref="compute_8hpp" startline="74">sample</references>
+        <references refid="class_compute_1a2542b78d6ec19f697e393f583443e924" compoundref="compute_8hpp" startline="72">window</references>
+        <referencedby refid="group___control_1ga654ce447d37ead187bf4294108f14dff" compoundref="compute_8cpp" startline="120" endline="151">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="group___control_1ga06063e8787ec8883de4ea5b5cc347b9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Compute::Compute</definition>
+        <argsstring>(int width, int height)</argsstring>
+        <name>Compute</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>The constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera frame width. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Camera frame height. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="79" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.cpp" bodystart="44" bodyend="58"/>
+        <references refid="class_compute_1a02745647b5601692ac3ec9bcf595637a" compoundref="compute_8hpp" startline="61">serial</references>
+        <references refid="class_compute_1af65423b80c39fdf34188349218557de9" compoundref="compute_8hpp" startline="62">pidX</references>
+        <references refid="class_compute_1a4b5b07c13ce32db61263e2f50b98fa26" compoundref="compute_8hpp" startline="63">pidY</references>
+        <references refid="class_compute_1a9d8e6f018efceb624332a8ed22b2d896" compoundref="compute_8hpp" startline="64">kalmanX</references>
+        <references refid="class_compute_1aaf52b9db239d1a995d4c049ea33557f0" compoundref="compute_8hpp" startline="65">kalmanY</references>
+        <references refid="class_compute_1a77daaacdce6ae91ec1747a3ac7a89e39" compoundref="compute_8hpp" startline="67">width</references>
+        <references refid="class_compute_1a0495bed470f6c5730e8f50d5dc22272d" compoundref="compute_8hpp" startline="68">height</references>
+        <references refid="class_compute_1a91eddcbc9fc44cccfef148a668e4da5a" compoundref="compute_8hpp" startline="69">setPoint_x</references>
+        <references refid="class_compute_1ab87fb2b6af3b765f819f85fcaa19da32" compoundref="compute_8hpp" startline="70">setPoint_y</references>
+        <references refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" compoundref="compute_8hpp" startline="73">image</references>
+        <references refid="class_compute_1a2542b78d6ec19f697e393f583443e924" compoundref="compute_8hpp" startline="72">window</references>
+        <references refid="class_compute_1a964c729355e2057c689c3f7dd2e73b43" compoundref="compute_8hpp" startline="74">sample</references>
+      </memberdef>
+      <memberdef kind="function" id="group___control_1ga0b870ef17154c6d4395e38a706b0421f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Compute::~Compute</definition>
+        <argsstring>()</argsstring>
+        <name>~Compute</name>
+        <briefdescription>
+<para>The destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="80" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.cpp" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="group___control_1gad916f913222c92830ecb4a192b67c6d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_p_i_d" kindref="compound">PID</ref> *</type>
+        <definition>PID * Compute::getPIDX</definition>
+        <argsstring>()</argsstring>
+        <name>getPIDX</name>
+        <briefdescription>
+<para>Return <ref refid="class_p_i_d" kindref="compound">PID</ref> x axis. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The <ref refid="class_p_i_d" kindref="compound">PID</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="82" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.cpp" bodystart="71" bodyend="73"/>
+        <references refid="class_compute_1af65423b80c39fdf34188349218557de9" compoundref="compute_8hpp" startline="62">pidX</references>
+      </memberdef>
+      <memberdef kind="function" id="group___control_1ga23898dbfd5e46b3dbe38d245bd417b9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_p_i_d" kindref="compound">PID</ref> *</type>
+        <definition>PID * Compute::getPIDY</definition>
+        <argsstring>()</argsstring>
+        <name>getPIDY</name>
+        <briefdescription>
+<para>Return <ref refid="class_p_i_d" kindref="compound">PID</ref> y axis. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The <ref refid="class_p_i_d" kindref="compound">PID</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="83" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.cpp" bodystart="79" bodyend="81"/>
+        <references refid="class_compute_1a4b5b07c13ce32db61263e2f50b98fa26" compoundref="compute_8hpp" startline="63">pidY</references>
+      </memberdef>
+      <memberdef kind="function" id="group___control_1ga426882753acbede055673691abe6b597" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Compute::setPoint</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>setPoint</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Update the x,y coordinates of the set point. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x axis coordinate of the set point. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>y axis coordinate of the set point. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="84" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.cpp" bodystart="89" bodyend="92"/>
+        <references refid="class_compute_1a91eddcbc9fc44cccfef148a668e4da5a" compoundref="compute_8hpp" startline="69">setPoint_x</references>
+        <references refid="class_compute_1ab87fb2b6af3b765f819f85fcaa19da32" compoundref="compute_8hpp" startline="70">setPoint_y</references>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___control_1gaab1c21a03462410a52b24047c66961fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Compute::center</definition>
+        <argsstring>()</argsstring>
+        <name>center</name>
+        <briefdescription>
+<para>Reset the set point to the center. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="85" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.cpp" bodystart="97" bodyend="100"/>
+        <references refid="class_compute_1a91eddcbc9fc44cccfef148a668e4da5a" compoundref="compute_8hpp" startline="69">setPoint_x</references>
+        <references refid="class_compute_1a77daaacdce6ae91ec1747a3ac7a89e39" compoundref="compute_8hpp" startline="67">width</references>
+        <references refid="class_compute_1ab87fb2b6af3b765f819f85fcaa19da32" compoundref="compute_8hpp" startline="70">setPoint_y</references>
+        <references refid="class_compute_1a0495bed470f6c5730e8f50d5dc22272d" compoundref="compute_8hpp" startline="68">height</references>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___control_1gae689eda9201b54d1ca06a04a693b0e73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Compute::IsConnected</definition>
+        <argsstring>()</argsstring>
+        <name>IsConnected</name>
+        <briefdescription>
+<para>Check serial connection. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>TRUE if serial port has been connected, FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="87" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.cpp" bodystart="106" bodyend="108"/>
+        <references refid="class_compute_1a02745647b5601692ac3ec9bcf595637a" compoundref="compute_8hpp" startline="61">serial</references>
+        <references refid="group___serial_1gaa53e46b5c8556152d5d3306fdab4117c" compoundref="serial_8cpp" startline="186" endline="188">Serial::IsConnected</references>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___control_1ga654ce447d37ead187bf4294108f14dff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Compute::Update</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Main control function. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is responsible for the control of the plate: it makes an estimation of the real position of the object, then generate control signals (i.e. angles for each servos) using PIDs.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object x coordinate. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object y coordinate. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="88" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.cpp" bodystart="120" bodyend="151"/>
+        <references refid="class_compute_1a02745647b5601692ac3ec9bcf595637a" compoundref="compute_8hpp" startline="61">serial</references>
+        <references refid="group___serial_1gaa53e46b5c8556152d5d3306fdab4117c" compoundref="serial_8cpp" startline="186" endline="188">Serial::IsConnected</references>
+        <references refid="class_compute_1a9d8e6f018efceb624332a8ed22b2d896" compoundref="compute_8hpp" startline="64">kalmanX</references>
+        <references refid="group___control_1gaa5abc03d34d704f352f145904ddbc3b4" compoundref="kalman_8cpp" startline="73" endline="92">Kalman::update</references>
+        <references refid="class_compute_1aaf52b9db239d1a995d4c049ea33557f0" compoundref="compute_8hpp" startline="65">kalmanY</references>
+        <references refid="class_compute_1af65423b80c39fdf34188349218557de9" compoundref="compute_8hpp" startline="62">pidX</references>
+        <references refid="group___control_1ga00974abc051527b2dcdcaf15d766872b" compoundref="_p_i_d_8cpp" startline="104" endline="150">PID::updatePID</references>
+        <references refid="class_compute_1a91eddcbc9fc44cccfef148a668e4da5a" compoundref="compute_8hpp" startline="69">setPoint_x</references>
+        <references refid="class_compute_1a4b5b07c13ce32db61263e2f50b98fa26" compoundref="compute_8hpp" startline="63">pidY</references>
+        <references refid="class_compute_1ab87fb2b6af3b765f819f85fcaa19da32" compoundref="compute_8hpp" startline="70">setPoint_y</references>
+        <references refid="group___control_1ga5de5e8e3ab304842347b047eb9a7a468" compoundref="_p_i_d_8hpp" startline="58">map</references>
+        <references refid="group___control_1gaf3c82099d63a2d91d68bd62d954059c7" compoundref="compute_8hpp" startline="50">MAX_ANGLE</references>
+        <references refid="class_compute_1a77daaacdce6ae91ec1747a3ac7a89e39" compoundref="compute_8hpp" startline="67">width</references>
+        <references refid="class_compute_1a0495bed470f6c5730e8f50d5dc22272d" compoundref="compute_8hpp" startline="68">height</references>
+        <references refid="group___serial_1ga3cce4a34142e8e2adbda131d43103e01" compoundref="serial_8cpp" startline="168" endline="179">Serial::WriteData</references>
+        <references refid="group___control_1gab35c5e0efd0fc15725300a44ec49ab3b" compoundref="compute_8cpp" startline="173" endline="218">Plot</references>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___control_1gadda796b81679fb1274b031977ed4aa85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Compute::SetPlotter</definition>
+        <argsstring>(char *, IplImage *)</argsstring>
+        <name>SetPlotter</name>
+        <param>
+          <type>char *</type>
+          <defname>win</defname>
+        </param>
+        <param>
+          <type>IplImage *</type>
+          <defname>image</defname>
+        </param>
+        <briefdescription>
+<para>Set OpenCV output window and image. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">win</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the plotter window to set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the output image to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="89" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.cpp" bodystart="160" bodyend="163"/>
+        <references refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" compoundref="compute_8hpp" startline="73">image</references>
+        <references refid="class_compute_1a2542b78d6ec19f697e393f583443e924" compoundref="compute_8hpp" startline="72">window</references>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="12">
+        <label>Compute</label>
+        <link refid="class_compute"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>kalmanX</edgelabel>
+          <edgelabel>kalmanY</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>serial</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>pidX</edgelabel>
+          <edgelabel>pidY</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>PID</label>
+        <link refid="class_p_i_d"/>
+      </node>
+      <node id="14">
+        <label>Serial</label>
+        <link refid="class_serial"/>
+      </node>
+      <node id="13">
+        <label>Kalman</label>
+        <link refid="class_kalman"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" line="59" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.hpp" bodystart="59" bodyend="91"/>
+    <listofallmembers>
+      <member refid="group___control_1gaab1c21a03462410a52b24047c66961fe" prot="public" virt="non-virtual"><scope>Compute</scope><name>center</name></member>
+      <member refid="group___control_1ga06063e8787ec8883de4ea5b5cc347b9b" prot="public" virt="non-virtual"><scope>Compute</scope><name>Compute</name></member>
+      <member refid="group___control_1gad916f913222c92830ecb4a192b67c6d4" prot="public" virt="non-virtual"><scope>Compute</scope><name>getPIDX</name></member>
+      <member refid="group___control_1ga23898dbfd5e46b3dbe38d245bd417b9d" prot="public" virt="non-virtual"><scope>Compute</scope><name>getPIDY</name></member>
+      <member refid="class_compute_1a0495bed470f6c5730e8f50d5dc22272d" prot="private" virt="non-virtual"><scope>Compute</scope><name>height</name></member>
+      <member refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" prot="private" virt="non-virtual"><scope>Compute</scope><name>image</name></member>
+      <member refid="group___control_1gae689eda9201b54d1ca06a04a693b0e73" prot="public" virt="non-virtual"><scope>Compute</scope><name>IsConnected</name></member>
+      <member refid="class_compute_1a9d8e6f018efceb624332a8ed22b2d896" prot="private" virt="non-virtual"><scope>Compute</scope><name>kalmanX</name></member>
+      <member refid="class_compute_1aaf52b9db239d1a995d4c049ea33557f0" prot="private" virt="non-virtual"><scope>Compute</scope><name>kalmanY</name></member>
+      <member refid="class_compute_1af65423b80c39fdf34188349218557de9" prot="private" virt="non-virtual"><scope>Compute</scope><name>pidX</name></member>
+      <member refid="class_compute_1a4b5b07c13ce32db61263e2f50b98fa26" prot="private" virt="non-virtual"><scope>Compute</scope><name>pidY</name></member>
+      <member refid="group___control_1gab35c5e0efd0fc15725300a44ec49ab3b" prot="private" virt="non-virtual"><scope>Compute</scope><name>Plot</name></member>
+      <member refid="class_compute_1a964c729355e2057c689c3f7dd2e73b43" prot="private" virt="non-virtual"><scope>Compute</scope><name>sample</name></member>
+      <member refid="class_compute_1a02745647b5601692ac3ec9bcf595637a" prot="private" virt="non-virtual"><scope>Compute</scope><name>serial</name></member>
+      <member refid="group___control_1gadda796b81679fb1274b031977ed4aa85" prot="public" virt="non-virtual"><scope>Compute</scope><name>SetPlotter</name></member>
+      <member refid="group___control_1ga426882753acbede055673691abe6b597" prot="public" virt="non-virtual"><scope>Compute</scope><name>setPoint</name></member>
+      <member refid="class_compute_1a91eddcbc9fc44cccfef148a668e4da5a" prot="private" virt="non-virtual"><scope>Compute</scope><name>setPoint_x</name></member>
+      <member refid="class_compute_1ab87fb2b6af3b765f819f85fcaa19da32" prot="private" virt="non-virtual"><scope>Compute</scope><name>setPoint_y</name></member>
+      <member refid="group___control_1ga654ce447d37ead187bf4294108f14dff" prot="public" virt="non-virtual"><scope>Compute</scope><name>Update</name></member>
+      <member refid="class_compute_1a77daaacdce6ae91ec1747a3ac7a89e39" prot="private" virt="non-virtual"><scope>Compute</scope><name>width</name></member>
+      <member refid="class_compute_1a2542b78d6ec19f697e393f583443e924" prot="private" virt="non-virtual"><scope>Compute</scope><name>window</name></member>
+      <member refid="group___control_1ga0b870ef17154c6d4395e38a706b0421f" prot="public" virt="non-virtual"><scope>Compute</scope><name>~Compute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

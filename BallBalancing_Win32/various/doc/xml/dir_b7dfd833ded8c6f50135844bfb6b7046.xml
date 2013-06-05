@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_b7dfd833ded8c6f50135844bfb6b7046" kind="dir">
+    <compoundname>C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/</compoundname>
+    <innerdir refid="dir_61e9e9f10ced6e29c92459e7e5e3fdc1">C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/</innerdir>
+    <innerdir refid="dir_3a0b84d77d47386d9349ffb79c83085f">C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/</innerdir>
+    <innerfile refid="capture_8cpp">capture.cpp</innerfile>
+    <innerfile refid="capture_8hpp">capture.hpp</innerfile>
+    <innerfile refid="find_h_s_v_values_8cpp">findHSVValues.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_61e9e9f10ced6e29c92459e7e5e3fdc1" kind="dir">
+    <compoundname>C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/</compoundname>
+    <innerfile refid="compute_8cpp">compute.cpp</innerfile>
+    <innerfile refid="compute_8hpp">compute.hpp</innerfile>
+    <innerfile refid="kalman_8cpp">kalman.cpp</innerfile>
+    <innerfile refid="kalman_8hpp">kalman.hpp</innerfile>
+    <innerfile refid="_p_i_d_8cpp">PID.cpp</innerfile>
+    <innerfile refid="_p_i_d_8hpp">PID.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/"/>
+  </compounddef>
+</doxygen>

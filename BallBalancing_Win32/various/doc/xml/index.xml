@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.7.6.1">
+  <compound refid="class_compute" kind="class"><name>Compute</name>
+    <member refid="class_compute_1a02745647b5601692ac3ec9bcf595637a" kind="variable"><name>serial</name></member>
+    <member refid="class_compute_1af65423b80c39fdf34188349218557de9" kind="variable"><name>pidX</name></member>
+    <member refid="class_compute_1a4b5b07c13ce32db61263e2f50b98fa26" kind="variable"><name>pidY</name></member>
+    <member refid="class_compute_1a9d8e6f018efceb624332a8ed22b2d896" kind="variable"><name>kalmanX</name></member>
+    <member refid="class_compute_1aaf52b9db239d1a995d4c049ea33557f0" kind="variable"><name>kalmanY</name></member>
+    <member refid="class_compute_1a77daaacdce6ae91ec1747a3ac7a89e39" kind="variable"><name>width</name></member>
+    <member refid="class_compute_1a0495bed470f6c5730e8f50d5dc22272d" kind="variable"><name>height</name></member>
+    <member refid="class_compute_1a91eddcbc9fc44cccfef148a668e4da5a" kind="variable"><name>setPoint_x</name></member>
+    <member refid="class_compute_1ab87fb2b6af3b765f819f85fcaa19da32" kind="variable"><name>setPoint_y</name></member>
+    <member refid="class_compute_1a2542b78d6ec19f697e393f583443e924" kind="variable"><name>window</name></member>
+    <member refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kind="variable"><name>image</name></member>
+    <member refid="class_compute_1a964c729355e2057c689c3f7dd2e73b43" kind="variable"><name>sample</name></member>
+    <member refid="group___control_1gab35c5e0efd0fc15725300a44ec49ab3b" kind="function"><name>Plot</name></member>
+    <member refid="group___control_1ga06063e8787ec8883de4ea5b5cc347b9b" kind="function"><name>Compute</name></member>
+    <member refid="group___control_1ga0b870ef17154c6d4395e38a706b0421f" kind="function"><name>~Compute</name></member>
+    <member refid="group___control_1gad916f913222c92830ecb4a192b67c6d4" kind="function"><name>getPIDX</name></member>
+    <member refid="group___control_1ga23898dbfd5e46b3dbe38d245bd417b9d" kind="function"><name>getPIDY</name></member>
+    <member refid="group___control_1ga426882753acbede055673691abe6b597" kind="function"><name>setPoint</name></member>
+    <member refid="group___control_1gaab1c21a03462410a52b24047c66961fe" kind="function"><name>center</name></member>
+    <member refid="group___control_1gae689eda9201b54d1ca06a04a693b0e73" kind="function"><name>IsConnected</name></member>
+    <member refid="group___control_1ga654ce447d37ead187bf4294108f14dff" kind="function"><name>Update</name></member>
+    <member refid="group___control_1gadda796b81679fb1274b031977ed4aa85" kind="function"><name>SetPlotter</name></member>
+  </compound>
+  <compound refid="class_kalman" kind="class"><name>Kalman</name>
+    <member refid="class_kalman_1a9855d82e7d26f8990198899b438ca431" kind="variable"><name>x_est_last</name></member>
+    <member refid="class_kalman_1a69c419c798d6c1498d74a8e506833458" kind="variable"><name>P_last</name></member>
+    <member refid="class_kalman_1afe10e874165b1bfb94ced158ff993fc8" kind="variable"><name>Q</name></member>
+    <member refid="class_kalman_1a451aa7b1366890a5963a81be7b6f015c" kind="variable"><name>R</name></member>
+    <member refid="class_kalman_1a7817ee61561f40ff8568252a5fcd828e" kind="variable"><name>K</name></member>
+    <member refid="class_kalman_1abb285b89fef7785b774455164c08120b" kind="variable"><name>P</name></member>
+    <member refid="class_kalman_1a21c6e83c549940968c25c8d2545e30f7" kind="variable"><name>P_temp</name></member>
+    <member refid="class_kalman_1aeb4230bb855eb133aa1e4dfe16dfa576" kind="variable"><name>x_temp_est</name></member>
+    <member refid="class_kalman_1a59a6a51c69cef6a20d4ac9837804c8fa" kind="variable"><name>x_est</name></member>
+    <member refid="group___control_1gafced0e28f571d98e8a3c7057e87cd100" kind="function"><name>Kalman</name></member>
+    <member refid="group___control_1ga4e54bc3ac77da48219de5b6297d90386" kind="function"><name>~Kalman</name></member>
+    <member refid="group___control_1gaa5abc03d34d704f352f145904ddbc3b4" kind="function"><name>update</name></member>
+  </compound>
+  <compound refid="class_p_i_d" kind="class"><name>PID</name>
+    <member refid="class_p_i_d_1a77d4138c9daab12fdf042aa5a4ffff68" kind="variable"><name>P</name></member>
+    <member refid="class_p_i_d_1a0d406ecdc67396f399b84742b271c18c" kind="variable"><name>I</name></member>
+    <member refid="class_p_i_d_1ac64494c2d6b8874248baec5328cfa63f" kind="variable"><name>D</name></member>
+    <member refid="class_p_i_d_1a8111a63a1f7c43d8ba18904e420b8fbf" kind="variable"><name>lastPosition</name></member>
+    <member refid="class_p_i_d_1a03edc16555f37cd01d2af9f050a3e206" kind="variable"><name>previousPIDTime</name></member>
+    <member refid="class_p_i_d_1a8df49529ada444c008092625e785c18b" kind="variable"><name>firstPass</name></member>
+    <member refid="class_p_i_d_1ad950cf7d52e710697cfae502332cf280" kind="variable"><name>integratedError</name></member>
+    <member refid="class_p_i_d_1ae84efe30e81886ccf3bd9570ad5665d2" kind="variable"><name>windupGuard</name></member>
+    <member refid="group___control_1ga6b6b4ec371d4bdf395be50f08ed3b04e" kind="function"><name>PID</name></member>
+    <member refid="group___control_1gab7d389fc5b88d881bc25f5dafd360441" kind="function"><name>~PID</name></member>
+    <member refid="group___control_1ga953e7ee82c4a11997d740771a2b1d610" kind="function"><name>setP</name></member>
+    <member refid="group___control_1gaf797ee59d8789940905d9b3692a801ab" kind="function"><name>setI</name></member>
+    <member refid="group___control_1ga63ddc5b4d6f6f4cd2166d27b96102240" kind="function"><name>setD</name></member>
+    <member refid="group___control_1ga00974abc051527b2dcdcaf15d766872b" kind="function"><name>updatePID</name></member>
+  </compound>
+  <compound refid="class_serial" kind="class"><name>Serial</name>
+    <member refid="class_serial_1ae4bd96b28d4eb348a1aca7ea456f82f5" kind="variable"><name>hSerial</name></member>
+    <member refid="class_serial_1ad788fe882057ff8393e6a59767eb3aa7" kind="variable"><name>connected</name></member>
+    <member refid="class_serial_1a956a7895cca74bc01261857842581f06" kind="variable"><name>status</name></member>
+    <member refid="class_serial_1a6762daaadf619992f60902783ae88727" kind="variable"><name>errors</name></member>
+    <member refid="group___serial_1ga53e1e7d545e9ca3776224344ea4c3719" kind="function"><name>Serial</name></member>
+    <member refid="group___serial_1ga5b32c394c0ff923a4ef1c13cfb20a6ba" kind="function"><name>~Serial</name></member>
+    <member refid="group___serial_1ga3874e3c10b006dc37584d45a928ae9db" kind="function"><name>ReadData</name></member>
+    <member refid="group___serial_1ga3cce4a34142e8e2adbda131d43103e01" kind="function"><name>WriteData</name></member>
+    <member refid="group___serial_1gaa53e46b5c8556152d5d3306fdab4117c" kind="function"><name>IsConnected</name></member>
+  </compound>
+  <compound refid="capture_8cpp" kind="file"><name>capture.cpp</name>
+    <member refid="group___main_1gad7991bf79c0bd42b362b88e2f4b59c13" kind="variable"><name>compute</name></member>
+    <member refid="group___main_1gac89b9ea5e9ea4d8dfa1db0389ae9655d" kind="variable"><name>imgTracking</name></member>
+    <member refid="group___main_1ga700fc8bf3bbb61cbe9bb79ef72191466" kind="variable"><name>imgPlot</name></member>
+    <member refid="group___main_1ga7bb8b2cfc1aec0db2429c600cddccf17" kind="variable"><name>lastX</name></member>
+    <member refid="group___main_1gae135df8cfc9b15d97e97b400a5cbc768" kind="variable"><name>lastY</name></member>
+    <member refid="group___main_1gadb535ce83837e88311ab083ecb99f320" kind="variable"><name>doTrack</name></member>
+    <member refid="group___main_1ga80f65a18255557dbc3bc236fab672264" kind="variable"><name>doRotate</name></member>
+    <member refid="group___main_1gaae7980446bfb533ac1d20bd364cd8f55" kind="function"><name>GetThresholdedImage</name></member>
+    <member refid="group___main_1ga1cff0b66e0542535915b29424186f1c3" kind="function"><name>trackObject</name></member>
+    <member refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="capture_8hpp" kind="file"><name>capture.hpp</name>
+    <member refid="group___main_1ga681e3f587c2e24e577ad99d56b663f0d" kind="define"><name>CAMERA_ID</name></member>
+    <member refid="group___main_1gafa42ae3a3e514ee00e30890c3158f56a" kind="define"><name>WIN_BINARY_NAME</name></member>
+    <member refid="group___main_1ga1f147d13e422eaccb294feb81f0e5ee7" kind="define"><name>WIN_FRAME_NAME</name></member>
+    <member refid="group___main_1ga528a674ecfc32beb8b1dfede24b66dca" kind="define"><name>WIN_GRAPH_NAME</name></member>
+    <member refid="group___main_1ga23ffff9afc54bc473cc3b4bbf0d9637c" kind="define"><name>BINARY_RESIZE</name></member>
+    <member refid="group___main_1gab26c7cb579e18875bacc9f7118c3d848" kind="define"><name>HSV_MIN</name></member>
+    <member refid="group___main_1gad59e8b6a2a4787641f4543edf1cde585" kind="define"><name>HSV_MAX</name></member>
+    <member refid="group___main_1ga5f048926a37dbc8f7cca17118f2607a6" kind="define"><name>TRACKING_COLOR</name></member>
+    <member refid="group___main_1ga42c814f2d0df4f5b808717f5ed2caab3" kind="define"><name>ROTATION_RADIUS</name></member>
+    <member refid="group___main_1ga56f5d8f5f5d41406e5a8d6c4a433d9ba" kind="define"><name>ROTATION_ANGLE_STEP</name></member>
+  </compound>
+  <compound refid="compute_8cpp" kind="file"><name>compute.cpp</name>
+  </compound>
+  <compound refid="compute_8hpp" kind="file"><name>compute.hpp</name>
+    <member refid="group___control_1gaf3c82099d63a2d91d68bd62d954059c7" kind="define"><name>MAX_ANGLE</name></member>
+  </compound>
+  <compound refid="kalman_8cpp" kind="file"><name>kalman.cpp</name>
+  </compound>
+  <compound refid="kalman_8hpp" kind="file"><name>kalman.hpp</name>
+  </compound>
+  <compound refid="_p_i_d_8cpp" kind="file"><name>PID.cpp</name>
+  </compound>
+  <compound refid="_p_i_d_8hpp" kind="file"><name>PID.hpp</name>
+    <member refid="group___control_1ga5de5e8e3ab304842347b047eb9a7a468" kind="define"><name>map</name></member>
+    <member refid="group___control_1gae534547361f20b9a2207606251572301" kind="define"><name>constrain</name></member>
+  </compound>
+  <compound refid="find_h_s_v_values_8cpp" kind="file"><name>findHSVValues.cpp</name>
+    <member refid="group___main_1ga83e8ee98846251f562a2f86d4b111305" kind="variable"><name>lowerH</name></member>
+    <member refid="group___main_1ga699ea9ef5e1bf6a6f203e8bc9d11cab8" kind="variable"><name>lowerS</name></member>
+    <member refid="group___main_1gabaa01b087134fbce24533de8262eeda1" kind="variable"><name>lowerV</name></member>
+    <member refid="group___main_1gaea3c34f140b4c990f615ec6a3c7f9141" kind="variable"><name>upperH</name></member>
+    <member refid="group___main_1ga9a9f67f87a6aa10dcae23e210f747dd2" kind="variable"><name>upperS</name></member>
+    <member refid="group___main_1gaddfe29c8ba358de0ac198a0be9e86a5c" kind="variable"><name>upperV</name></member>
+    <member refid="group___main_1gaae7980446bfb533ac1d20bd364cd8f55" kind="function"><name>GetThresholdedImage</name></member>
+    <member refid="group___main_1gabadf4b2e338a230af277c457a6f48b1d" kind="function"><name>setwindowSettings</name></member>
+    <member refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="serial_8cpp" kind="file"><name>serial.cpp</name>
+  </compound>
+  <compound refid="serial_8hpp" kind="file"><name>serial.hpp</name>
+    <member refid="group___serial_1gae7676cdfa371dfdcf6fb0687737c29a6" kind="define"><name>WAIT_TIME</name></member>
+  </compound>
+  <compound refid="group___main" kind="group"><name>Main</name>
+    <member refid="group___main_1gad7991bf79c0bd42b362b88e2f4b59c13" kind="variable"><name>compute</name></member>
+    <member refid="group___main_1gac89b9ea5e9ea4d8dfa1db0389ae9655d" kind="variable"><name>imgTracking</name></member>
+    <member refid="group___main_1ga700fc8bf3bbb61cbe9bb79ef72191466" kind="variable"><name>imgPlot</name></member>
+    <member refid="group___main_1ga7bb8b2cfc1aec0db2429c600cddccf17" kind="variable"><name>lastX</name></member>
+    <member refid="group___main_1gae135df8cfc9b15d97e97b400a5cbc768" kind="variable"><name>lastY</name></member>
+    <member refid="group___main_1gadb535ce83837e88311ab083ecb99f320" kind="variable"><name>doTrack</name></member>
+    <member refid="group___main_1ga80f65a18255557dbc3bc236fab672264" kind="variable"><name>doRotate</name></member>
+    <member refid="group___main_1ga83e8ee98846251f562a2f86d4b111305" kind="variable"><name>lowerH</name></member>
+    <member refid="group___main_1ga699ea9ef5e1bf6a6f203e8bc9d11cab8" kind="variable"><name>lowerS</name></member>
+    <member refid="group___main_1gabaa01b087134fbce24533de8262eeda1" kind="variable"><name>lowerV</name></member>
+    <member refid="group___main_1gaea3c34f140b4c990f615ec6a3c7f9141" kind="variable"><name>upperH</name></member>
+    <member refid="group___main_1ga9a9f67f87a6aa10dcae23e210f747dd2" kind="variable"><name>upperS</name></member>
+    <member refid="group___main_1gaddfe29c8ba358de0ac198a0be9e86a5c" kind="variable"><name>upperV</name></member>
+    <member refid="group___main_1gaae7980446bfb533ac1d20bd364cd8f55" kind="function"><name>GetThresholdedImage</name></member>
+    <member refid="group___main_1ga1cff0b66e0542535915b29424186f1c3" kind="function"><name>trackObject</name></member>
+    <member refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+    <member refid="group___main_1gabadf4b2e338a230af277c457a6f48b1d" kind="function"><name>setwindowSettings</name></member>
+    <member refid="group___main_1ga681e3f587c2e24e577ad99d56b663f0d" kind="define"><name>CAMERA_ID</name></member>
+    <member refid="group___main_1gafa42ae3a3e514ee00e30890c3158f56a" kind="define"><name>WIN_BINARY_NAME</name></member>
+    <member refid="group___main_1ga1f147d13e422eaccb294feb81f0e5ee7" kind="define"><name>WIN_FRAME_NAME</name></member>
+    <member refid="group___main_1ga528a674ecfc32beb8b1dfede24b66dca" kind="define"><name>WIN_GRAPH_NAME</name></member>
+    <member refid="group___main_1ga23ffff9afc54bc473cc3b4bbf0d9637c" kind="define"><name>BINARY_RESIZE</name></member>
+    <member refid="group___main_1gab26c7cb579e18875bacc9f7118c3d848" kind="define"><name>HSV_MIN</name></member>
+    <member refid="group___main_1gad59e8b6a2a4787641f4543edf1cde585" kind="define"><name>HSV_MAX</name></member>
+    <member refid="group___main_1ga5f048926a37dbc8f7cca17118f2607a6" kind="define"><name>TRACKING_COLOR</name></member>
+    <member refid="group___main_1ga42c814f2d0df4f5b808717f5ed2caab3" kind="define"><name>ROTATION_RADIUS</name></member>
+    <member refid="group___main_1ga56f5d8f5f5d41406e5a8d6c4a433d9ba" kind="define"><name>ROTATION_ANGLE_STEP</name></member>
+  </compound>
+  <compound refid="group___control" kind="group"><name>Control</name>
+    <member refid="group___control_1gaf3c82099d63a2d91d68bd62d954059c7" kind="define"><name>MAX_ANGLE</name></member>
+    <member refid="group___control_1ga5de5e8e3ab304842347b047eb9a7a468" kind="define"><name>map</name></member>
+    <member refid="group___control_1gae534547361f20b9a2207606251572301" kind="define"><name>constrain</name></member>
+    <member refid="group___control_1ga06063e8787ec8883de4ea5b5cc347b9b" kind="function"><name>Compute</name></member>
+    <member refid="group___control_1ga0b870ef17154c6d4395e38a706b0421f" kind="function"><name>~Compute</name></member>
+    <member refid="group___control_1gad916f913222c92830ecb4a192b67c6d4" kind="function"><name>getPIDX</name></member>
+    <member refid="group___control_1ga23898dbfd5e46b3dbe38d245bd417b9d" kind="function"><name>getPIDY</name></member>
+    <member refid="group___control_1ga426882753acbede055673691abe6b597" kind="function"><name>setPoint</name></member>
+    <member refid="group___control_1gaab1c21a03462410a52b24047c66961fe" kind="function"><name>center</name></member>
+    <member refid="group___control_1gae689eda9201b54d1ca06a04a693b0e73" kind="function"><name>IsConnected</name></member>
+    <member refid="group___control_1ga654ce447d37ead187bf4294108f14dff" kind="function"><name>Update</name></member>
+    <member refid="group___control_1gadda796b81679fb1274b031977ed4aa85" kind="function"><name>SetPlotter</name></member>
+    <member refid="group___control_1gab35c5e0efd0fc15725300a44ec49ab3b" kind="function"><name>Plot</name></member>
+    <member refid="group___control_1gafced0e28f571d98e8a3c7057e87cd100" kind="function"><name>Kalman</name></member>
+    <member refid="group___control_1ga4e54bc3ac77da48219de5b6297d90386" kind="function"><name>~Kalman</name></member>
+    <member refid="group___control_1gaa5abc03d34d704f352f145904ddbc3b4" kind="function"><name>update</name></member>
+    <member refid="group___control_1ga6b6b4ec371d4bdf395be50f08ed3b04e" kind="function"><name>PID</name></member>
+    <member refid="group___control_1gab7d389fc5b88d881bc25f5dafd360441" kind="function"><name>~PID</name></member>
+    <member refid="group___control_1ga953e7ee82c4a11997d740771a2b1d610" kind="function"><name>setP</name></member>
+    <member refid="group___control_1ga63ddc5b4d6f6f4cd2166d27b96102240" kind="function"><name>setD</name></member>
+    <member refid="group___control_1gaf797ee59d8789940905d9b3692a801ab" kind="function"><name>setI</name></member>
+    <member refid="group___control_1ga00974abc051527b2dcdcaf15d766872b" kind="function"><name>updatePID</name></member>
+  </compound>
+  <compound refid="group___serial" kind="group"><name>Serial</name>
+    <member refid="group___serial_1gae7676cdfa371dfdcf6fb0687737c29a6" kind="define"><name>WAIT_TIME</name></member>
+    <member refid="group___serial_1ga53e1e7d545e9ca3776224344ea4c3719" kind="function"><name>Serial</name></member>
+    <member refid="group___serial_1ga5b32c394c0ff923a4ef1c13cfb20a6ba" kind="function"><name>~Serial</name></member>
+    <member refid="group___serial_1ga3874e3c10b006dc37584d45a928ae9db" kind="function"><name>ReadData</name></member>
+    <member refid="group___serial_1ga3cce4a34142e8e2adbda131d43103e01" kind="function"><name>WriteData</name></member>
+    <member refid="group___serial_1gaa53e46b5c8556152d5d3306fdab4117c" kind="function"><name>IsConnected</name></member>
+  </compound>
+  <compound refid="dir_61e9e9f10ced6e29c92459e7e5e3fdc1" kind="dir"><name>C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/</name>
+  </compound>
+  <compound refid="dir_3a0b84d77d47386d9349ffb79c83085f" kind="dir"><name>C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/serial/</name>
+  </compound>
+  <compound refid="dir_b7dfd833ded8c6f50135844bfb6b7046" kind="dir"><name>C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/</name>
+  </compound>
+</doxygenindex>

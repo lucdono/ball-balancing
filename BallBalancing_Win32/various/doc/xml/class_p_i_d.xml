@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_p_i_d" kind="class" prot="public">
+    <compoundname>PID</compoundname>
+    <includes refid="_p_i_d_8hpp" local="no">PID.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_p_i_d_1a77d4138c9daab12fdf042aa5a4ffff68" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PID::P</definition>
+        <argsstring></argsstring>
+        <name>P</name>
+        <briefdescription>
+<para>Proportional gain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" line="87" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" bodystart="87" bodyend="-1"/>
+        <referencedby refid="group___control_1ga6b6b4ec371d4bdf395be50f08ed3b04e" compoundref="_p_i_d_8cpp" startline="48" endline="57">PID</referencedby>
+        <referencedby refid="group___control_1ga953e7ee82c4a11997d740771a2b1d610" compoundref="_p_i_d_8cpp" startline="71" endline="73">setP</referencedby>
+        <referencedby refid="group___control_1ga00974abc051527b2dcdcaf15d766872b" compoundref="_p_i_d_8cpp" startline="104" endline="150">updatePID</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a0d406ecdc67396f399b84742b271c18c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PID::I</definition>
+        <argsstring></argsstring>
+        <name>I</name>
+        <briefdescription>
+<para>Integral gain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" line="88" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" bodystart="88" bodyend="-1"/>
+        <referencedby refid="group___control_1ga6b6b4ec371d4bdf395be50f08ed3b04e" compoundref="_p_i_d_8cpp" startline="48" endline="57">PID</referencedby>
+        <referencedby refid="group___control_1gaf797ee59d8789940905d9b3692a801ab" compoundref="_p_i_d_8cpp" startline="89" endline="91">setI</referencedby>
+        <referencedby refid="group___control_1ga00974abc051527b2dcdcaf15d766872b" compoundref="_p_i_d_8cpp" startline="104" endline="150">updatePID</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1ac64494c2d6b8874248baec5328cfa63f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PID::D</definition>
+        <argsstring></argsstring>
+        <name>D</name>
+        <briefdescription>
+<para>Derivative gain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" line="89" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" bodystart="89" bodyend="-1"/>
+        <referencedby refid="group___control_1ga6b6b4ec371d4bdf395be50f08ed3b04e" compoundref="_p_i_d_8cpp" startline="48" endline="57">PID</referencedby>
+        <referencedby refid="group___control_1ga63ddc5b4d6f6f4cd2166d27b96102240" compoundref="_p_i_d_8cpp" startline="80" endline="82">setD</referencedby>
+        <referencedby refid="group___control_1ga00974abc051527b2dcdcaf15d766872b" compoundref="_p_i_d_8cpp" startline="104" endline="150">updatePID</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a8111a63a1f7c43d8ba18904e420b8fbf" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PID::lastPosition</definition>
+        <argsstring></argsstring>
+        <name>lastPosition</name>
+        <briefdescription>
+<para>Last reference value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" line="90" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" bodystart="90" bodyend="-1"/>
+        <referencedby refid="group___control_1ga6b6b4ec371d4bdf395be50f08ed3b04e" compoundref="_p_i_d_8cpp" startline="48" endline="57">PID</referencedby>
+        <referencedby refid="group___control_1ga00974abc051527b2dcdcaf15d766872b" compoundref="_p_i_d_8cpp" startline="104" endline="150">updatePID</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a03edc16555f37cd01d2af9f050a3e206" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PID::previousPIDTime</definition>
+        <argsstring></argsstring>
+        <name>previousPIDTime</name>
+        <briefdescription>
+<para>Previous <ref refid="class_p_i_d" kindref="compound">PID</ref> update time. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" line="91" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" bodystart="91" bodyend="-1"/>
+        <referencedby refid="group___control_1ga6b6b4ec371d4bdf395be50f08ed3b04e" compoundref="_p_i_d_8cpp" startline="48" endline="57">PID</referencedby>
+        <referencedby refid="group___control_1ga00974abc051527b2dcdcaf15d766872b" compoundref="_p_i_d_8cpp" startline="104" endline="150">updatePID</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a8df49529ada444c008092625e785c18b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PID::firstPass</definition>
+        <argsstring></argsstring>
+        <name>firstPass</name>
+        <briefdescription>
+<para>Initialization flag. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" line="92" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" bodystart="92" bodyend="-1"/>
+        <referencedby refid="group___control_1ga6b6b4ec371d4bdf395be50f08ed3b04e" compoundref="_p_i_d_8cpp" startline="48" endline="57">PID</referencedby>
+        <referencedby refid="group___control_1ga00974abc051527b2dcdcaf15d766872b" compoundref="_p_i_d_8cpp" startline="104" endline="150">updatePID</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1ad950cf7d52e710697cfae502332cf280" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PID::integratedError</definition>
+        <argsstring></argsstring>
+        <name>integratedError</name>
+        <briefdescription>
+<para>Last integral error. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" line="93" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" bodystart="93" bodyend="-1"/>
+        <referencedby refid="group___control_1ga6b6b4ec371d4bdf395be50f08ed3b04e" compoundref="_p_i_d_8cpp" startline="48" endline="57">PID</referencedby>
+        <referencedby refid="group___control_1ga00974abc051527b2dcdcaf15d766872b" compoundref="_p_i_d_8cpp" startline="104" endline="150">updatePID</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1ae84efe30e81886ccf3bd9570ad5665d2" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PID::windupGuard</definition>
+        <argsstring></argsstring>
+        <name>windupGuard</name>
+        <briefdescription>
+<para>Integral saturation guard. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" line="94" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" bodystart="94" bodyend="-1"/>
+        <referencedby refid="group___control_1ga6b6b4ec371d4bdf395be50f08ed3b04e" compoundref="_p_i_d_8cpp" startline="48" endline="57">PID</referencedby>
+        <referencedby refid="group___control_1ga00974abc051527b2dcdcaf15d766872b" compoundref="_p_i_d_8cpp" startline="104" endline="150">updatePID</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="group___control_1ga6b6b4ec371d4bdf395be50f08ed3b04e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PID::PID</definition>
+        <argsstring>(float P, float I, float D)</argsstring>
+        <name>PID</name>
+        <param>
+          <type>float</type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>I</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>D</declname>
+        </param>
+        <briefdescription>
+<para>The constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Proportional gain. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">I</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integral gain. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">D</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Derivative gain. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" line="97" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.cpp" bodystart="48" bodyend="57"/>
+        <references refid="class_p_i_d_1a8df49529ada444c008092625e785c18b" compoundref="_p_i_d_8hpp" startline="92">firstPass</references>
+        <references refid="class_p_i_d_1a0d406ecdc67396f399b84742b271c18c" compoundref="_p_i_d_8hpp" startline="88">I</references>
+        <references refid="class_p_i_d_1a77d4138c9daab12fdf042aa5a4ffff68" compoundref="_p_i_d_8hpp" startline="87">P</references>
+        <references refid="class_p_i_d_1ac64494c2d6b8874248baec5328cfa63f" compoundref="_p_i_d_8hpp" startline="89">D</references>
+        <references refid="class_p_i_d_1a03edc16555f37cd01d2af9f050a3e206" compoundref="_p_i_d_8hpp" startline="91">previousPIDTime</references>
+        <references refid="class_p_i_d_1a8111a63a1f7c43d8ba18904e420b8fbf" compoundref="_p_i_d_8hpp" startline="90">lastPosition</references>
+        <references refid="class_p_i_d_1ae84efe30e81886ccf3bd9570ad5665d2" compoundref="_p_i_d_8hpp" startline="94">windupGuard</references>
+        <references refid="class_p_i_d_1ad950cf7d52e710697cfae502332cf280" compoundref="_p_i_d_8hpp" startline="93">integratedError</references>
+      </memberdef>
+      <memberdef kind="function" id="group___control_1gab7d389fc5b88d881bc25f5dafd360441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PID::~PID</definition>
+        <argsstring>()</argsstring>
+        <name>~PID</name>
+        <briefdescription>
+<para>The destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" line="98" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.cpp" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="group___control_1ga953e7ee82c4a11997d740771a2b1d610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PID::setP</definition>
+        <argsstring>(float val)</argsstring>
+        <name>setP</name>
+        <param>
+          <type>float</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set P value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" line="100" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.cpp" bodystart="71" bodyend="73"/>
+        <references refid="class_p_i_d_1a77d4138c9daab12fdf042aa5a4ffff68" compoundref="_p_i_d_8hpp" startline="87">P</references>
+      </memberdef>
+      <memberdef kind="function" id="group___control_1gaf797ee59d8789940905d9b3692a801ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PID::setI</definition>
+        <argsstring>(float val)</argsstring>
+        <name>setI</name>
+        <param>
+          <type>float</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set I value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" line="101" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.cpp" bodystart="89" bodyend="91"/>
+        <references refid="class_p_i_d_1a0d406ecdc67396f399b84742b271c18c" compoundref="_p_i_d_8hpp" startline="88">I</references>
+      </memberdef>
+      <memberdef kind="function" id="group___control_1ga63ddc5b4d6f6f4cd2166d27b96102240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PID::setD</definition>
+        <argsstring>(float val)</argsstring>
+        <name>setD</name>
+        <param>
+          <type>float</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set D value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" line="102" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.cpp" bodystart="80" bodyend="82"/>
+        <references refid="class_p_i_d_1ac64494c2d6b8874248baec5328cfa63f" compoundref="_p_i_d_8hpp" startline="89">D</references>
+      </memberdef>
+      <memberdef kind="function" id="group___control_1ga00974abc051527b2dcdcaf15d766872b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float PID::updatePID</definition>
+        <argsstring>(float targetPosition, float currentPosition)</argsstring>
+        <name>updatePID</name>
+        <param>
+          <type>float</type>
+          <declname>targetPosition</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>currentPosition</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_p_i_d" kindref="compound">PID</ref> controller update function. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_compute" kindref="compound">Compute</ref> the <ref refid="class_p_i_d" kindref="compound">PID</ref> output according to the current reference signal value and the desired target reference value.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">targetPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the target reference value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">currentPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current signal value.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the actuator input signal needed to reach the target reference value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" line="103" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.cpp" bodystart="104" bodyend="150"/>
+        <references refid="class_p_i_d_1a03edc16555f37cd01d2af9f050a3e206" compoundref="_p_i_d_8hpp" startline="91">previousPIDTime</references>
+        <references refid="class_p_i_d_1a8df49529ada444c008092625e785c18b" compoundref="_p_i_d_8hpp" startline="92">firstPass</references>
+        <references refid="group___control_1gae534547361f20b9a2207606251572301" compoundref="_p_i_d_8hpp" startline="75">constrain</references>
+        <references refid="class_p_i_d_1ae84efe30e81886ccf3bd9570ad5665d2" compoundref="_p_i_d_8hpp" startline="94">windupGuard</references>
+        <references refid="class_p_i_d_1ad950cf7d52e710697cfae502332cf280" compoundref="_p_i_d_8hpp" startline="93">integratedError</references>
+        <references refid="class_p_i_d_1ac64494c2d6b8874248baec5328cfa63f" compoundref="_p_i_d_8hpp" startline="89">D</references>
+        <references refid="class_p_i_d_1a8111a63a1f7c43d8ba18904e420b8fbf" compoundref="_p_i_d_8hpp" startline="90">lastPosition</references>
+        <references refid="class_p_i_d_1a77d4138c9daab12fdf042aa5a4ffff68" compoundref="_p_i_d_8hpp" startline="87">P</references>
+        <references refid="class_p_i_d_1a0d406ecdc67396f399b84742b271c18c" compoundref="_p_i_d_8hpp" startline="88">I</references>
+        <referencedby refid="group___control_1ga654ce447d37ead187bf4294108f14dff" compoundref="compute_8cpp" startline="120" endline="151">Compute::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" line="85" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/PID.hpp" bodystart="85" bodyend="105"/>
+    <listofallmembers>
+      <member refid="class_p_i_d_1ac64494c2d6b8874248baec5328cfa63f" prot="private" virt="non-virtual"><scope>PID</scope><name>D</name></member>
+      <member refid="class_p_i_d_1a8df49529ada444c008092625e785c18b" prot="private" virt="non-virtual"><scope>PID</scope><name>firstPass</name></member>
+      <member refid="class_p_i_d_1a0d406ecdc67396f399b84742b271c18c" prot="private" virt="non-virtual"><scope>PID</scope><name>I</name></member>
+      <member refid="class_p_i_d_1ad950cf7d52e710697cfae502332cf280" prot="private" virt="non-virtual"><scope>PID</scope><name>integratedError</name></member>
+      <member refid="class_p_i_d_1a8111a63a1f7c43d8ba18904e420b8fbf" prot="private" virt="non-virtual"><scope>PID</scope><name>lastPosition</name></member>
+      <member refid="class_p_i_d_1a77d4138c9daab12fdf042aa5a4ffff68" prot="private" virt="non-virtual"><scope>PID</scope><name>P</name></member>
+      <member refid="group___control_1ga6b6b4ec371d4bdf395be50f08ed3b04e" prot="public" virt="non-virtual"><scope>PID</scope><name>PID</name></member>
+      <member refid="class_p_i_d_1a03edc16555f37cd01d2af9f050a3e206" prot="private" virt="non-virtual"><scope>PID</scope><name>previousPIDTime</name></member>
+      <member refid="group___control_1ga63ddc5b4d6f6f4cd2166d27b96102240" prot="public" virt="non-virtual"><scope>PID</scope><name>setD</name></member>
+      <member refid="group___control_1gaf797ee59d8789940905d9b3692a801ab" prot="public" virt="non-virtual"><scope>PID</scope><name>setI</name></member>
+      <member refid="group___control_1ga953e7ee82c4a11997d740771a2b1d610" prot="public" virt="non-virtual"><scope>PID</scope><name>setP</name></member>
+      <member refid="group___control_1ga00974abc051527b2dcdcaf15d766872b" prot="public" virt="non-virtual"><scope>PID</scope><name>updatePID</name></member>
+      <member refid="class_p_i_d_1ae84efe30e81886ccf3bd9570ad5665d2" prot="private" virt="non-virtual"><scope>PID</scope><name>windupGuard</name></member>
+      <member refid="group___control_1gab7d389fc5b88d881bc25f5dafd360441" prot="public" virt="non-virtual"><scope>PID</scope><name>~PID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,442 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="main_8c" kind="file">
+    <compoundname>main.c</compoundname>
+    <includes local="yes">ch.h</includes>
+    <includes local="yes">hal.h</includes>
+    <includes local="yes">serial.h</includes>
+    <incdepgraph>
+      <node id="264">
+        <label>serial.h</label>
+      </node>
+      <node id="262">
+        <label>ch.h</label>
+      </node>
+      <node id="261">
+        <label>C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c</label>
+        <link refid="main.c"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+      </node>
+      <node id="263">
+        <label>hal.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___ball_balancing_1ga104df749bd51b5924bbfcd67313773c3" prot="public" static="no">
+        <name>MIN_SERVO</name>
+        <initializer>700</initializer>
+        <briefdescription>
+<para>HS325HB servo min pulse. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" line="71" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" bodystart="71" bodyend="-1"/>
+        <referencedby refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" compoundref="main_8c" startline="112" endline="116">commandServo</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___ball_balancing_1ga6225ed2d3ed40a4841073e5b6b0b4166" prot="public" static="no">
+        <name>MAX_SERVO</name>
+        <initializer>2400</initializer>
+        <briefdescription>
+<para>HS325HB servo max pulse. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" line="76" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" bodystart="76" bodyend="-1"/>
+        <referencedby refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" compoundref="main_8c" startline="112" endline="116">commandServo</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___ball_balancing_1gaf3c82099d63a2d91d68bd62d954059c7" prot="public" static="no">
+        <name>MAX_ANGLE</name>
+        <initializer>90</initializer>
+        <briefdescription>
+<para>HS325HB servo max absolute angle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" line="81" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" bodystart="81" bodyend="-1"/>
+        <referencedby refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" compoundref="main_8c" startline="112" endline="116">commandServo</referencedby>
+        <referencedby refid="group___ball_balancing_1ga66c2c15e726cd90ad73f1497f6f9859c" compoundref="main_8c" startline="130" endline="149">CtrlThread</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___ball_balancing_1ga5de5e8e3ab304842347b047eb9a7a468" prot="public" static="no">
+        <name>map</name>
+        <param><defname>in</defname></param>
+        <param><defname>inMin</defname></param>
+        <param><defname>inMax</defname></param>
+        <param><defname>outMin</defname></param>
+        <param><defname>outMax</defname></param>
+        <initializer>(((float)in - (float)inMin) / \
+	((float)inMax - (float)inMin) * \
+	((float)outMax - (float)outMin) + (float)outMin)</initializer>
+        <briefdescription>
+<para>Scale an input value within a given range. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to scale. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">inMin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the lower bound of input value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">inMax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the upper bound of input value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">outMin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the lower bound of output value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">outMax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the upper bound of utput value.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the scaled value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" line="97" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" bodystart="94" bodyend="-1"/>
+        <referencedby refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" compoundref="main_8c" startline="112" endline="116">commandServo</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___ball_balancing_1ga902ad52cd507aae1615bd2858a47020d" prot="public" static="yes" mutable="no">
+        <type>PWMConfig</type>
+        <definition>PWMConfig pwmcfg</definition>
+        <argsstring></argsstring>
+        <name>pwmcfg</name>
+        <initializer> {
+		1000000, 
+		20000, 
+		NULL,
+		{
+			{ PWM_OUTPUT_ACTIVE_LOW, NULL },
+			{ PWM_OUTPUT_ACTIVE_LOW, NULL },
+			{ PWM_OUTPUT_ACTIVE_HIGH, NULL },
+			{ PWM_OUTPUT_ACTIVE_HIGH, NULL }
+		},
+		
+		0,
+
+
+
+}</initializer>
+        <briefdescription>
+<para>PWM configuration structure. </para>        </briefdescription>
+        <detaileddescription>
+<para>Channels 3 and 4 enabled without callbacks, the active state is logic high. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" line="62" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" bodystart="47" bodyend="-1"/>
+        <referencedby refid="group___ball_balancing_1ga840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8c" startline="158" endline="219">main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void commandServo</definition>
+        <argsstring>(uint8_t servo, int8_t angle)</argsstring>
+        <name>commandServo</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>servo</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Rotate a servo with the given angle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">servo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the servo to command (0 or 1). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the rotation angle in the range [-MAX_ANGLE,MAX_ANGLE].</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>the servo id will be mapped to the associated PWM channel. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" line="112" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" bodystart="112" bodyend="116"/>
+        <references refid="group___ball_balancing_1gaf3c82099d63a2d91d68bd62d954059c7" compoundref="main_8c" startline="81">MAX_ANGLE</references>
+        <references refid="group___ball_balancing_1ga5de5e8e3ab304842347b047eb9a7a468" compoundref="main_8c" startline="94">map</references>
+        <references refid="group___ball_balancing_1ga104df749bd51b5924bbfcd67313773c3" compoundref="main_8c" startline="71">MIN_SERVO</references>
+        <references refid="group___ball_balancing_1ga6225ed2d3ed40a4841073e5b6b0b4166" compoundref="main_8c" startline="76">MAX_SERVO</references>
+        <referencedby refid="group___ball_balancing_1ga66c2c15e726cd90ad73f1497f6f9859c" compoundref="main_8c" startline="130" endline="149">CtrlThread</referencedby>
+        <referencedby refid="group___ball_balancing_1ga840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8c" startline="158" endline="219">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___ball_balancing_1gaf2c4109d8f7d0188c8bd1792b02368cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>static</type>
+        <definition>static WORKING_AREA</definition>
+        <argsstring>(ctrlThreadWA, 128)</argsstring>
+        <name>WORKING_AREA</name>
+        <param>
+          <type>ctrlThreadWA</type>
+        </param>
+        <param>
+          <type>128</type>
+        </param>
+        <briefdescription>
+<para>The servo control thread. </para>        </briefdescription>
+        <detaileddescription>
+<para>It reads the angle used to control the servos from serial driver, then it commands the servo. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the thread argument.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the thread exit status.</para></simplesect>
+<simplesect kind="note"><para>serial 1° byte --&gt; servo 0 angle, serial 2° byte --&gt; servo 1 angle. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" line="129"/>
+      </memberdef>
+      <memberdef kind="function" id="group___ball_balancing_1ga66c2c15e726cd90ad73f1497f6f9859c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_t</type>
+        <definition>static msg_t CtrlThread</definition>
+        <argsstring>(void *arg)</argsstring>
+        <name>CtrlThread</name>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" line="130" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" bodystart="130" bodyend="149"/>
+        <references refid="group___ball_balancing_1gaf3c82099d63a2d91d68bd62d954059c7" compoundref="main_8c" startline="81">MAX_ANGLE</references>
+        <references refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" compoundref="main_8c" startline="112" endline="116">commandServo</references>
+        <referencedby refid="group___ball_balancing_1ga840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8c" startline="158" endline="219">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___ball_balancing_1ga840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(void)</argsstring>
+        <name>main</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Application entry point. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" line="158" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c" bodystart="158" bodyend="219"/>
+        <references refid="group___ball_balancing_1ga902ad52cd507aae1615bd2858a47020d" compoundref="main_8c" startline="47">pwmcfg</references>
+        <references refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" compoundref="main_8c" startline="112" endline="116">commandServo</references>
+        <references refid="group___ball_balancing_1ga66c2c15e726cd90ad73f1497f6f9859c" compoundref="main_8c" startline="130" endline="149">CtrlThread</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Main servo control algorithms for Ball Balancing System. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>BallBalancing<sp/>-<sp/>Copyright<sp/>(C)<sp/>2013<sp/>Luca<sp/>D&apos;Onofrio.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>BallBalancing<sp/>Project</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>BallBalancing<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>BallBalancing<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>This<sp/>firmware<sp/>is<sp/>based<sp/>on<sp/>ChibiOS-RT<sp/>2.5.0,<sp/>see<sp/>&lt;http://www.chibios.org&gt;.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Include<sp/>files.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ch.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;serial.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Variables.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="group___ball_balancing_1ga902ad52cd507aae1615bd2858a47020d" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>PWMConfig<sp/><ref refid="group___ball_balancing_1ga902ad52cd507aae1615bd2858a47020d" kindref="member" tooltip="PWM configuration structure.">pwmcfg</ref><sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1000000,<sp/></highlight><highlight class="comment">/*<sp/>10KHz<sp/>PWM<sp/>clock<sp/>frequency.<sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>20000,<sp/></highlight><highlight class="comment">/*<sp/>PWM<sp/>period<sp/>20ms<sp/>(in<sp/>ticks).<sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NULL,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>PWM_OUTPUT_ACTIVE_LOW,<sp/>NULL<sp/>},</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>PWM_OUTPUT_ACTIVE_LOW,<sp/>NULL<sp/>},</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>PWM_OUTPUT_ACTIVE_HIGH,<sp/>NULL<sp/>},</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>PWM_OUTPUT_ACTIVE_HIGH,<sp/>NULL<sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>HW<sp/>dependent<sp/>part.*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>STM32_PWM_USE_ADVANCED</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Defines<sp/>and<sp/>macros.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="group___ball_balancing_1ga104df749bd51b5924bbfcd67313773c3" refkind="member"><highlight class="preprocessor">#define<sp/>MIN_SERVO<sp/><sp/>700</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="76" refid="group___ball_balancing_1ga6225ed2d3ed40a4841073e5b6b0b4166" refkind="member"><highlight class="preprocessor">#define<sp/>MAX_SERVO<sp/><sp/>2400</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="81" refid="group___ball_balancing_1gaf3c82099d63a2d91d68bd62d954059c7" refkind="member"><highlight class="preprocessor">#define<sp/>MAX_ANGLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>90</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="94" refid="group___ball_balancing_1ga5de5e8e3ab304842347b047eb9a7a468" refkind="member"><highlight class="preprocessor">#define<sp/>map(in,<sp/>inMin,<sp/>inMax,<sp/>outMin,<sp/>outMax)<sp/>\</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((float)in<sp/>-<sp/>(float)inMin)<sp/>/<sp/>\</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((float)inMax<sp/>-<sp/>(float)inMin)<sp/>*<sp/>\</highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((float)outMax<sp/>-<sp/>(float)outMin)<sp/>+<sp/>(float)outMin)</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Internal<sp/>Functions.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" kindref="member" tooltip="Rotate a servo with the given angle.">commandServo</ref>(uint8_t<sp/>servo,<sp/>int8_t<sp/>angle)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(angle<sp/>&gt;=<sp/>-<ref refid="group___ball_balancing_1gaf3c82099d63a2d91d68bd62d954059c7" kindref="member" tooltip="HS325HB servo max absolute angle.">MAX_ANGLE</ref><sp/>&amp;&amp;<sp/>angle<sp/>&lt;=<sp/><ref refid="group___ball_balancing_1gaf3c82099d63a2d91d68bd62d954059c7" kindref="member" tooltip="HS325HB servo max absolute angle.">MAX_ANGLE</ref>)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pwmEnableChannel(&amp;PWMD3,<sp/>servo<sp/>+<sp/>2,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___ball_balancing_1ga5de5e8e3ab304842347b047eb9a7a468" kindref="member" tooltip="Scale an input value within a given range.">map</ref>(angle,<ref refid="group___ball_balancing_1gaf3c82099d63a2d91d68bd62d954059c7" kindref="member" tooltip="HS325HB servo max absolute angle.">MAX_ANGLE</ref>,-<ref refid="group___ball_balancing_1gaf3c82099d63a2d91d68bd62d954059c7" kindref="member" tooltip="HS325HB servo max absolute angle.">MAX_ANGLE</ref>,<ref refid="group___ball_balancing_1ga104df749bd51b5924bbfcd67313773c3" kindref="member" tooltip="HS325HB servo min pulse.">MIN_SERVO</ref>,<ref refid="group___ball_balancing_1ga6225ed2d3ed40a4841073e5b6b0b4166" kindref="member" tooltip="HS325HB servo max pulse.">MAX_SERVO</ref>));</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="group___ball_balancing_1gaf2c4109d8f7d0188c8bd1792b02368cb" kindref="member" tooltip="The servo control thread.">WORKING_AREA</ref>(ctrlThreadWA,<sp/>128);</highlight></codeline>
+<codeline lineno="130" refid="group___ball_balancing_1ga66c2c15e726cd90ad73f1497f6f9859c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>msg_t<sp/><ref refid="group___ball_balancing_1ga66c2c15e726cd90ad73f1497f6f9859c" kindref="member">CtrlThread</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>data[2];</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)<sp/>arg;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chRegSetThreadName(</highlight><highlight class="stringliteral">&quot;Control&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(TRUE)<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sdRead(&amp;SD1,&amp;data[0],2);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int8_t<sp/>a0<sp/>=<sp/>(int8_t)data[0];</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int8_t<sp/>a1<sp/>=<sp/>(int8_t)data[1];</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a0<sp/>&gt;=<sp/>-<ref refid="group___ball_balancing_1gaf3c82099d63a2d91d68bd62d954059c7" kindref="member" tooltip="HS325HB servo max absolute angle.">MAX_ANGLE</ref><sp/>&amp;&amp;<sp/>a0<sp/>&lt;=<sp/><ref refid="group___ball_balancing_1gaf3c82099d63a2d91d68bd62d954059c7" kindref="member" tooltip="HS325HB servo max absolute angle.">MAX_ANGLE</ref>)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" kindref="member" tooltip="Rotate a servo with the given angle.">commandServo</ref>(0,<sp/>a0);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a1<sp/>&gt;=<sp/>-<ref refid="group___ball_balancing_1gaf3c82099d63a2d91d68bd62d954059c7" kindref="member" tooltip="HS325HB servo max absolute angle.">MAX_ANGLE</ref><sp/>&amp;&amp;<sp/>a1<sp/>&lt;=<sp/><ref refid="group___ball_balancing_1gaf3c82099d63a2d91d68bd62d954059c7" kindref="member" tooltip="HS325HB servo max absolute angle.">MAX_ANGLE</ref>)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" kindref="member" tooltip="Rotate a servo with the given angle.">commandServo</ref>(1,<sp/>a1);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>External<sp/>Functions.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="group___ball_balancing_1ga840291bc02cba5474a4cb46a9b9566fe" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___ball_balancing_1ga840291bc02cba5474a4cb46a9b9566fe" kindref="member" tooltip="Application entry point.">main</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="161"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>System<sp/>initializations.</highlight></codeline>
+<codeline lineno="162"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>-<sp/>HAL<sp/>initialization,<sp/>this<sp/>also<sp/>initializes<sp/>the<sp/>configured<sp/>device<sp/>drivers</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>and<sp/>performs<sp/>the<sp/>board-specific<sp/>initializations.</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>-<sp/>Kernel<sp/>initialization,<sp/>the<sp/>main()<sp/>function<sp/>becomes<sp/>a<sp/>thread<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>RTOS<sp/>is<sp/>active.</highlight></codeline>
+<codeline lineno="166"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>halInit();</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chSysInit();</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="171"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>Activates<sp/>the<sp/>serial<sp/>driver<sp/>with<sp/>the<sp/>default<sp/>configuration</highlight></codeline>
+<codeline lineno="172"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sdStart(&amp;SD1,<sp/>NULL);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>palSetPadMode(GPIOB,<sp/>6,<sp/>PAL_MODE_ALTERNATE(0));</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>palSetPadMode(GPIOB,<sp/>7,<sp/>PAL_MODE_ALTERNATE(0));</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>Initializes<sp/>the<sp/>PWM<sp/>driver<sp/>3.</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>GPIOC<sp/>9<sp/>and<sp/>GPIOC<sp/>8<sp/>are<sp/>the<sp/>PWM<sp/>output<sp/>(CH2-3).</highlight></codeline>
+<codeline lineno="180"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pwmStart(&amp;PWMD3,<sp/>&amp;<ref refid="group___ball_balancing_1ga902ad52cd507aae1615bd2858a47020d" kindref="member" tooltip="PWM configuration structure.">pwmcfg</ref>);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>palSetPadMode(GPIOC,<sp/>9,<sp/>PAL_MODE_ALTERNATE(0));</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>palSetPadMode(GPIOC,<sp/>8,<sp/>PAL_MODE_ALTERNATE(0));</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>Test<sp/>each<sp/>servo<sp/>at<sp/>min<sp/>angle</highlight></codeline>
+<codeline lineno="187"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" kindref="member" tooltip="Rotate a servo with the given angle.">commandServo</ref>(0,<sp/>-90);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" kindref="member" tooltip="Rotate a servo with the given angle.">commandServo</ref>(1,<sp/>-90);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chThdSleepMilliseconds(1000);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="193"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>Test<sp/>each<sp/>servo<sp/>at<sp/>max<sp/>angle</highlight></codeline>
+<codeline lineno="194"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" kindref="member" tooltip="Rotate a servo with the given angle.">commandServo</ref>(0,<sp/>90);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" kindref="member" tooltip="Rotate a servo with the given angle.">commandServo</ref>(1,<sp/>90);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chThdSleepMilliseconds(1000);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="200"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>Set<sp/>servos<sp/>to<sp/>0<sp/>angle</highlight></codeline>
+<codeline lineno="201"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" kindref="member" tooltip="Rotate a servo with the given angle.">commandServo</ref>(0,<sp/>0);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___ball_balancing_1gaf89aa0ee54dfbbdd58c7407aef33cd22" kindref="member" tooltip="Rotate a servo with the given angle.">commandServo</ref>(1,<sp/>0);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chThdSleepMilliseconds(1000);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="207"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>Create<sp/>control<sp/>thread</highlight></codeline>
+<codeline lineno="208"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chThdCreateStatic(ctrlThreadWA,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(ctrlThreadWA),<sp/>NORMALPRIO,</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___ball_balancing_1ga66c2c15e726cd90ad73f1497f6f9859c" kindref="member">CtrlThread</ref>,<sp/>NULL);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="213"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>Normal<sp/>main()<sp/>thread<sp/>activity,<sp/>in<sp/>this<sp/>demo<sp/>it<sp/>does<sp/>nothing<sp/>except</highlight></codeline>
+<codeline lineno="214"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>sleeping<sp/>in<sp/>a<sp/>loop.</highlight></codeline>
+<codeline lineno="215"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(TRUE)<sp/>{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chThdSleepMilliseconds(100);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/main.c"/>
+  </compounddef>
+</doxygen>

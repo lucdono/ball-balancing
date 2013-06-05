@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_6e45fa0bd4374919c48b459ee5c9e1aa" kind="dir">
+    <compoundname>C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/.dep/</compoundname>
+    <innerfile refid="adc_8o_8d">adc.o.d</innerfile>
+    <innerfile refid="adc__lld_8o_8d">adc_lld.o.d</innerfile>
+    <innerfile refid="board_8o_8d">board.o.d</innerfile>
+    <innerfile refid="can_8o_8d">can.o.d</innerfile>
+    <innerfile refid="chcond_8o_8d">chcond.o.d</innerfile>
+    <innerfile refid="chcore_8o_8d">chcore.o.d</innerfile>
+    <innerfile refid="chcore__v6m_8o_8d">chcore_v6m.o.d</innerfile>
+    <innerfile refid="chdebug_8o_8d">chdebug.o.d</innerfile>
+    <innerfile refid="chdynamic_8o_8d">chdynamic.o.d</innerfile>
+    <innerfile refid="chevents_8o_8d">chevents.o.d</innerfile>
+    <innerfile refid="chheap_8o_8d">chheap.o.d</innerfile>
+    <innerfile refid="chlists_8o_8d">chlists.o.d</innerfile>
+    <innerfile refid="chmboxes_8o_8d">chmboxes.o.d</innerfile>
+    <innerfile refid="chmemcore_8o_8d">chmemcore.o.d</innerfile>
+    <innerfile refid="chmempools_8o_8d">chmempools.o.d</innerfile>
+    <innerfile refid="chmsg_8o_8d">chmsg.o.d</innerfile>
+    <innerfile refid="chmtx_8o_8d">chmtx.o.d</innerfile>
+    <innerfile refid="chqueues_8o_8d">chqueues.o.d</innerfile>
+    <innerfile refid="chregistry_8o_8d">chregistry.o.d</innerfile>
+    <innerfile refid="chschd_8o_8d">chschd.o.d</innerfile>
+    <innerfile refid="chsem_8o_8d">chsem.o.d</innerfile>
+    <innerfile refid="chsys_8o_8d">chsys.o.d</innerfile>
+    <innerfile refid="chthreads_8o_8d">chthreads.o.d</innerfile>
+    <innerfile refid="chvt_8o_8d">chvt.o.d</innerfile>
+    <innerfile refid="crt0_8o_8d">crt0.o.d</innerfile>
+    <innerfile refid="ext_8o_8d">ext.o.d</innerfile>
+    <innerfile refid="ext__lld_8o_8d">ext_lld.o.d</innerfile>
+    <innerfile refid="ext__lld__isr_8o_8d">ext_lld_isr.o.d</innerfile>
+    <innerfile refid="gpt_8o_8d">gpt.o.d</innerfile>
+    <innerfile refid="gpt__lld_8o_8d">gpt_lld.o.d</innerfile>
+    <innerfile refid="hal_8o_8d">hal.o.d</innerfile>
+    <innerfile refid="hal__lld_8o_8d">hal_lld.o.d</innerfile>
+    <innerfile refid="i2c_8o_8d">i2c.o.d</innerfile>
+    <innerfile refid="icu_8o_8d">icu.o.d</innerfile>
+    <innerfile refid="icu__lld_8o_8d">icu_lld.o.d</innerfile>
+    <innerfile refid="mac_8o_8d">mac.o.d</innerfile>
+    <innerfile refid="main_8o_8d">main.o.d</innerfile>
+    <innerfile refid="mmc__spi_8o_8d">mmc_spi.o.d</innerfile>
+    <innerfile refid="mmcsd_8o_8d">mmcsd.o.d</innerfile>
+    <innerfile refid="nvic_8o_8d">nvic.o.d</innerfile>
+    <innerfile refid="pal_8o_8d">pal.o.d</innerfile>
+    <innerfile refid="pal__lld_8o_8d">pal_lld.o.d</innerfile>
+    <innerfile refid="pwm_8o_8d">pwm.o.d</innerfile>
+    <innerfile refid="pwm__lld_8o_8d">pwm_lld.o.d</innerfile>
+    <innerfile refid="rtc_8o_8d">rtc.o.d</innerfile>
+    <innerfile refid="sdc_8o_8d">sdc.o.d</innerfile>
+    <innerfile refid="serial_8o_8d">serial.o.d</innerfile>
+    <innerfile refid="serial__lld_8o_8d">serial_lld.o.d</innerfile>
+    <innerfile refid="serial__usb_8o_8d">serial_usb.o.d</innerfile>
+    <innerfile refid="spi_8o_8d">spi.o.d</innerfile>
+    <innerfile refid="spi__lld_8o_8d">spi_lld.o.d</innerfile>
+    <innerfile refid="stm32__dma_8o_8d">stm32_dma.o.d</innerfile>
+    <innerfile refid="tm_8o_8d">tm.o.d</innerfile>
+    <innerfile refid="uart_8o_8d">uart.o.d</innerfile>
+    <innerfile refid="uart__lld_8o_8d">uart_lld.o.d</innerfile>
+    <innerfile refid="usb_8o_8d">usb.o.d</innerfile>
+    <innerfile refid="vectors_8o_8d">vectors.o.d</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_ChibiOSRT/.dep/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="capture_8hpp" kind="file">
+    <compoundname>capture.hpp</compoundname>
+    <includedby refid="capture_8cpp" local="yes">C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp</includedby>
+    <invincdepgraph>
+      <node id="98">
+        <label>C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp</label>
+        <link refid="capture.hpp"/>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp</label>
+        <link refid="capture_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___main_1ga681e3f587c2e24e577ad99d56b663f0d" prot="public" static="no">
+        <name>CAMERA_ID</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>The camera id used (0 = primary, 1 = secondary) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="42" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___main_1gafa42ae3a3e514ee00e30890c3158f56a" prot="public" static="no">
+        <name>WIN_BINARY_NAME</name>
+        <initializer>&quot;Binary HSV Recognition&quot;</initializer>
+        <briefdescription>
+<para>Binary frame window name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="47" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="47" bodyend="-1"/>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___main_1ga1f147d13e422eaccb294feb81f0e5ee7" prot="public" static="no">
+        <name>WIN_FRAME_NAME</name>
+        <initializer>&quot;Object Tracking&quot;</initializer>
+        <briefdescription>
+<para>Object tracking frame window name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="52" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="52" bodyend="-1"/>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___main_1ga528a674ecfc32beb8b1dfede24b66dca" prot="public" static="no">
+        <name>WIN_GRAPH_NAME</name>
+        <initializer>&quot;Signal plot&quot;</initializer>
+        <briefdescription>
+<para>Graph window name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="57" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___main_1ga23ffff9afc54bc473cc3b4bbf0d9637c" prot="public" static="no">
+        <name>BINARY_RESIZE</name>
+        <initializer>50</initializer>
+        <briefdescription>
+<para>Scaling factor (%) of the binary frame window. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="62" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="62" bodyend="-1"/>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___main_1gab26c7cb579e18875bacc9f7118c3d848" prot="public" static="no">
+        <name>HSV_MIN</name>
+        <initializer>cvScalar(42, 140, 43)</initializer>
+        <briefdescription>
+<para>Lower HSV values for creating binary image. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="66" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="66" bodyend="-1"/>
+        <referencedby refid="group___main_1gaae7980446bfb533ac1d20bd364cd8f55" compoundref="capture_8cpp" startline="93" endline="97">GetThresholdedImage</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___main_1gad59e8b6a2a4787641f4543edf1cde585" prot="public" static="no">
+        <name>HSV_MAX</name>
+        <initializer>cvScalar(1118, 256, 256)</initializer>
+        <briefdescription>
+<para>Upper HSV values for creating binary image. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="71" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="71" bodyend="-1"/>
+        <referencedby refid="group___main_1gaae7980446bfb533ac1d20bd364cd8f55" compoundref="capture_8cpp" startline="93" endline="97">GetThresholdedImage</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___main_1ga5f048926a37dbc8f7cca17118f2607a6" prot="public" static="no">
+        <name>TRACKING_COLOR</name>
+        <initializer>cvScalar(0, 0, 255)</initializer>
+        <briefdescription>
+<para>Color for the tracking path. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="76" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="76" bodyend="-1"/>
+        <referencedby refid="group___main_1ga1cff0b66e0542535915b29424186f1c3" compoundref="capture_8cpp" startline="106" endline="142">trackObject</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___main_1ga42c814f2d0df4f5b808717f5ed2caab3" prot="public" static="no">
+        <name>ROTATION_RADIUS</name>
+        <initializer>150.0f</initializer>
+        <briefdescription>
+<para>The radius of the circle path around the center. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="81" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="81" bodyend="-1"/>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___main_1ga56f5d8f5f5d41406e5a8d6c4a433d9ba" prot="public" static="no">
+        <name>ROTATION_ANGLE_STEP</name>
+        <initializer>2.0f</initializer>
+        <briefdescription>
+<para>The rotation angle step around the center. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="86" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="86" bodyend="-1"/>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Main program header. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>Win32 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>BallBalancing<sp/>-<sp/>Copyright<sp/>(C)<sp/>2013<sp/>Luca<sp/>D&apos;Onofrio.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>BallBalancing<sp/>Project</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>BallBalancing<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>BallBalancing<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>This<sp/>firmware<sp/>is<sp/>based<sp/>on<sp/>OpenCV<sp/>2.4.5,<sp/>see<sp/>&lt;http://www.opencv.org&gt;.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#ifndef<sp/>CAPTURE_HPP_</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAPTURE_HPP_</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Defines<sp/>and<sp/>Macros<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="group___main_1ga681e3f587c2e24e577ad99d56b663f0d" refkind="member"><highlight class="preprocessor">#define<sp/>CAMERA_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="47" refid="group___main_1gafa42ae3a3e514ee00e30890c3158f56a" refkind="member"><highlight class="preprocessor">#define<sp/>WIN_BINARY_NAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;Binary<sp/>HSV<sp/>Recognition&quot;</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="52" refid="group___main_1ga1f147d13e422eaccb294feb81f0e5ee7" refkind="member"><highlight class="preprocessor">#define<sp/>WIN_FRAME_NAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;Object<sp/>Tracking&quot;</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="57" refid="group___main_1ga528a674ecfc32beb8b1dfede24b66dca" refkind="member"><highlight class="preprocessor">#define<sp/>WIN_GRAPH_NAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;Signal<sp/>plot&quot;</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="62" refid="group___main_1ga23ffff9afc54bc473cc3b4bbf0d9637c" refkind="member"><highlight class="preprocessor">#define<sp/>BINARY_RESIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>50</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="66" refid="group___main_1gab26c7cb579e18875bacc9f7118c3d848" refkind="member"><highlight class="preprocessor">#define<sp/>HSV_MIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvScalar(42,<sp/>140,<sp/>43)</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="71" refid="group___main_1gad59e8b6a2a4787641f4543edf1cde585" refkind="member"><highlight class="preprocessor">#define<sp/>HSV_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvScalar(1118,<sp/>256,<sp/>256)</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="76" refid="group___main_1ga5f048926a37dbc8f7cca17118f2607a6" refkind="member"><highlight class="preprocessor">#define<sp/>TRACKING_COLOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvScalar(0,<sp/>0,<sp/>255)</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="81" refid="group___main_1ga42c814f2d0df4f5b808717f5ed2caab3" refkind="member"><highlight class="preprocessor">#define<sp/>ROTATION_RADIUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>150.0f</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="86" refid="group___main_1ga56f5d8f5f5d41406e5a8d6c4a433d9ba" refkind="member"><highlight class="preprocessor">#define<sp/>ROTATION_ANGLE_STEP<sp/><sp/><sp/><sp/><sp/>2.0f</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CAPTURE_HPP_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp"/>
+  </compounddef>
+</doxygen>

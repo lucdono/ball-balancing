@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group___main" kind="group">
+    <compoundname>Main</compoundname>
+    <title>Main</title>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___main_1gad7991bf79c0bd42b362b88e2f4b59c13" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_compute" kindref="compound">Compute</ref> *</type>
+        <definition>Compute* compute</definition>
+        <argsstring></argsstring>
+        <name>compute</name>
+        <briefdescription>
+<para>The main computing class instanace. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" line="50" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___main_1gac89b9ea5e9ea4d8dfa1db0389ae9655d" prot="public" static="yes" mutable="no">
+        <type>IplImage *</type>
+        <definition>IplImage* imgTracking</definition>
+        <argsstring></argsstring>
+        <name>imgTracking</name>
+        <briefdescription>
+<para>Image tracking frame. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" line="55" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" bodystart="55" bodyend="-1"/>
+        <referencedby refid="group___main_1ga1cff0b66e0542535915b29424186f1c3" compoundref="capture_8cpp" startline="106" endline="142">trackObject</referencedby>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___main_1ga700fc8bf3bbb61cbe9bb79ef72191466" prot="public" static="yes" mutable="no">
+        <type>IplImage *</type>
+        <definition>IplImage* imgPlot</definition>
+        <argsstring></argsstring>
+        <name>imgPlot</name>
+        <briefdescription>
+<para>Plot frame. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" line="60" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" bodystart="60" bodyend="-1"/>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___main_1ga7bb8b2cfc1aec0db2429c600cddccf17" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int lastX</definition>
+        <argsstring></argsstring>
+        <name>lastX</name>
+        <initializer> -1</initializer>
+        <briefdescription>
+<para>Tracking last X position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" line="65" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" bodystart="65" bodyend="-1"/>
+        <referencedby refid="group___main_1ga1cff0b66e0542535915b29424186f1c3" compoundref="capture_8cpp" startline="106" endline="142">trackObject</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___main_1gae135df8cfc9b15d97e97b400a5cbc768" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int lastY</definition>
+        <argsstring></argsstring>
+        <name>lastY</name>
+        <initializer> -1</initializer>
+        <briefdescription>
+<para>Tracking last Y position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" line="70" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" bodystart="70" bodyend="-1"/>
+        <referencedby refid="group___main_1ga1cff0b66e0542535915b29424186f1c3" compoundref="capture_8cpp" startline="106" endline="142">trackObject</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___main_1gadb535ce83837e88311ab083ecb99f320" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool doTrack</definition>
+        <argsstring></argsstring>
+        <name>doTrack</name>
+        <initializer> FALSE</initializer>
+        <briefdescription>
+<para>Tracking enablement. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" line="75" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" bodystart="75" bodyend="-1"/>
+        <referencedby refid="group___main_1ga1cff0b66e0542535915b29424186f1c3" compoundref="capture_8cpp" startline="106" endline="142">trackObject</referencedby>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___main_1ga80f65a18255557dbc3bc236fab672264" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool doRotate</definition>
+        <argsstring></argsstring>
+        <name>doRotate</name>
+        <initializer> FALSE</initializer>
+        <briefdescription>
+<para>Set the setpoint along a cirlce. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" line="80" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" bodystart="80" bodyend="-1"/>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___main_1ga83e8ee98846251f562a2f86d4b111305" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int lowerH</definition>
+        <argsstring></argsstring>
+        <name>lowerH</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+<para>Lower value of Hue. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/findHSVValues.cpp" line="44" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/findHSVValues.cpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="group___main_1gabadf4b2e338a230af277c457a6f48b1d" compoundref="find_h_s_v_values_8cpp" startline="76" endline="88">setwindowSettings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___main_1ga699ea9ef5e1bf6a6f203e8bc9d11cab8" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int lowerS</definition>
+        <argsstring></argsstring>
+        <name>lowerS</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+<para>Lower value of Saturation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/findHSVValues.cpp" line="45" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/findHSVValues.cpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="group___main_1gabadf4b2e338a230af277c457a6f48b1d" compoundref="find_h_s_v_values_8cpp" startline="76" endline="88">setwindowSettings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___main_1gabaa01b087134fbce24533de8262eeda1" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int lowerV</definition>
+        <argsstring></argsstring>
+        <name>lowerV</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+<para>Lower value of Brightness. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/findHSVValues.cpp" line="46" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/findHSVValues.cpp" bodystart="46" bodyend="-1"/>
+        <referencedby refid="group___main_1gabadf4b2e338a230af277c457a6f48b1d" compoundref="find_h_s_v_values_8cpp" startline="76" endline="88">setwindowSettings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___main_1gaea3c34f140b4c990f615ec6a3c7f9141" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int upperH</definition>
+        <argsstring></argsstring>
+        <name>upperH</name>
+        <initializer> 180</initializer>
+        <briefdescription>
+<para>Upper value of Hue. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/findHSVValues.cpp" line="48" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/findHSVValues.cpp" bodystart="48" bodyend="-1"/>
+        <referencedby refid="group___main_1gabadf4b2e338a230af277c457a6f48b1d" compoundref="find_h_s_v_values_8cpp" startline="76" endline="88">setwindowSettings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___main_1ga9a9f67f87a6aa10dcae23e210f747dd2" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int upperS</definition>
+        <argsstring></argsstring>
+        <name>upperS</name>
+        <initializer> 256</initializer>
+        <briefdescription>
+<para>Upper value of Saturation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/findHSVValues.cpp" line="49" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/findHSVValues.cpp" bodystart="49" bodyend="-1"/>
+        <referencedby refid="group___main_1gabadf4b2e338a230af277c457a6f48b1d" compoundref="find_h_s_v_values_8cpp" startline="76" endline="88">setwindowSettings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="group___main_1gaddfe29c8ba358de0ac198a0be9e86a5c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int upperV</definition>
+        <argsstring></argsstring>
+        <name>upperV</name>
+        <initializer> 256</initializer>
+        <briefdescription>
+<para>Upper value of Brightness. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/findHSVValues.cpp" line="50" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/findHSVValues.cpp" bodystart="50" bodyend="-1"/>
+        <referencedby refid="group___main_1gabadf4b2e338a230af277c457a6f48b1d" compoundref="find_h_s_v_values_8cpp" startline="76" endline="88">setwindowSettings</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___main_1gaae7980446bfb533ac1d20bd364cd8f55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IplImage *</type>
+        <definition>IplImage * GetThresholdedImage</definition>
+        <argsstring>(IplImage *imgHSV)</argsstring>
+        <name>GetThresholdedImage</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>imgHSV</declname>
+        </param>
+        <briefdescription>
+<para>Threshold the HSV image and create a binary image. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">imgHSV</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the HSV frame.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the binary image. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" line="93" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" bodystart="93" bodyend="97"/>
+        <references refid="group___main_1gab26c7cb579e18875bacc9f7118c3d848" compoundref="capture_8hpp" startline="66">HSV_MIN</references>
+        <references refid="group___main_1gad59e8b6a2a4787641f4543edf1cde585" compoundref="capture_8hpp" startline="71">HSV_MAX</references>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___main_1ga1cff0b66e0542535915b29424186f1c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CvPoint</type>
+        <definition>CvPoint trackObject</definition>
+        <argsstring>(IplImage *imgThresh)</argsstring>
+        <name>trackObject</name>
+        <param>
+          <type>IplImage *</type>
+          <declname>imgThresh</declname>
+        </param>
+        <briefdescription>
+<para>Object tracking functions from a binary image. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">imgThresh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the binary image.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the center of gravity of the tracked object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" line="106" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" bodystart="106" bodyend="142"/>
+        <references refid="group___main_1ga7bb8b2cfc1aec0db2429c600cddccf17" compoundref="capture_8cpp" startline="65">lastX</references>
+        <references refid="group___main_1gae135df8cfc9b15d97e97b400a5cbc768" compoundref="capture_8cpp" startline="70">lastY</references>
+        <references refid="group___main_1gadb535ce83837e88311ab083ecb99f320" compoundref="capture_8cpp" startline="75">doTrack</references>
+        <references refid="group___main_1gac89b9ea5e9ea4d8dfa1db0389ae9655d" compoundref="capture_8cpp" startline="55">imgTracking</references>
+        <references refid="group___main_1ga5f048926a37dbc8f7cca17118f2607a6" compoundref="capture_8hpp" startline="76">TRACKING_COLOR</references>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+<para>The program entry point. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" line="151" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.cpp" bodystart="151" bodyend="322"/>
+        <references refid="group___main_1ga681e3f587c2e24e577ad99d56b663f0d" compoundref="capture_8hpp" startline="42">CAMERA_ID</references>
+        <references refid="group___main_1gafa42ae3a3e514ee00e30890c3158f56a" compoundref="capture_8hpp" startline="47">WIN_BINARY_NAME</references>
+        <references refid="group___main_1ga1f147d13e422eaccb294feb81f0e5ee7" compoundref="capture_8hpp" startline="52">WIN_FRAME_NAME</references>
+        <references refid="group___main_1ga528a674ecfc32beb8b1dfede24b66dca" compoundref="capture_8hpp" startline="57">WIN_GRAPH_NAME</references>
+        <references refid="group___control_1gae689eda9201b54d1ca06a04a693b0e73" compoundref="compute_8cpp" startline="106" endline="108">Compute::IsConnected</references>
+        <references refid="group___main_1gac89b9ea5e9ea4d8dfa1db0389ae9655d" compoundref="capture_8cpp" startline="55">imgTracking</references>
+        <references refid="group___main_1ga700fc8bf3bbb61cbe9bb79ef72191466" compoundref="capture_8cpp" startline="60">imgPlot</references>
+        <references refid="group___control_1gadda796b81679fb1274b031977ed4aa85" compoundref="compute_8cpp" startline="160" endline="163">Compute::SetPlotter</references>
+        <references refid="group___main_1gaae7980446bfb533ac1d20bd364cd8f55" compoundref="capture_8cpp" startline="93" endline="97">GetThresholdedImage</references>
+        <references refid="group___main_1ga23ffff9afc54bc473cc3b4bbf0d9637c" compoundref="capture_8hpp" startline="62">BINARY_RESIZE</references>
+        <references refid="group___main_1ga1cff0b66e0542535915b29424186f1c3" compoundref="capture_8cpp" startline="106" endline="142">trackObject</references>
+        <references refid="group___main_1gadb535ce83837e88311ab083ecb99f320" compoundref="capture_8cpp" startline="75">doTrack</references>
+        <references refid="group___main_1ga80f65a18255557dbc3bc236fab672264" compoundref="capture_8cpp" startline="80">doRotate</references>
+        <references refid="group___main_1ga56f5d8f5f5d41406e5a8d6c4a433d9ba" compoundref="capture_8hpp" startline="86">ROTATION_ANGLE_STEP</references>
+        <references refid="group___main_1ga42c814f2d0df4f5b808717f5ed2caab3" compoundref="capture_8hpp" startline="81">ROTATION_RADIUS</references>
+        <references refid="group___control_1ga426882753acbede055673691abe6b597" compoundref="compute_8cpp" startline="89" endline="92">Compute::setPoint</references>
+        <references refid="group___control_1gaab1c21a03462410a52b24047c66961fe" compoundref="compute_8cpp" startline="97" endline="100">Compute::center</references>
+        <references refid="group___control_1ga654ce447d37ead187bf4294108f14dff" compoundref="compute_8cpp" startline="120" endline="151">Compute::Update</references>
+      </memberdef>
+      <memberdef kind="function" id="group___main_1gabadf4b2e338a230af277c457a6f48b1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setwindowSettings</definition>
+        <argsstring>(void)</argsstring>
+        <name>setwindowSettings</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function create two windows and 6 trackbars. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/findHSVValues.cpp" line="76" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/findHSVValues.cpp" bodystart="76" bodyend="88"/>
+        <references refid="group___main_1ga83e8ee98846251f562a2f86d4b111305" compoundref="find_h_s_v_values_8cpp" startline="44">lowerH</references>
+        <references refid="group___main_1gaea3c34f140b4c990f615ec6a3c7f9141" compoundref="find_h_s_v_values_8cpp" startline="48">upperH</references>
+        <references refid="group___main_1ga699ea9ef5e1bf6a6f203e8bc9d11cab8" compoundref="find_h_s_v_values_8cpp" startline="45">lowerS</references>
+        <references refid="group___main_1ga9a9f67f87a6aa10dcae23e210f747dd2" compoundref="find_h_s_v_values_8cpp" startline="49">upperS</references>
+        <references refid="group___main_1gabaa01b087134fbce24533de8262eeda1" compoundref="find_h_s_v_values_8cpp" startline="46">lowerV</references>
+        <references refid="group___main_1gaddfe29c8ba358de0ac198a0be9e86a5c" compoundref="find_h_s_v_values_8cpp" startline="50">upperV</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___main_1ga681e3f587c2e24e577ad99d56b663f0d" prot="public" static="no">
+        <name>CAMERA_ID</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>The camera id used (0 = primary, 1 = secondary) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="42" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___main_1gafa42ae3a3e514ee00e30890c3158f56a" prot="public" static="no">
+        <name>WIN_BINARY_NAME</name>
+        <initializer>&quot;Binary HSV Recognition&quot;</initializer>
+        <briefdescription>
+<para>Binary frame window name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="47" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="47" bodyend="-1"/>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___main_1ga1f147d13e422eaccb294feb81f0e5ee7" prot="public" static="no">
+        <name>WIN_FRAME_NAME</name>
+        <initializer>&quot;Object Tracking&quot;</initializer>
+        <briefdescription>
+<para>Object tracking frame window name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="52" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="52" bodyend="-1"/>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___main_1ga528a674ecfc32beb8b1dfede24b66dca" prot="public" static="no">
+        <name>WIN_GRAPH_NAME</name>
+        <initializer>&quot;Signal plot&quot;</initializer>
+        <briefdescription>
+<para>Graph window name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="57" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___main_1ga23ffff9afc54bc473cc3b4bbf0d9637c" prot="public" static="no">
+        <name>BINARY_RESIZE</name>
+        <initializer>50</initializer>
+        <briefdescription>
+<para>Scaling factor (%) of the binary frame window. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="62" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="62" bodyend="-1"/>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___main_1gab26c7cb579e18875bacc9f7118c3d848" prot="public" static="no">
+        <name>HSV_MIN</name>
+        <initializer>cvScalar(42, 140, 43)</initializer>
+        <briefdescription>
+<para>Lower HSV values for creating binary image. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="66" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="66" bodyend="-1"/>
+        <referencedby refid="group___main_1gaae7980446bfb533ac1d20bd364cd8f55" compoundref="capture_8cpp" startline="93" endline="97">GetThresholdedImage</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___main_1gad59e8b6a2a4787641f4543edf1cde585" prot="public" static="no">
+        <name>HSV_MAX</name>
+        <initializer>cvScalar(1118, 256, 256)</initializer>
+        <briefdescription>
+<para>Upper HSV values for creating binary image. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="71" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="71" bodyend="-1"/>
+        <referencedby refid="group___main_1gaae7980446bfb533ac1d20bd364cd8f55" compoundref="capture_8cpp" startline="93" endline="97">GetThresholdedImage</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___main_1ga5f048926a37dbc8f7cca17118f2607a6" prot="public" static="no">
+        <name>TRACKING_COLOR</name>
+        <initializer>cvScalar(0, 0, 255)</initializer>
+        <briefdescription>
+<para>Color for the tracking path. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="76" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="76" bodyend="-1"/>
+        <referencedby refid="group___main_1ga1cff0b66e0542535915b29424186f1c3" compoundref="capture_8cpp" startline="106" endline="142">trackObject</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___main_1ga42c814f2d0df4f5b808717f5ed2caab3" prot="public" static="no">
+        <name>ROTATION_RADIUS</name>
+        <initializer>150.0f</initializer>
+        <briefdescription>
+<para>The radius of the circle path around the center. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="81" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="81" bodyend="-1"/>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="group___main_1ga56f5d8f5f5d41406e5a8d6c4a433d9ba" prot="public" static="no">
+        <name>ROTATION_ANGLE_STEP</name>
+        <initializer>2.0f</initializer>
+        <briefdescription>
+<para>The rotation angle step around the center. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" line="86" bodyfile="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/capture.hpp" bodystart="86" bodyend="-1"/>
+        <referencedby refid="group___main_1gae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="capture_8cpp" startline="151" endline="322">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

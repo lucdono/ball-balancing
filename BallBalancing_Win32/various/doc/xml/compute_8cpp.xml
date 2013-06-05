@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="compute_8cpp" kind="file">
+    <compoundname>compute.cpp</compoundname>
+    <includes refid="serial_8hpp" local="yes">serial.hpp</includes>
+    <includes refid="compute_8hpp" local="yes">compute.hpp</includes>
+    <includes local="yes">stdint.h</includes>
+    <incdepgraph>
+      <node id="102">
+        <label>windows.h</label>
+      </node>
+      <node id="108">
+        <label>PID.hpp</label>
+        <link refid="_p_i_d_8hpp"/>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>stdint.h</label>
+      </node>
+      <node id="104">
+        <label>stdlib.h</label>
+      </node>
+      <node id="107">
+        <label>highgui.h</label>
+      </node>
+      <node id="100">
+        <label>C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.cpp</label>
+        <link refid="compute.cpp"/>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>cv.h</label>
+      </node>
+      <node id="101">
+        <label>serial.hpp</label>
+        <link refid="serial_8hpp"/>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>compute.hpp</label>
+        <link refid="compute_8hpp"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>kalman.hpp</label>
+        <link refid="kalman_8hpp"/>
+      </node>
+      <node id="103">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>Main control algorithm. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>BallBalancing<sp/>-<sp/>Copyright<sp/>(C)<sp/>2013<sp/>Luca<sp/>D&apos;Onofrio.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>BallBalancing<sp/>Project</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>BallBalancing<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>BallBalancing<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>This<sp/>firmware<sp/>is<sp/>based<sp/>on<sp/>OpenCV<sp/>2.4.5,<sp/>see<sp/>&lt;http://www.opencv.org&gt;.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="serial_8hpp" kindref="compound" tooltip="Serial driver class.">serial.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="compute_8hpp" kindref="compound" tooltip="Main control algorithm.">compute.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stdint.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>External<sp/>functions.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*===========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="group___control_1ga06063e8787ec8883de4ea5b5cc347b9b" refkind="member"><highlight class="normal"><ref refid="group___control_1ga06063e8787ec8883de4ea5b5cc347b9b" kindref="member" tooltip="The constructor.">Compute::Compute</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_compute_1a02745647b5601692ac3ec9bcf595637a" kindref="member" tooltip="The serial driver instance.">serial</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_serial" kindref="compound">Serial</ref>(</highlight><highlight class="stringliteral">&quot;\\\\.\\COM19&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_compute_1af65423b80c39fdf34188349218557de9" kindref="member" tooltip="PID for X coordinate.">pidX</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_p_i_d" kindref="compound">PID</ref>(0.09f,<sp/>0.0f,<sp/>-0.03f);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_compute_1a4b5b07c13ce32db61263e2f50b98fa26" kindref="member" tooltip="PID for Y coordinate.">pidY</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_p_i_d" kindref="compound">PID</ref>(0.07f,<sp/>0.0f,<sp/>-0.05f);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_compute_1a9d8e6f018efceb624332a8ed22b2d896" kindref="member" tooltip="Kalman filter for X coordinate.">kalmanX</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_kalman" kindref="compound">Kalman</ref>(0.022f,<sp/>0.215f);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_compute_1aaf52b9db239d1a995d4c049ea33557f0" kindref="member" tooltip="Kalman filter for X coordinate.">kalmanY</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_kalman" kindref="compound">Kalman</ref>(0.022f,<sp/>0.215f);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;width<sp/>=<sp/><ref refid="class_compute_1a77daaacdce6ae91ec1747a3ac7a89e39" kindref="member" tooltip="Camera frame width.">width</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;height<sp/>=<sp/><ref refid="class_compute_1a0495bed470f6c5730e8f50d5dc22272d" kindref="member" tooltip="Camera frame height.">height</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_compute_1a91eddcbc9fc44cccfef148a668e4da5a" kindref="member" tooltip="X coordinate of the set point.">setPoint_x</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_compute_1ab87fb2b6af3b765f819f85fcaa19da32" kindref="member" tooltip="Y coordinate of the set point.">setPoint_y</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_compute_1a2542b78d6ec19f697e393f583443e924" kindref="member" tooltip="The window used to draw the graph.">window</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_compute_1a964c729355e2057c689c3f7dd2e73b43" kindref="member" tooltip="Plot x value.">sample</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="group___control_1ga0b870ef17154c6d4395e38a706b0421f" refkind="member"><highlight class="normal"><ref refid="group___control_1ga0b870ef17154c6d4395e38a706b0421f" kindref="member" tooltip="The destructor.">Compute::~Compute</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="group___control_1gad916f913222c92830ecb4a192b67c6d4" refkind="member"><highlight class="normal"><ref refid="class_p_i_d" kindref="compound">PID</ref><sp/>*<ref refid="group___control_1gad916f913222c92830ecb4a192b67c6d4" kindref="member" tooltip="Return PID x axis.">Compute::getPIDX</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_compute_1af65423b80c39fdf34188349218557de9" kindref="member" tooltip="PID for X coordinate.">pidX</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="group___control_1ga23898dbfd5e46b3dbe38d245bd417b9d" refkind="member"><highlight class="normal"><ref refid="class_p_i_d" kindref="compound">PID</ref><sp/>*<ref refid="group___control_1ga23898dbfd5e46b3dbe38d245bd417b9d" kindref="member" tooltip="Return PID y axis.">Compute::getPIDY</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_compute_1a4b5b07c13ce32db61263e2f50b98fa26" kindref="member" tooltip="PID for Y coordinate.">pidY</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="group___control_1ga426882753acbede055673691abe6b597" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___control_1ga426882753acbede055673691abe6b597" kindref="member" tooltip="Update the x,y coordinates of the set point.">Compute::setPoint</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y)<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_compute_1a91eddcbc9fc44cccfef148a668e4da5a" kindref="member" tooltip="X coordinate of the set point.">setPoint_x</ref><sp/>=<sp/>x;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_compute_1ab87fb2b6af3b765f819f85fcaa19da32" kindref="member" tooltip="Y coordinate of the set point.">setPoint_y</ref><sp/>=<sp/>y;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="group___control_1gaab1c21a03462410a52b24047c66961fe" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___control_1gaab1c21a03462410a52b24047c66961fe" kindref="member" tooltip="Reset the set point to the center.">Compute::center</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_compute_1a91eddcbc9fc44cccfef148a668e4da5a" kindref="member" tooltip="X coordinate of the set point.">setPoint_x</ref><sp/>=<sp/>this-&gt;<ref refid="class_compute_1a77daaacdce6ae91ec1747a3ac7a89e39" kindref="member" tooltip="Camera frame width.">width</ref><sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_compute_1ab87fb2b6af3b765f819f85fcaa19da32" kindref="member" tooltip="Y coordinate of the set point.">setPoint_y</ref><sp/>=<sp/>this-&gt;<ref refid="class_compute_1a0495bed470f6c5730e8f50d5dc22272d" kindref="member" tooltip="Camera frame height.">height</ref><sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="group___control_1gae689eda9201b54d1ca06a04a693b0e73" refkind="member"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___control_1gae689eda9201b54d1ca06a04a693b0e73" kindref="member" tooltip="Check serial connection.">Compute::IsConnected</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_compute_1a02745647b5601692ac3ec9bcf595637a" kindref="member" tooltip="The serial driver instance.">serial</ref>-&gt;<ref refid="group___serial_1gaa53e46b5c8556152d5d3306fdab4117c" kindref="member" tooltip="Get the connection status.">IsConnected</ref>();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="group___control_1ga654ce447d37ead187bf4294108f14dff" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___control_1ga654ce447d37ead187bf4294108f14dff" kindref="member" tooltip="Main control function.">Compute::Update</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>data[2];</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_compute_1a02745647b5601692ac3ec9bcf595637a" kindref="member" tooltip="The serial driver instance.">serial</ref>-&gt;<ref refid="group___serial_1gaa53e46b5c8556152d5d3306fdab4117c" kindref="member" tooltip="Get the connection status.">IsConnected</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>Estimate<sp/>x<sp/>and<sp/>y<sp/>coordinates</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x_est<sp/>=<sp/>this-&gt;<ref refid="class_compute_1a9d8e6f018efceb624332a8ed22b2d896" kindref="member" tooltip="Kalman filter for X coordinate.">kalmanX</ref>-&gt;<ref refid="group___control_1gaa5abc03d34d704f352f145904ddbc3b4" kindref="member" tooltip="Update estimated value.">update</ref>((</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>x);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y_est<sp/>=<sp/>this-&gt;<ref refid="class_compute_1aaf52b9db239d1a995d4c049ea33557f0" kindref="member" tooltip="Kalman filter for X coordinate.">kalmanY</ref>-&gt;<ref refid="group___control_1gaa5abc03d34d704f352f145904ddbc3b4" kindref="member" tooltip="Update estimated value.">update</ref>((</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>y);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>Update<sp/>PIDs</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ctrl_x<sp/>=<sp/>this-&gt;<ref refid="class_compute_1af65423b80c39fdf34188349218557de9" kindref="member" tooltip="PID for X coordinate.">pidX</ref>-&gt;<ref refid="group___control_1ga00974abc051527b2dcdcaf15d766872b" kindref="member" tooltip="PID controller update function.">updatePID</ref>(this-&gt;<ref refid="class_compute_1a91eddcbc9fc44cccfef148a668e4da5a" kindref="member" tooltip="X coordinate of the set point.">setPoint_x</ref>,<sp/>x_est);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ctrl_y<sp/>=<sp/>this-&gt;<ref refid="class_compute_1a4b5b07c13ce32db61263e2f50b98fa26" kindref="member" tooltip="PID for Y coordinate.">pidY</ref>-&gt;<ref refid="group___control_1ga00974abc051527b2dcdcaf15d766872b" kindref="member" tooltip="PID controller update function.">updatePID</ref>(this-&gt;<ref refid="class_compute_1ab87fb2b6af3b765f819f85fcaa19da32" kindref="member" tooltip="Y coordinate of the set point.">setPoint_y</ref>,<sp/>y_est);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>Scale<sp/>PIDs<sp/>output<sp/>to<sp/>motor<sp/>angles</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data[0]<sp/>=</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___control_1ga5de5e8e3ab304842347b047eb9a7a468" kindref="member" tooltip="Scale an input value within a given range.">map</ref>(ctrl_x,<ref refid="group___control_1gaf3c82099d63a2d91d68bd62d954059c7" kindref="member" tooltip="Max servo angle absolute value.">MAX_ANGLE</ref>,-<ref refid="group___control_1gaf3c82099d63a2d91d68bd62d954059c7" kindref="member" tooltip="Max servo angle absolute value.">MAX_ANGLE</ref>,-(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)(this-&gt;<ref refid="class_compute_1a77daaacdce6ae91ec1747a3ac7a89e39" kindref="member" tooltip="Camera frame width.">width</ref><sp/>/<sp/>2),(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)(this-&gt;<ref refid="class_compute_1a77daaacdce6ae91ec1747a3ac7a89e39" kindref="member" tooltip="Camera frame width.">width</ref><sp/>/<sp/>2));</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data[1]<sp/>=</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___control_1ga5de5e8e3ab304842347b047eb9a7a468" kindref="member" tooltip="Scale an input value within a given range.">map</ref>(ctrl_y,<ref refid="group___control_1gaf3c82099d63a2d91d68bd62d954059c7" kindref="member" tooltip="Max servo angle absolute value.">MAX_ANGLE</ref>,-<ref refid="group___control_1gaf3c82099d63a2d91d68bd62d954059c7" kindref="member" tooltip="Max servo angle absolute value.">MAX_ANGLE</ref>,-(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)(this-&gt;<ref refid="class_compute_1a0495bed470f6c5730e8f50d5dc22272d" kindref="member" tooltip="Camera frame height.">height</ref><sp/>/<sp/>2),(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)(this-&gt;<ref refid="class_compute_1a0495bed470f6c5730e8f50d5dc22272d" kindref="member" tooltip="Camera frame height.">height</ref><sp/>/<sp/>2));</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>Send<sp/>data<sp/>over<sp/>serial<sp/>port</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_compute_1a02745647b5601692ac3ec9bcf595637a" kindref="member" tooltip="The serial driver instance.">serial</ref>-&gt;<ref refid="group___serial_1ga3cce4a34142e8e2adbda131d43103e01" kindref="member" tooltip="Write data to serial port.">WriteData</ref>(data,<sp/>2);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="group___control_1gab35c5e0efd0fc15725300a44ec49ab3b" kindref="member" tooltip="Draw a XY plot.">Plot</ref>(x_est,<sp/>y_est);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Serial<sp/>port<sp/>unavailable!\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="group___control_1gadda796b81679fb1274b031977ed4aa85" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___control_1gadda796b81679fb1274b031977ed4aa85" kindref="member" tooltip="Set OpenCV output window and image.">Compute::SetPlotter</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*win,<sp/>IplImage*<sp/>image)<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;image<sp/>=<sp/><ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_compute_1a2542b78d6ec19f697e393f583443e924" kindref="member" tooltip="The window used to draw the graph.">window</ref><sp/>=<sp/>win;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="group___control_1gab35c5e0efd0fc15725300a44ec49ab3b" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___control_1gab35c5e0efd0fc15725300a44ec49ab3b" kindref="member" tooltip="Draw a XY plot.">Compute::Plot</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x_est,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y_est)<sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i_x_est<sp/>=</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___control_1ga5de5e8e3ab304842347b047eb9a7a468" kindref="member" tooltip="Scale an input value within a given range.">map</ref>(x_est,0.0f,(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)this-&gt;<ref refid="class_compute_1a77daaacdce6ae91ec1747a3ac7a89e39" kindref="member" tooltip="Camera frame width.">width</ref>,0.0f,(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)(this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>-&gt;height/2));</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i_x_set<sp/>=</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___control_1ga5de5e8e3ab304842347b047eb9a7a468" kindref="member" tooltip="Scale an input value within a given range.">map</ref>(this-&gt;<ref refid="class_compute_1a91eddcbc9fc44cccfef148a668e4da5a" kindref="member" tooltip="X coordinate of the set point.">setPoint_x</ref>,0.0f,(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)this-&gt;width,0.0f,(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)(this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>-&gt;height/2));</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i_y_est<sp/>=</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___control_1ga5de5e8e3ab304842347b047eb9a7a468" kindref="member" tooltip="Scale an input value within a given range.">map</ref>(y_est,0.0f,(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)this-&gt;<ref refid="class_compute_1a0495bed470f6c5730e8f50d5dc22272d" kindref="member" tooltip="Camera frame height.">height</ref>,(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)(this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>-&gt;height/2),(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)(this-&gt;image-&gt;height));</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i_y_set<sp/>=</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___control_1ga5de5e8e3ab304842347b047eb9a7a468" kindref="member" tooltip="Scale an input value within a given range.">map</ref>(this-&gt;<ref refid="class_compute_1ab87fb2b6af3b765f819f85fcaa19da32" kindref="member" tooltip="Y coordinate of the set point.">setPoint_y</ref>,0.0f,(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)this-&gt;height,(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)(this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>-&gt;height/2),(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)(this-&gt;image-&gt;height));</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvScalar<sp/>whiteLine<sp/>=<sp/>cvScalar(255,<sp/>255,<sp/>255);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvScalar<sp/>greenLine<sp/>=<sp/>cvScalar(0,<sp/>255,<sp/>0);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvScalar<sp/>redLine<sp/>=<sp/>cvScalar(255,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvFont<sp/>font;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvInitFont(&amp;font,<sp/>CV_FONT_HERSHEY_PLAIN,<sp/>1.0,<sp/>1.0,<sp/>0,<sp/>1,<sp/>8);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_compute_1a964c729355e2057c689c3f7dd2e73b43" kindref="member" tooltip="Plot x value.">sample</ref><sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvPutText(this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Estimation&quot;</highlight><highlight class="normal">,<sp/>cvPoint(10,<sp/>12),<sp/>&amp;font,<sp/>greenLine);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvPutText(this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Set<sp/>Point&quot;</highlight><highlight class="normal">,<sp/>cvPoint(120,<sp/>12),<sp/>&amp;font,<sp/>redLine);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvPutText(this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>,<sp/></highlight><highlight class="stringliteral">&quot;X&quot;</highlight><highlight class="normal">,<sp/>cvPoint(0,<sp/>12<sp/>+<sp/>this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>-&gt;height<sp/>/<sp/>4),</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;font,<sp/>whiteLine);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvPutText(this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Y&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvPoint(0,<sp/>12<sp/>+<sp/>3<sp/>*<sp/>this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>-&gt;height<sp/>/<sp/>4),<sp/>&amp;font,<sp/>whiteLine);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvLine(this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>,<sp/>cvPoint(0,<sp/>this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>-&gt;height<sp/>/<sp/>4),</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvPoint(this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>-&gt;width,<sp/>this-&gt;image-&gt;height<sp/>/<sp/>4),<sp/>whiteLine,</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvLine(this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>,<sp/>cvPoint(0,<sp/>0),<sp/>cvPoint(0,<sp/>this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>-&gt;height),</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>whiteLine,<sp/>0);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvCircle(this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>,<sp/>cvPoint(this-&gt;<ref refid="class_compute_1a964c729355e2057c689c3f7dd2e73b43" kindref="member" tooltip="Plot x value.">sample</ref>,<sp/>i_x_est),<sp/>0,<sp/>greenLine,<sp/>0);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvCircle(this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>,<sp/>cvPoint(this-&gt;<ref refid="class_compute_1a964c729355e2057c689c3f7dd2e73b43" kindref="member" tooltip="Plot x value.">sample</ref>,<sp/>i_x_set),<sp/>0,<sp/>redLine,<sp/>0);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvCircle(this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>,<sp/>cvPoint(this-&gt;<ref refid="class_compute_1a964c729355e2057c689c3f7dd2e73b43" kindref="member" tooltip="Plot x value.">sample</ref>,<sp/>i_y_est),<sp/>0,<sp/>greenLine,<sp/>0);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvCircle(this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>,<sp/>cvPoint(this-&gt;<ref refid="class_compute_1a964c729355e2057c689c3f7dd2e73b43" kindref="member" tooltip="Plot x value.">sample</ref>,<sp/>i_y_set),<sp/>0,<sp/>redLine,<sp/>0);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_compute_1a964c729355e2057c689c3f7dd2e73b43" kindref="member" tooltip="Plot x value.">sample</ref>++;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_compute_1a964c729355e2057c689c3f7dd2e73b43" kindref="member" tooltip="Plot x value.">sample</ref><sp/>&gt;=<sp/>this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>-&gt;width)<sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_compute_1a964c729355e2057c689c3f7dd2e73b43" kindref="member" tooltip="Plot x value.">sample</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvZero(this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvShowImage(this-&gt;<ref refid="class_compute_1a2542b78d6ec19f697e393f583443e924" kindref="member" tooltip="The window used to draw the graph.">window</ref>,<sp/>this-&gt;<ref refid="class_compute_1a530b8cca9b6eb572c8428760a66fccd5" kindref="member" tooltip="The image used for plotting data.">image</ref>);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Luca/Documents/Workspaces/Workspace/BallBalancing_Win32/src/control/compute.cpp"/>
+  </compounddef>
+</doxygen>
