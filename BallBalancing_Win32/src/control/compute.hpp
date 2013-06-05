@@ -33,6 +33,8 @@
 /*===========================================================================*/
 /* Include files.                                                            */
 /*===========================================================================*/
+#include <cv.h>
+#include <highgui.h>
 
 #include "Serial.hpp"
 #include "PID.hpp"
@@ -67,6 +69,12 @@ private:
 	int setPoint_x;			//!< X coordinate of the set point
 	int setPoint_y;			//!< Y coordinate of the set point
 
+	char *window;			//!< The window used to draw the graph
+	IplImage* image;		//!< The image used for plotting data
+	int sample;				//!< Plot x value
+
+	void Plot(float x_est, float y_est);
+
 public:
 	Compute(int width, int height);
 	~Compute();
@@ -78,6 +86,7 @@ public:
 
 	bool IsConnected();
 	void Update(int x, int y);
+	void SetPlotter(char *, IplImage*);
 
 };
 

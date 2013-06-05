@@ -52,6 +52,11 @@
 #define WIN_FRAME_NAME		"Object Tracking"
 
 /**
+ * @brief		Graph window name.
+ */
+#define WIN_GRAPH_NAME		"Signal plot"
+
+/**
  * @brief		Scaling factor (%) of the binary frame window
  */
 #define	BINARY_RESIZE		50

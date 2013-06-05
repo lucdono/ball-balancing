@@ -55,6 +55,11 @@ static Compute *compute;
 static IplImage* imgTracking;
 
 /**
+ * @brief		Plot frame.
+ */
+static IplImage* imgPlot;
+
+/**
  * @brief		Tracking last X position.
  */
 static int lastX = -1;
@@ -174,6 +179,7 @@ int main() {
 	 */
 	cvNamedWindow(WIN_BINARY_NAME);
 	cvNamedWindow(WIN_FRAME_NAME);
+	cvNamedWindow(WIN_GRAPH_NAME);
 
 	frame = cvQueryFrame(capture);
 	if (!frame) {
@@ -201,6 +207,14 @@ int main() {
 	 */
 	imgTracking = cvCreateImage(cvGetSize(frame), IPL_DEPTH_8U, 3);
 	cvZero(imgTracking); //covert the image, 'imgTracking' to black
+
+	/*
+	 * Create a blank image for signal plot and inizialize Compute class
+	 */
+	imgPlot = cvCreateImage(cvSize(800,200), IPL_DEPTH_8U, 3);
+	cvZero(imgPlot); //covert the image, 'imgTracking' to black
+	compute->SetPlotter(WIN_GRAPH_NAME,imgPlot);
+	cvShowImage(WIN_GRAPH_NAME, imgPlot);
 
 	/*
 	 * Iterate through each frames of the video
@@ -281,7 +295,7 @@ int main() {
 		cvReleaseImage(&frame);
 
 		/*
-		 * Wait 50mS
+		 * Wait 10mS
 		 */
 		int c = cvWaitKey(10);
 
