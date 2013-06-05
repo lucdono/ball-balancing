@@ -1,22 +1,65 @@
 /*
- * findValues.cpp
+ * BallBalancing - Copyright (C) 2013 Luca D'Onofrio.
  *
- *  Created on: 01/giu/2013
- *      Author: Luca
+ * This file is part of BallBalancing Project
+ *
+ * BallBalancing is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * BallBalancing is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * This firmware is based on OpenCV 2.4.5, see <http://www.opencv.org>.
  */
+
+/**
+ * @file    findHSVValues.cpp
+ * @brief   Main program for finding correct values of HSV.
+ * @details More details at http://opencv-srf.blogspot.it/2010/09/object-detection-using-color-seperation.html
+ *
+ * @note	Win32
+ *
+ * @addtogroup Main
+ * @{
+ */
+
+/*===========================================================================*/
+/* Include files.                                                            */
+/*===========================================================================*/
 
 #include <cv.h>
 #include <highgui.h>
 
-int lowerH = 0;
-int lowerS = 0;
-int lowerV = 0;
+/*===========================================================================*/
+/* Internal Variables.                                                       */
+/*===========================================================================*/
 
-int upperH = 180;
-int upperS = 256;
-int upperV = 256;
+static int lowerH = 0;		//!< Lower value of Hue
+static int lowerS = 0;		//!< Lower value of Saturation
+static int lowerV = 0;		//!< Lower value of Brightness
 
-//This function threshold the HSV image and create a binary image
+static int upperH = 180;	//!< Upper value of Hue
+static int upperS = 256;	//!< Upper value of Saturation
+static int upperV = 256;	//!< Upper value of Brightness
+
+/*===========================================================================*/
+/* Internal Functions.                                                       */
+/*===========================================================================*/
+
+/**
+ * @brief		Threshold the HSV image and create a binary image
+ *
+ * @param[in]	imgHSV	the HSV frame.
+ *
+ * @return		the binary image.
+ */
 IplImage* GetThresholdedImage(IplImage* imgHSV) {
 
 	IplImage* imgThresh = cvCreateImage(cvGetSize(imgHSV), IPL_DEPTH_8U, 1);
@@ -27,8 +70,10 @@ IplImage* GetThresholdedImage(IplImage* imgHSV) {
 
 }
 
-//This function create two windows and 6 trackbars for the "Ball" window
-void setwindowSettings() {
+/**
+ * @brief		This function create two windows and 6 trackbars.
+ */
+void setwindowSettings(void) {
 	cvNamedWindow("Video");
 	cvNamedWindow("Ball");
 
@@ -42,6 +87,13 @@ void setwindowSettings() {
 	cvCreateTrackbar("UpperV", "Ball", &upperV, 256, NULL);
 }
 
+/*===========================================================================*/
+/* External functions.                                                       */
+/*===========================================================================*/
+
+/**
+ * @brief		The program entry point.
+ */
 int main() {
 	CvCapture* capture = 0;
 
@@ -90,5 +142,4 @@ int main() {
 	return 0;
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+/** @} */

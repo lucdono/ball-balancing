@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$compute_8hpp.html" title="Main control algorithm." alt="" coords="275,83,867,112"/>
+<area shape="rect" id="node9" href="$_p_i_d_8cpp.html" title="PID Controller update function code." alt="" coords="891,83,1453,112"/>
+<area shape="rect" id="node5" href="$capture_8cpp.html" title="Main program." alt="" coords="5,160,547,189"/>
+<area shape="rect" id="node7" href="$compute_8cpp.html" title="Main control algorithm." alt="" coords="571,160,1163,189"/>
+</map>

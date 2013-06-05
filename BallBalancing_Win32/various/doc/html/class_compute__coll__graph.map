@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_kalman.html" title="Kalman" alt="" coords="5,5,72,35"/>
+<area shape="rect" id="node4" href="$class_serial.html" title="Serial" alt="" coords="96,5,149,35"/>
+<area shape="rect" id="node6" href="$class_p_i_d.html" title="PID" alt="" coords="173,5,216,35"/>
+</map>

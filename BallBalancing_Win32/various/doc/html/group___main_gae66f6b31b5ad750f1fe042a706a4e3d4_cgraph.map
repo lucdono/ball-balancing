@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$group___control.html#gae689eda9201b54d1ca06a04a693b0e73" title="Check serial connection." alt="" coords="104,5,259,35"/>
+<area shape="rect" id="node7" href="$group___control.html#gadda796b81679fb1274b031977ed4aa85" title="Set OpenCV output window and image." alt="" coords="112,59,251,88"/>
+<area shape="rect" id="node9" href="$group___main.html#gaae7980446bfb533ac1d20bd364cd8f55" title="Threshold the HSV image and create a binary image." alt="" coords="108,112,255,141"/>
+<area shape="rect" id="node11" href="$group___main.html#ga1cff0b66e0542535915b29424186f1c3" title="Object tracking functions from a binary image." alt="" coords="137,165,225,195"/>
+<area shape="rect" id="node13" href="$group___control.html#ga426882753acbede055673691abe6b597" title="Update the x,y coordinates of the set point." alt="" coords="116,219,247,248"/>
+<area shape="rect" id="node15" href="$group___control.html#gaab1c21a03462410a52b24047c66961fe" title="Reset the set point to the center." alt="" coords="123,272,240,301"/>
+<area shape="rect" id="node17" href="$group___control.html#ga654ce447d37ead187bf4294108f14dff" title="Main control function." alt="" coords="120,325,243,355"/>
+<area shape="rect" id="node5" href="$group___serial.html#gaa53e46b5c8556152d5d3306fdab4117c" title="Get the connection status." alt="" coords="308,99,441,128"/>
+<area shape="rect" id="node20" href="$group___control.html#gaa5abc03d34d704f352f145904ddbc3b4" title="Update estimated value." alt="" coords="319,245,431,275"/>
+<area shape="rect" id="node22" href="$group___control.html#ga00974abc051527b2dcdcaf15d766872b" title="PID controller update function." alt="" coords="320,299,429,328"/>
+<area shape="rect" id="node24" href="$group___serial.html#ga3cce4a34142e8e2adbda131d43103e01" title="Write data to serial port." alt="" coords="315,352,435,381"/>
+<area shape="rect" id="node26" href="$group___control.html#gab35c5e0efd0fc15725300a44ec49ab3b" title="Draw a XY plot." alt="" coords="323,405,427,435"/>
+</map>

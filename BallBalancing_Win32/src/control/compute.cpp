@@ -32,7 +32,7 @@
 #include "stdint.h"
 
 /*===========================================================================*/
-/* External declarations.                                                    */
+/* External functions.                                                       */
 /*===========================================================================*/
 
 /**
@@ -150,11 +150,26 @@ void Compute::Update(int x, int y) {
 		printf("Serial port unavailable!\n");
 }
 
+/**
+ * @brief		Set OpenCV output window and image.
+ *
+ * @param[in]	win 	the plotter window to set.
+ * @param[in]	image 	the output image to set.
+ *
+ */
 void Compute::SetPlotter(char *win, IplImage* image) {
 	this->image = image;
 	this->window = win;
 }
 
+/**
+ * @brief		Draw a XY plot.
+ * @details		This function draws a XY plot of Kalman estimation comparing
+ * 				values with the given set point.
+ *
+ * @param[in]	x_est	the Kalman estimation of the x position.
+ * @param[in]	y_est	the Kalman estimation of the y position.
+ */
 void Compute::Plot(float x_est, float y_est) {
 	int i_x_est =
 			map(x_est,0.0f,(float)this->width,0.0f,(float)(this->image->height/2));

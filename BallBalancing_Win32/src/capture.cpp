@@ -80,7 +80,7 @@ static bool doTrack = FALSE;
 static bool doRotate = FALSE;
 
 /*===========================================================================*/
-/* Internal declarations.                                                    */
+/* Internal functions.                                                       */
 /*===========================================================================*/
 
 /**
@@ -142,7 +142,7 @@ CvPoint trackObject(IplImage* imgThresh) {
 }
 
 /*===========================================================================*/
-/* External declarations.                                                    */
+/* External functions.                                                       */
 /*===========================================================================*/
 
 /**
@@ -153,13 +153,6 @@ int main() {
 	 * The rotation angle around the center
 	 */
 	float angle = 0.0f;
-
-	/*
-	 * TODO integrate find HSV code
-	 */
-	/*
-	 * TODO add graph in the window in order to show system response
-	 */
 
 	CvCapture* capture = 0;
 

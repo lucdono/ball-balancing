@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$capture_8hpp.html" title="Main program header." alt="" coords="348,83,439,112"/>
+<area shape="rect" id="node9" href="$compute_8hpp.html" title="Main control algorithm." alt="" coords="228,83,324,112"/>
+<area shape="rect" id="node13" href="$serial_8hpp.html" title="Serial driver class." alt="" coords="343,160,423,189"/>
+<area shape="rect" id="node21" href="$_p_i_d_8hpp.html" title="PID Controller data structure and functions." alt="" coords="252,160,319,189"/>
+<area shape="rect" id="node26" href="$kalman_8hpp.html" title="Simple Kalman filter." alt="" coords="447,160,535,189"/>
+</map>

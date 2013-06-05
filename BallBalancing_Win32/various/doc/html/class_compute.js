@@ -1,0 +1,25 @@
+var class_compute =
+[
+    [ "Compute", "group___control.html#ga06063e8787ec8883de4ea5b5cc347b9b", null ],
+    [ "~Compute", "group___control.html#ga0b870ef17154c6d4395e38a706b0421f", null ],
+    [ "center", "group___control.html#gaab1c21a03462410a52b24047c66961fe", null ],
+    [ "getPIDX", "group___control.html#gad916f913222c92830ecb4a192b67c6d4", null ],
+    [ "getPIDY", "group___control.html#ga23898dbfd5e46b3dbe38d245bd417b9d", null ],
+    [ "IsConnected", "group___control.html#gae689eda9201b54d1ca06a04a693b0e73", null ],
+    [ "Plot", "group___control.html#gab35c5e0efd0fc15725300a44ec49ab3b", null ],
+    [ "SetPlotter", "group___control.html#gadda796b81679fb1274b031977ed4aa85", null ],
+    [ "setPoint", "group___control.html#ga426882753acbede055673691abe6b597", null ],
+    [ "Update", "group___control.html#ga654ce447d37ead187bf4294108f14dff", null ],
+    [ "height", "class_compute.html#a0495bed470f6c5730e8f50d5dc22272d", null ],
+    [ "image", "class_compute.html#a530b8cca9b6eb572c8428760a66fccd5", null ],
+    [ "kalmanX", "class_compute.html#a9d8e6f018efceb624332a8ed22b2d896", null ],
+    [ "kalmanY", "class_compute.html#aaf52b9db239d1a995d4c049ea33557f0", null ],
+    [ "pidX", "class_compute.html#af65423b80c39fdf34188349218557de9", null ],
+    [ "pidY", "class_compute.html#a4b5b07c13ce32db61263e2f50b98fa26", null ],
+    [ "sample", "class_compute.html#a964c729355e2057c689c3f7dd2e73b43", null ],
+    [ "serial", "class_compute.html#a02745647b5601692ac3ec9bcf595637a", null ],
+    [ "setPoint_x", "class_compute.html#a91eddcbc9fc44cccfef148a668e4da5a", null ],
+    [ "setPoint_y", "class_compute.html#ab87fb2b6af3b765f819f85fcaa19da32", null ],
+    [ "width", "class_compute.html#a77daaacdce6ae91ec1747a3ac7a89e39", null ],
+    [ "window", "class_compute.html#a2542b78d6ec19f697e393f583443e924", null ]
+];

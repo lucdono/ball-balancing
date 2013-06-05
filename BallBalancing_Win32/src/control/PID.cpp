@@ -35,7 +35,7 @@
 #include "PID.hpp"
 
 /*===========================================================================*/
-/* External declarations.                                                    */
+/* External functions.                                                       */
 /*===========================================================================*/
 
 /**
@@ -46,7 +46,7 @@
  * @param[in]	D	Derivative gain.
  */
 PID::PID(float P, float I, float D) {
-	this->firstPass = TRUE;
+	this->firstPass = true;
 	this->I = I;
 	this->P = P;
 	this->D = D;
@@ -125,7 +125,7 @@ float PID::updatePID(float targetPosition, float currentPosition) {
 	 * Initialize PID
 	 */
 	if (this->firstPass) {
-		this->firstPass = FALSE;
+		this->firstPass = false;
 		return (constrain(error, -this->windupGuard, this->windupGuard));
 	}
 
